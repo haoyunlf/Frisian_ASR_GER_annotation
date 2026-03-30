@@ -29,86 +29,38 @@ def load_data():
 
 samples = load_data()
 
-# ===== 自动生成用户ID =====
-def get_next_user_id():
-    """自动生成下一个用户编号"""
-    import glob
-    import re
-    
-    # 查找现有的标注文件
-    existing_files = glob.glob("Frisian_A*_annotations.json")
-    
-    if not existing_files:
-        return "Frisian_A01"
-    
-    # 提取现有编号
-    numbers = []
-    for file in existing_files:
-        match = re.search(r'Frisian_A(\d+)_annotations\.json', file)
-        if match:
-            numbers.append(int(match.group(1)))
-    
-    if numbers:
-        next_num = max(numbers) + 1
-        return f"Frisian_A{next_num:02d}"
-    else:
-        return "Frisian_A01"
+st.title("Frisian ASR Error Annotation")
 
-st.title("Frisian ASR Human Annotation")
+# 添加任务描述
+st.markdown("""
+### 📋 Task Description
+You will help evaluate and correct Frisian automatic speech recognition (ASR) outputs. For each sample, you'll be shown:
+- **Multiple candidate transcriptions** ranked by the ASR system's confidence (from highest to lowest probability)
+- Your task is to **select the best transcription** or **provide a manual correction** if none are satisfactory
+- **Ignore capitalization and punctuation differences** - all texts have been normalized
+- When making manual corrections, please indicate the types of errors you found in the candidates
+""")
+
 st.write(f"Total samples available: {len(samples)}")
+st.info("📝 **Important:** Please ignore differences in capitalization and punctuation when comparing transcriptions, as all texts have been normalized.")
 
-# 添加重要说明
-st.write("**Note:** Please ignore differences in capitalization and punctuation in the sentences, as all texts have been normalized.")
-
-# 自动生成或选择用户ID
+# 自动生成用户ID
 if 'user_id' not in st.session_state:
-    col1, col2 = st.columns([2, 1])
+    # 自动生成一个唯一的annotator编号（用户不可见）
+    import time
+    import random
     
-    with col1:
-        option = st.radio(
-            "Choose user ID option:",
-            ["Auto-generate ID", "Use existing ID", "Custom ID"]
-        )
+    # 基于时间戳和随机数生成唯一ID
+    timestamp = int(time.time())
+    random_num = random.randint(100, 999)
+    auto_id = f"Annotator_{timestamp}_{random_num}"
     
-    with col2:
-        if option == "Auto-generate ID":
-            suggested_id = get_next_user_id()
-            st.info(f"Next ID: {suggested_id}")
-            
-        elif option == "Use existing ID":
-            existing_files = glob.glob("Frisian_A*_annotations.json")
-            if existing_files:
-                existing_ids = [os.path.basename(f).replace("_annotations.json", "") for f in existing_files]
-                selected_id = st.selectbox("Select existing ID:", existing_ids)
-            else:
-                st.warning("No existing annotation files found")
-                selected_id = None
-                
-        else:  # Custom ID
-            custom_id = st.text_input("Enter custom ID:", placeholder="e.g., Frisian_B01")
-    
-    if st.button("Confirm User ID", type="primary"):
-        if option == "Auto-generate ID":
-            st.session_state.user_id = get_next_user_id()
-        elif option == "Use existing ID" and 'selected_id' in locals() and selected_id:
-            st.session_state.user_id = selected_id
-        elif option == "Custom ID" and 'custom_id' in locals() and custom_id.strip():
-            st.session_state.user_id = custom_id.strip()
-        else:
-            st.error("Please provide a valid user ID")
-            st.stop()
-        
-        st.success(f"✅ User ID set to: {st.session_state.user_id}")
-        st.rerun()
-    else:
-        st.info("👆 Please confirm your user ID to continue")
-        st.stop()
+    st.session_state.user_id = auto_id
 
 user_id = st.session_state.user_id
-st.write(f"**Current User:** {user_id}")
 
+# 确保annotation目录存在（用于下载功能）
 os.makedirs("annotation", exist_ok=True)
-save_path = f"annotation/{user_id}_annotations.json"
 
 # ===== 配置参数 =====
 # 管理员可在此修改标注任务的配置
@@ -116,18 +68,9 @@ USE_ALL_DATA = False             # 默认使用随机抽样而不是全部数据
 ANNOTATION_SAMPLE_SIZE = 20      # 默认样本数量
 ALLOW_CUSTOM_SIZE = True         # 是否允许用户自定义样本数量
 
-# ===== 读取进度 =====
-if os.path.exists(save_path):
-    state = json.load(open(save_path))
-    # 确保状态数据完整性
-    if "subset" not in state or "idx" not in state or "answers" not in state:
-        st.warning("⚠️ Invalid save file, starting fresh")
-        state = None
-    else:
-        st.success(f"🔄 Resumed existing annotation task with {len(state['subset'])} samples")
-        st.write(f"📊 Progress: {state['idx']}/{len(state['subset'])} completed ({state['idx']/len(state['subset'])*100:.1f}%)")
-
-if not os.path.exists(save_path) or state is None:
+# ===== 创建新的标注任务 =====
+# 网络部署时每次都从头开始
+if 'annotation_state' not in st.session_state:
     # 创建新的标注任务
     st.subheader("🆕 Create New Annotation Task")
     
@@ -179,16 +122,18 @@ if not os.path.exists(save_path) or state is None:
             "total_available": len(samples)
         }
 
-        # 保存初始状态
-        with open(save_path, "w", encoding='utf-8') as f:
-            json.dump(state, f, ensure_ascii=False, indent=2)
+        # 保存到session state而不是文件
+        st.session_state.annotation_state = state
         st.success("✅ New annotation task created!")
         st.rerun()
     else:
         st.stop()
 
-if 'state' not in locals() or state is None:
+# 从session state获取state
+if 'annotation_state' not in st.session_state:
     st.stop()
+
+state = st.session_state.annotation_state
 
 # ===== 检查是否完成 =====
 if state["idx"] >= len(state["subset"]):
@@ -209,15 +154,19 @@ if state["idx"] >= len(state["subset"]):
         st.metric("Manual Rate", f"{manual_corrections/len(state['answers'])*100:.1f}%")
     
     if st.button("Download Results"):
+        total_samples = len(state["subset"])
+        completed_samples = len(state["answers"])
         st.download_button(
             label="📥 Download Annotation Results",
             data=json.dumps(state, ensure_ascii=False, indent=2),
-            file_name=f"{user_id}_annotations.json",
+            file_name=f"{user_id}_{completed_samples}of{total_samples}_annotations.json",
             mime="application/json"
         )
     
     if st.button("🔄 Start New Task"):
-        os.remove(save_path) if os.path.exists(save_path) else None
+        # 清除session state重新开始
+        if 'annotation_state' in st.session_state:
+            del st.session_state.annotation_state
         st.rerun()
     
     st.stop()
@@ -331,9 +280,8 @@ with col1:
             if state["answers"] and len(state["answers"]) > state["idx"]:
                 state["answers"] = state["answers"][:state["idx"]]
             
-            # 保存状态
-            with open(save_path, "w", encoding='utf-8') as f:
-                json.dump(state, f, ensure_ascii=False, indent=2)
+            # 更新session state
+            st.session_state.annotation_state = state
             
             st.success("⬅️ Moved to previous sample")
             st.rerun()
@@ -401,9 +349,8 @@ with col3:
         state["answers"].append(answer)
         state["idx"] += 1
 
-        # 保存进度
-        with open(save_path, "w", encoding='utf-8') as f:
-            json.dump(state, f, ensure_ascii=False, indent=2)
+        # 更新session state
+        st.session_state.annotation_state = state
 
         # 清理当前样本的session state
         current_choice_key = f"transcription_choice_{state['idx']-1}"
@@ -420,9 +367,6 @@ with col3:
 
 # ===== 侧边栏信息 =====
 with st.sidebar:
-    st.subheader("User Info")
-    st.write(f"**User ID:** {user_id}")
-    
     if state["answers"]:
         manual_count = sum(1 for ans in state["answers"] if ans["is_manual"])
         nbest_count = len(state["answers"]) - manual_count
@@ -433,11 +377,11 @@ with st.sidebar:
         if len(state["answers"]) > 0:
             st.metric("Manual Rate", f"{manual_count/len(state['answers'])*100:.1f}%")
     
-    st.subheader("💾 Data")
-    st.write(f"Save file: `{save_path}`")
+    st.subheader("💾 Actions")
     
     if st.button("🔄 Reset Progress"):
-        if os.path.exists(save_path):
-            os.remove(save_path)
-            st.success("Progress reset!")
-            st.rerun()
+        # 清除session state重新开始
+        if 'annotation_state' in st.session_state:
+            del st.session_state.annotation_state
+        st.success("Progress reset!")
+        st.rerun()
