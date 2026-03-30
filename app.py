@@ -109,9 +109,9 @@ save_path = f"annotation/{user_id}_annotations.json"
 
 # ===== 配置参数 =====
 # 管理员可在此修改标注任务的配置
-USE_ALL_DATA = True              # 使用全部数据而不是随机抽样
-ANNOTATION_SAMPLE_SIZE = 200     # 仅在USE_ALL_DATA=False时使用
-ALLOW_CUSTOM_SIZE = False        # 是否允许用户自定义样本数量
+USE_ALL_DATA = False             # 默认使用随机抽样而不是全部数据
+ANNOTATION_SAMPLE_SIZE = 20      # 默认样本数量
+ALLOW_CUSTOM_SIZE = True         # 是否允许用户自定义样本数量
 
 # ===== 读取进度 =====
 if os.path.exists(save_path):
@@ -128,20 +128,45 @@ if not os.path.exists(save_path) or state is None:
     # 创建新的标注任务
     st.subheader("🆕 Create New Annotation Task")
     
-    if USE_ALL_DATA:
+    # 让用户选择任务类型
+    task_option = st.radio(
+        "Choose annotation task type:",
+        ["Quick test (20 random samples)", "Full dataset (all samples)", "Custom size"]
+    )
+    
+    if task_option == "Quick test (20 random samples)":
+        sample_size = 20
+        available_samples = min(sample_size, len(samples))
+        st.info(f"This task will include **{available_samples}** randomly selected samples for annotation.")
+        task_description = f"Quick test - {available_samples} samples"
+        use_all = False
+        
+    elif task_option == "Full dataset (all samples)":
         available_samples = len(samples)
         st.info(f"This task will include **all {available_samples}** samples from the dataset for annotation.")
         task_description = "Complete dataset annotation"
-    else:
-        available_samples = min(ANNOTATION_SAMPLE_SIZE, len(samples))
+        use_all = True
+        
+    else:  # Custom size
+        sample_size = st.number_input(
+            "Enter number of samples:", 
+            min_value=1, 
+            max_value=len(samples), 
+            value=50
+        )
+        available_samples = min(sample_size, len(samples))
         st.info(f"This task will include **{available_samples}** randomly selected samples for annotation.")
-        task_description = f"Random {available_samples} samples"
+        task_description = f"Custom task - {available_samples} samples"
+        use_all = False
     
     if st.button("🚀 Start New Annotation Task", type="primary"):
-        if USE_ALL_DATA:
-            selected_samples = samples.copy()  # 使用全部数据
+        if use_all:
+            # 使用全部数据，但先shuffle
+            selected_samples = samples.copy()
+            random.shuffle(selected_samples)  # 确保数据被shuffle
         else:
-            selected_samples = random.sample(samples, available_samples)  # 随机抽样
+            # 随机抽样（random.sample自动shuffle）
+            selected_samples = random.sample(samples, available_samples)
             
         state = {
             "subset": selected_samples,
@@ -157,7 +182,7 @@ if not os.path.exists(save_path) or state is None:
         st.success("✅ New annotation task created!")
         st.rerun()
     else:
-        st.info("� Configure your annotation task above and click 'Start'")
+        st.info("👆 Configure your annotation task above and click 'Start'")
         st.stop()
 
 if 'state' not in locals() or state is None:
@@ -236,26 +261,32 @@ if choice and choice.startswith("✍️"):
     if correction.strip():  # 只有当用户输入了内容才显示错误类型选择
         st.markdown("**❓ What types of errors did you find in the N-best options? (Select all that apply)**")
         
-        col1, col2 = st.columns(2)
+        col1, col2, col3 = st.columns(3)
         
         with col1:
             spelling_error = st.checkbox(
-                "**Spelling Error**", 
+                "🔤 **Spelling** - Incorrect letter combinations, typos", 
                 key=f"error_spelling_{state['idx']}"
             )
             morphological_error = st.checkbox(
-                "**Morphological Error**", 
+                "🏗️ **Morphological** - Wrong word forms, inflections", 
                 key=f"error_morphological_{state['idx']}"
             )
         
         with col2:
             syntactic_error = st.checkbox(
-                "**Syntactic Error**", 
+                "📝 **Syntactic** - Incorrect grammar, word order", 
                 key=f"error_syntactic_{state['idx']}"
             )
             pragmatic_error = st.checkbox(
-                "**Pragmatic Error**", 
+                "💭 **Pragmatic** - Contextually inappropriate, meaning issues", 
                 key=f"error_pragmatic_{state['idx']}"
+            )
+        
+        with col3:
+            others_error = st.checkbox(
+                "❓ **Others** - Other types of errors", 
+                key=f"error_others_{state['idx']}"
             )
         
         # 收集选择的错误类型
@@ -267,8 +298,8 @@ if choice and choice.startswith("✍️"):
             error_types.append("syntactic")
         if pragmatic_error:
             error_types.append("pragmatic")
-
-# ===== 验证和提交 =====
+        if others_error:
+            error_types.append("others")# ===== 验证和提交 =====
 st.divider()
 
 # 显示当前选择摘要
