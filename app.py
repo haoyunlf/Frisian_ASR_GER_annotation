@@ -71,12 +71,14 @@ ALLOW_CUSTOM_SIZE = True         # 是否允许用户自定义样本数量
 if 'annotation_state' not in st.session_state:
     # 创建新的标注任务
     
+    # 让用户选择任务类型
+    st.write("**Choose annotation task type:**")
     task_option = st.radio(
-        "Choose annotation task type:",
-        ["Quick test (20 random samples)", "Full dataset (all samples)", "Custom size"],
+        label=None,  # 空标签
+        options=["Quick test (20 random samples)", "Full dataset (all samples)", "Custom size"],
         index=0,
         key="task_type_radio"
-    )
+)
     
     if task_option == "Quick test (20 random samples)":
         sample_size = 20
