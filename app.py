@@ -104,7 +104,7 @@ if 'user_id' not in st.session_state:
 user_id = st.session_state.user_id
 st.write(f"**Current User:** {user_id}")
 
-os.mkdir("annotation", exist_ok=True)
+os.makedirs("annotation", exist_ok=True)
 save_path = f"annotation/{user_id}_annotations.json"
 
 # ===== 配置参数 =====
