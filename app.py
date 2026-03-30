@@ -182,7 +182,6 @@ if not os.path.exists(save_path) or state is None:
         st.success("✅ New annotation task created!")
         st.rerun()
     else:
-        st.info("👆 Configure your annotation task above and click 'Start'")
         st.stop()
 
 if 'state' not in locals() or state is None:
