@@ -36,7 +36,7 @@ def get_next_user_id():
     import re
     
     # 查找现有的标注文件
-    existing_files = glob.glob("human_correction/Frisian_A*_annotations.json")
+    existing_files = glob.glob("Frisian_A*_annotations.json")
     
     if not existing_files:
         return "Frisian_A01"
@@ -57,6 +57,9 @@ def get_next_user_id():
 st.title("Frisian ASR Human Annotation")
 st.write(f"Total samples available: {len(samples)}")
 
+# 添加重要说明
+st.info("📝 **Note:** Please ignore differences in capitalization and punctuation in the sentences, as all texts have been normalized.")
+
 # 自动生成或选择用户ID
 if 'user_id' not in st.session_state:
     col1, col2 = st.columns([2, 1])
@@ -73,7 +76,7 @@ if 'user_id' not in st.session_state:
             st.info(f"Next ID: {suggested_id}")
             
         elif option == "Use existing ID":
-            existing_files = glob.glob("human_correction/Frisian_A*_annotations.json")
+            existing_files = glob.glob("Frisian_A*_annotations.json")
             if existing_files:
                 existing_ids = [os.path.basename(f).replace("_annotations.json", "") for f in existing_files]
                 selected_id = st.selectbox("Select existing ID:", existing_ids)
@@ -238,7 +241,7 @@ options = []
 for i, text in enumerate(nbest):
     options.append(f"{i+1}: {text}")
 
-options.append("✍️ None of the above - I'll write my own correction")
+options.append("None of the above")
 
 choice = st.radio("Select the best transcription:", options, key=f"transcription_choice_{state['idx']}")
 
@@ -246,8 +249,8 @@ choice = st.radio("Select the best transcription:", options, key=f"transcription
 correction = ""
 error_types = []
 
-if choice and choice.startswith("✍️"):
-    st.markdown("**✍️ Enter your manual correction:**")
+if choice and choice == "None of the above":
+    st.markdown("**Enter your correction:**")
     correction = st.text_area(
         "", 
         placeholder="Type your correction here...", 
@@ -258,33 +261,33 @@ if choice and choice.startswith("✍️"):
     
     # 添加错误类型选择
     if correction.strip():  # 只有当用户输入了内容才显示错误类型选择
-        st.markdown("**❓ What types of errors did you find in the N-best options? (Select all that apply)**")
+        st.markdown("**What types of errors did you find? (Select all that apply)**")
         
         col1, col2, col3 = st.columns(3)
         
         with col1:
             spelling_error = st.checkbox(
-                "🔤 **Spelling** - Incorrect letter combinations, typos", 
+                "Spelling", 
                 key=f"error_spelling_{state['idx']}"
             )
             morphological_error = st.checkbox(
-                "🏗️ **Morphological** - Wrong word forms, inflections", 
+                "Morphological", 
                 key=f"error_morphological_{state['idx']}"
             )
         
         with col2:
             syntactic_error = st.checkbox(
-                "📝 **Syntactic** - Incorrect grammar, word order", 
+                "Syntactic", 
                 key=f"error_syntactic_{state['idx']}"
             )
             pragmatic_error = st.checkbox(
-                "💭 **Pragmatic** - Contextually inappropriate, meaning issues", 
+                "Pragmatic", 
                 key=f"error_pragmatic_{state['idx']}"
             )
         
         with col3:
             others_error = st.checkbox(
-                "❓ **Others** - Other types of errors", 
+                "Others", 
                 key=f"error_others_{state['idx']}"
             )
         
@@ -298,12 +301,14 @@ if choice and choice.startswith("✍️"):
         if pragmatic_error:
             error_types.append("pragmatic")
         if others_error:
-            error_types.append("others")# ===== 验证和提交 =====
+            error_types.append("others")
+
+# ===== 验证和提交 =====
 st.divider()
 
 # 显示当前选择摘要
 if choice:
-    if choice.startswith("✍️"):
+    if choice == "None of the above":
         if correction.strip():
             st.success(f"📝 **Manual correction:** {correction.strip()}")
         else:
@@ -345,7 +350,7 @@ with col3:
     submit_label = "➡️ Submit & Next"
     
     if choice:
-        if choice.startswith("✍️"):
+        if choice == "None of the above":
             if correction and correction.strip():
                 can_submit = True
             else:
@@ -362,7 +367,7 @@ with col3:
         manual_text = st.session_state.get(f"manual_correction_{state['idx']}", "")
 
         # 解析选择
-        if choice.startswith("✍️"):
+        if choice == "None of the above":
             selected_option = "manual_correction"
             selected_text = manual_text.strip() if manual_text else correction.strip()
         else:
@@ -388,9 +393,9 @@ with col3:
             "behavior_type": item["behavior_type"],
             "choice": selected_option,
             "selected_text": selected_text,
-            "is_manual": choice.startswith("✍️"),
+            "is_manual": choice == "None of the above",
             "annotation_timestamp": st.session_state.get('current_time', ''),
-            "error_types": error_types if choice.startswith("✍️") else []  # 只在手动纠正时包含错误类型
+            "error_types": error_types if choice == "None of the above" else []  # 只在手动纠正时包含错误类型
         }
         
         state["answers"].append(answer)
