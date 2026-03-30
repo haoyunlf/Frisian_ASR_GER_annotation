@@ -35,12 +35,10 @@ st.title("Frisian ASR Error Annotation")
 st.markdown("""
 You will help evaluate and correct Frisian automatic speech recognition (ASR) outputs. For each sample, you'll be shown:
 - Multiple candidate transcriptions ranked by the ASR system's confidence (from highest to lowest probability)
-- Your task is to **select the best transcription** or provide a manual correction if none are satisfactory
+- Your task is to **select the best transcription** or **provide a manual correction** if none are satisfactory
 - Ignore capitalization and punctuation differences - all texts have been normalized
 - When making manual corrections, please indicate the types of errors you found in the candidates
 """)
-
-st.write(f"Total samples available: {len(samples)}")
 
 # 自动生成用户ID
 if 'user_id' not in st.session_state:
