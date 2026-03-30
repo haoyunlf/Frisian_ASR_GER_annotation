@@ -58,7 +58,7 @@ st.title("Frisian ASR Human Annotation")
 st.write(f"Total samples available: {len(samples)}")
 
 # 添加重要说明
-st.info("📝 **Note:** Please ignore differences in capitalization and punctuation in the sentences, as all texts have been normalized.")
+st.write("**Note:** Please ignore differences in capitalization and punctuation in the sentences, as all texts have been normalized.")
 
 # 自动生成或选择用户ID
 if 'user_id' not in st.session_state:
