@@ -104,7 +104,8 @@ if 'user_id' not in st.session_state:
 user_id = st.session_state.user_id
 st.write(f"**Current User:** {user_id}")
 
-save_path = f"human_correction/{user_id}_annotations.json"
+os.mkdir("annotation", exist_ok=True)
+save_path = f"annotation/{user_id}_annotations.json"
 
 # ===== 配置参数 =====
 # 管理员可在此修改标注任务的配置
