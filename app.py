@@ -72,7 +72,7 @@ if 'annotation_state' not in st.session_state:
     # 创建新的标注任务
     
     # 让用户选择任务类型
-    st.write("**Choose annotation task type:**", help=None)
+    st.write("**Choose annotation task type:**")
     task_option = st.radio(
         label="",  # 空标签
         options=["Quick test (20 random samples)", "Full dataset (all samples)", "Custom size"],
