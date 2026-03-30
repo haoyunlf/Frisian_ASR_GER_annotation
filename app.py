@@ -33,7 +33,6 @@ st.title("Frisian ASR Error Annotation")
 
 # 添加任务描述
 st.markdown("""
-### 📋 Task Description
 You will help evaluate and correct Frisian automatic speech recognition (ASR) outputs. For each sample, you'll be shown:
 - Multiple candidate transcriptions ranked by the ASR system's confidence (from highest to lowest probability)
 - Your task is to **select the best transcription** or provide a manual correction if none are satisfactory
@@ -71,14 +70,15 @@ ALLOW_CUSTOM_SIZE = True         # 是否允许用户自定义样本数量
 # 网络部署时每次都从头开始
 if 'annotation_state' not in st.session_state:
     # 创建新的标注任务
-    st.subheader("🆕 Create New Annotation Task")
     
     # 让用户选择任务类型
-    st.markdown("**Choose annotation task type:**")
+    st.markdown("**Choose annotation task type:**", help=None)
     task_option = st.radio(
-        "",  # 空标签，因为我们用上面的markdown作为标题
-        ["Quick test (20 random samples)", "Full dataset (all samples)", "Custom size"]
-    )
+        label="",  # 空标签
+        options=["Quick test (20 random samples)", "Full dataset (all samples)", "Custom size"],
+        index=0,
+        key="task_type_radio"
+)
     
     if task_option == "Quick test (20 random samples)":
         sample_size = 20
