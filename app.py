@@ -10,7 +10,7 @@ st.set_page_config(page_title="Frisian ASR Human Annotation", layout="wide")
 # ===== 加载数据 =====
 @st.cache_data
 def load_data():
-    data = json.load(open("behavior_analysis_output/sampled_sentences_flat.json"))
+    data = json.load(open("sampled_sentences_flat.json"))
     samples = []
     for uid, item in data.items():
         samples.append({
