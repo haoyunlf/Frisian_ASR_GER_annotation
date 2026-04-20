@@ -33,11 +33,19 @@ st.title("Frisian ASR Error Annotation")
 
 # 添加任务描述
 st.markdown("""
-You will help evaluate and correct Frisian automatic speech recognition (ASR) outputs. For each sample, you'll be shown:
-- Multiple candidate transcriptions ranked by the ASR system's confidence (from highest to lowest probability)
-- Your task is to **select the best transcription** or **provide a manual correction** if none are satisfactory
-- Ignore capitalization and punctuation differences - all texts have been normalized
-- When making manual corrections, please indicate the types of errors you found in the candidates
+On each page, you will be presented with a list of ASR (automatic speech recognition) transcriptions for the same utterance. These are multiple alternative transcription candidates ordered by confidence, with the most likely transcription appearing first.
+
+**Your task is to write a single corrected transcription.**
+
+When reviewing the hypotheses:
+
+- Infer the most likely spoken Frisian from the candidate hypotheses and write your answer in the text box.
+- If you think a candidate is completely correct, you can click the copy button to copy it into the text box.
+- If none of the candidates are completely correct, you may rewrite them to produce the most possible transcription.
+- If there are any spelling or grammatical errors, correct them so the sentence follows normal Frisian usage.
+- If dialectal forms appear, do not normalize them into standard Frisian; instead, infer and preserve what the speaker most likely said.
+- If you make additional modifications beyond the candidate sentences, indicate which original candidate is closest to your final answer and briefly describe what errors it contains.
+- Ignore capitalization and punctuation differences — all texts have been normalized.
 """)
 
 # 自动生成用户ID
@@ -140,16 +148,17 @@ if state["idx"] >= len(state["subset"]):
     
     # 显示统计信息
     st.subheader("📊 Your Annotation Statistics:")
-    manual_corrections = sum(1 for ans in state["answers"] if ans["choice"] == "manual_correction")
-    nbest_selections = len(state["answers"]) - manual_corrections
-    
+    total_ans = len(state["answers"])
+    copied_count = sum(1 for ans in state["answers"] if ans.get("copied_from_nbest") is not None)
+    modified_count = total_ans - copied_count
+
     col1, col2 = st.columns(2)
     with col1:
-        st.metric("Total Annotations", len(state["answers"]))
-        st.metric("N-best Selections", nbest_selections)
+        st.metric("Total Annotations", total_ans)
+        st.metric("Copied from N-best", copied_count)
     with col2:
-        st.metric("Manual Corrections", manual_corrections)
-        st.metric("Manual Rate", f"{manual_corrections/len(state['answers'])*100:.1f}%")
+        st.metric("Manually Written", modified_count)
+        st.metric("Manual Rate", f"{modified_count/total_ans*100:.1f}%" if total_ans > 0 else "0%")
     
     if st.button("Download Results"):
         total_samples = len(state["subset"])
@@ -176,159 +185,105 @@ st.write(f"**Sample {state['idx'] + 1} / {len(state['subset'])}** ({progress*100
 
 # ===== 当前样本 =====
 item = state["subset"][state["idx"]]
+idx = state["idx"]
 
-st.subheader("🎯 Select the Best Transcription")
-st.write("Choose the best option from the N-best list below:")
-
-# N-best选项（按顺序显示，不显示额外信息）
+# N-best 候选（最多5条）
 nbest = item["nbest"][:5] if len(item["nbest"]) >= 5 else item["nbest"]
 
-# 简单的选项列表
-options = []
+# 用于文本框的 session state key
+correction_key = f"correction_text_{idx}"
+
+st.subheader("📋 N-best Candidates")
+st.write("Review the candidates below. Click **Copy** to load a candidate into the text box, then edit as needed.")
+
 for i, text in enumerate(nbest):
-    options.append(f"{i+1}: {text}")
+    col_text, col_btn = st.columns([9, 1])
+    with col_text:
+        st.markdown(f"**{i+1}.** {text}")
+    with col_btn:
+        if st.button("📋", key=f"copy_{idx}_{i}", help=f"Copy candidate {i+1} into the text box"):
+            st.session_state[correction_key] = text
+            st.rerun()
 
-options.append("None of the above")
+st.divider()
 
-choice = st.radio("Select the best transcription:", options, key=f"transcription_choice_{state['idx']}")
+# ===== 文本框 =====
+st.subheader("✏️ Your Correction")
+st.write("Write or edit the corrected transcription here:")
 
-# ===== 自己改写 =====
-correction = ""
+correction = st.text_area(
+    "",
+    placeholder="Type your correction here, or click a Copy button above to load a candidate...",
+    height=100,
+    key=correction_key,
+)
+
+# 判断是否直接复制自某个 nbest（完全相同）
+copied_from_nbest = None
+if correction.strip():
+    for i, text in enumerate(nbest):
+        if correction.strip() == text.strip():
+            copied_from_nbest = i + 1  # 1-based
+            break
+
+# ===== 错误类型（修改了内容时显示） =====
 error_types = []
+closest_candidate = None
 
-if choice and choice == "None of the above":
-    st.markdown("**Enter your correction:**")
-    correction = st.text_area(
-        "", 
-        placeholder="Type your correction here...", 
-        height=100,
-        key=f"manual_correction_{state['idx']}",
-        help="",
-    )
-    
-    # 添加错误类型选择
-    if correction.strip():  # 只有当用户输入了内容才显示错误类型选择
-        st.markdown("**What types of errors did you find? (Select all that apply)**")
-        
-        col1, col2, col3 = st.columns(3)
-        
-        with col1:
-            spelling_error = st.checkbox(
-                "Spelling", 
-                key=f"error_spelling_{state['idx']}"
-            )
-            morphological_error = st.checkbox(
-                "Morphological", 
-                key=f"error_morphological_{state['idx']}"
-            )
-        
-        with col2:
-            syntactic_error = st.checkbox(
-                "Syntactic", 
-                key=f"error_syntactic_{state['idx']}"
-            )
-            pragmatic_error = st.checkbox(
-                "Pragmatic", 
-                key=f"error_pragmatic_{state['idx']}"
-            )
-        
-        with col3:
-            others_error = st.checkbox(
-                "Others", 
-                key=f"error_others_{state['idx']}"
-            )
-        
-        # 收集选择的错误类型
-        if spelling_error:
-            error_types.append("spelling")
-        if morphological_error:
-            error_types.append("morphological")
-        if syntactic_error:
-            error_types.append("syntactic")
-        if pragmatic_error:
-            error_types.append("pragmatic")
-        if others_error:
-            error_types.append("others")
+if correction.strip() and copied_from_nbest is None:
+    st.markdown("**Which candidate is closest to your answer?** (optional)")
+    closest_options = ["(None / not sure)"] + [f"{i+1}: {text}" for i, text in enumerate(nbest)]
+    closest_choice = st.selectbox("", closest_options, key=f"closest_{idx}")
+    if closest_choice != "(None / not sure)":
+        closest_candidate = int(closest_choice.split(":")[0])
+
+    st.markdown("**What types of errors did you correct? (Select all that apply)**")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        if st.checkbox("Spelling",      key=f"err_spell_{idx}"):    error_types.append("spelling")
+        if st.checkbox("Morphological", key=f"err_morph_{idx}"):    error_types.append("morphological")
+    with col2:
+        if st.checkbox("Syntactic",     key=f"err_syn_{idx}"):      error_types.append("syntactic")
+        if st.checkbox("Pragmatic",     key=f"err_prag_{idx}"):     error_types.append("pragmatic")
+    with col3:
+        if st.checkbox("Others",        key=f"err_other_{idx}"):    error_types.append("others")
 
 # ===== 验证和提交 =====
 st.divider()
 
-# 显示当前选择摘要
-if choice:
-    if choice == "None of the above":
-        if correction.strip():
-            st.success(f"📝 **Manual correction:** {correction.strip()}")
-        else:
-            st.warning("⚠️ Please enter your manual correction above")
+# 显示当前状态摘要
+if correction.strip():
+    if copied_from_nbest:
+        st.info(f"✅ Using candidate {copied_from_nbest} (unchanged): {correction.strip()}")
     else:
-        selected_num = choice.split(":")[0]
-        selected_text = choice.split(":", 1)[1].strip()
-        st.info(f"✅ **Selected option {selected_num}:** {selected_text}")
+        st.success(f"📝 Your correction: {correction.strip()}")
+else:
+    st.warning("⚠️ Please enter a corrected transcription above before submitting.")
 
 # ===== 导航按钮 =====
 col1, col2, col3 = st.columns([1, 1, 1])
 
 with col1:
-    # 上一个按钮
     if state["idx"] > 0:
         if st.button("⬅️ Previous", use_container_width=True):
             state["idx"] -= 1
-            
-            # 如果有答案，移除最后一个答案
             if state["answers"] and len(state["answers"]) > state["idx"]:
                 state["answers"] = state["answers"][:state["idx"]]
-            
-            # 更新session state
             st.session_state.annotation_state = state
-            
-            st.success("⬅️ Moved to previous sample")
             st.rerun()
     else:
         st.button("⬅️ Previous", disabled=True, use_container_width=True, help="No previous sample")
 
 with col2:
-    # 空白中间列
     st.write("")
 
 with col3:
-    # 提交按钮 - 检查是否可以提交
-    can_submit = False
-    submit_label = "➡️ Submit & Next"
-    
-    if choice:
-        if choice == "None of the above":
-            if correction and correction.strip():
-                can_submit = True
-            else:
-                submit_label = "⚠️ Enter Correction First"
-        else:
-            can_submit = True
-    else:
-        submit_label = "⚠️ Select Option First"
-    
-    # 提交按钮
+    can_submit = bool(correction and correction.strip())
+    submit_label = "➡️ Submit & Next" if can_submit else "⚠️ Enter Correction First"
+
     if st.button(submit_label, type="primary", disabled=not can_submit, use_container_width=True):
-        
-        # 获取手动输入的文本（如果有）
-        manual_text = st.session_state.get(f"manual_correction_{state['idx']}", "")
+        selected_text = correction.strip()
 
-        # 解析选择
-        if choice == "None of the above":
-            selected_option = "manual_correction"
-            selected_text = manual_text.strip() if manual_text else correction.strip()
-        else:
-            # 提取选择的编号 - 修复解析逻辑
-            try:
-                # choice格式: "1: 文本内容" 或 "2: 文本内容"
-                option_num = int(choice.split(":")[0]) - 1  # 简化解析
-                selected_option = f"nbest_{option_num + 1}"
-                selected_text = nbest[option_num]
-                
-            except (ValueError, IndexError) as e:
-                st.error(f"❌ Error parsing choice: {e}")
-                st.stop()
-
-        # 保存答案
         answer = {
             "uid": item["uid"],
             "reference": item["reference"],
@@ -337,43 +292,37 @@ with col3:
             "nbest": nbest,
             "category": item["category"],
             "behavior_type": item["behavior_type"],
-            "choice": selected_option,
             "selected_text": selected_text,
-            "is_manual": choice == "None of the above",
+            "copied_from_nbest": copied_from_nbest,   # 1-based index if exact copy, else None
+            "closest_candidate": closest_candidate,    # 1-based, for modified answers
+            "error_types": error_types,
             "annotation_timestamp": st.session_state.get('current_time', ''),
-            "error_types": error_types if choice == "None of the above" else []  # 只在手动纠正时包含错误类型
         }
-        
+
         state["answers"].append(answer)
         state["idx"] += 1
-
-        # 更新session state
         st.session_state.annotation_state = state
 
-        # 清理当前样本的session state
-        current_choice_key = f"transcription_choice_{state['idx']-1}"
-        current_manual_key = f"manual_correction_{state['idx']-1}"
-        
-        if current_choice_key in st.session_state:
-            del st.session_state[current_choice_key]
-        if current_manual_key in st.session_state:
-            del st.session_state[current_manual_key]
+        # 清理当前样本的 session state
+        for key in [correction_key, f"closest_{idx}"]:
+            if key in st.session_state:
+                del st.session_state[key]
 
-        # 显示确认信息
         st.success(f"✅ Saved: {selected_text}")
         st.rerun()
 
 # ===== 侧边栏信息 =====
 with st.sidebar:
     if state["answers"]:
-        manual_count = sum(1 for ans in state["answers"] if ans["is_manual"])
-        nbest_count = len(state["answers"]) - manual_count
-        
+        total_ans = len(state["answers"])
+        copied_count = sum(1 for ans in state["answers"] if ans.get("copied_from_nbest") is not None)
+        modified_count = total_ans - copied_count
+
         st.subheader("📋 Annotation Stats")
-        st.metric("N-best Selections", nbest_count)
-        st.metric("Manual Corrections", manual_count)
-        if len(state["answers"]) > 0:
-            st.metric("Manual Rate", f"{manual_count/len(state['answers'])*100:.1f}%")
+        st.metric("Copied from N-best", copied_count)
+        st.metric("Manually Written", modified_count)
+        if total_ans > 0:
+            st.metric("Manual Rate", f"{modified_count/total_ans*100:.1f}%")
     
     st.subheader("💾 Actions")
     
