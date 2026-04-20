@@ -238,15 +238,15 @@ if correction.strip() and copied_from_nbest is None:
         closest_candidate = int(closest_choice.split(":")[0])
 
     st.markdown("**What types of errors did you correct? (Select all that apply)**")
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
     with col1:
-        if st.checkbox("Spelling",      key=f"err_spell_{idx}"):    error_types.append("spelling")
-        if st.checkbox("Morphological", key=f"err_morph_{idx}"):    error_types.append("morphological")
+        if st.checkbox("Spelling (wrong characters, typos)", key=f"err_spell_{idx}"):   error_types.append("spelling")
     with col2:
-        if st.checkbox("Syntactic",     key=f"err_syn_{idx}"):      error_types.append("syntactic")
-        if st.checkbox("Pragmatic",     key=f"err_prag_{idx}"):     error_types.append("pragmatic")
+        if st.checkbox("Lexical (wrong word choice)",         key=f"err_lex_{idx}"):     error_types.append("lexical")
     with col3:
-        if st.checkbox("Others",        key=f"err_other_{idx}"):    error_types.append("others")
+        if st.checkbox("Grammar (morphology/syntax)",         key=f"err_gram_{idx}"):    error_types.append("grammar")
+    with col4:
+        if st.checkbox("Others",              key=f"err_other_{idx}"):   error_types.append("others")
 
 # ===== 验证和提交 =====
 st.divider()
