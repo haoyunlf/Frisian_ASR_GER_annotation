@@ -8,7 +8,7 @@ import requests
 
 
 # ===== GitHub 上传 =====
-def upload_to_github(answers, user_id, total_elapsed):
+def upload_to_github(state, user_id, total_elapsed):
     """push 结果 JSON 到 GitHub repo。"""
     try:
         token        = st.secrets["github"]["token"]
@@ -16,12 +16,11 @@ def upload_to_github(answers, user_id, total_elapsed):
         branch       = st.secrets["github"]["branch"]
         results_path = st.secrets["github"]["results_path"]
 
-        content = json.dumps({
-            "user_id": user_id,
-            "answers": answers,
-            "total_elapsed_seconds": round(total_elapsed, 1),
-            "saved_at": time.strftime('%Y-%m-%d %H:%M:%S'),
-        }, ensure_ascii=False, indent=2)
+        save_data = dict(state)
+        save_data["user_id"] = user_id
+        save_data["total_elapsed_seconds"] = round(total_elapsed, 1)
+        save_data["saved_at"] = time.strftime('%Y-%m-%d %H:%M:%S')
+        content = json.dumps(save_data, ensure_ascii=False, indent=2)
 
         encoded = base64.b64encode(content.encode()).decode()
         filepath = f"{results_path}/{user_id}.json"
@@ -158,13 +157,13 @@ if 'annotation_state' not in st.session_state:
     st.write("**Choose annotation task type:**")
     task_option = st.radio(
         label="",  # 空标签
-        options=["Quick test (20 random samples)", "Full dataset (all samples)", "Custom size"],
+        options=["Quick test (10 random samples)", "Full dataset (all samples)", "Custom size"],
         index=0,
         key="task_type_radio"
 )
     
-    if task_option == "Quick test (20 random samples)":
-        sample_size = 20
+    if task_option == "Quick test (10 random samples)":
+        sample_size = 10
         available_samples = min(sample_size, len(samples))
         st.info(f"This task will include **{available_samples}** randomly selected samples for annotation.")
         task_description = f"Quick test - {available_samples} samples"
@@ -207,7 +206,7 @@ if 'annotation_state' not in st.session_state:
         st.session_state.last_resume_time = time.time()
         st.session_state.is_paused = False
         # 显示ID给用户
-        st.info(f"📋 Your annotator ID: **{user_id}**  \nPlease save this ID — you will need it to identify your results.")
+        st.info(f"📋 Your annotator ID: **{user_id}**  \nPlease save this ID so you can resume your annotation later!")
         st.success("✅ Task created! The page will reload.")
         st.rerun()
     else:
@@ -231,7 +230,7 @@ if state["idx"] >= len(state["subset"]):
     total_elapsed = elapsed_before_pause if is_paused else elapsed_before_pause + (time.time() - last_resume_time)
     total_samples = len(state["subset"])
 
-    ok, err = upload_to_github(state["answers"], user_id, total_elapsed)
+    ok, err = upload_to_github(state, user_id, total_elapsed)
     if ok:
         st.success("✅ Results uploaded to GitHub!")
     else:
@@ -435,8 +434,8 @@ if st.session_state.get('save_and_exit'):
         st.session_state.elapsed_before_pause = current_elapsed
         st.session_state.is_paused = True
 
-    st.info(f"📋 Your annotator ID: **{user_id}**  \nNote it down to identify your results.")
-    ok, err = upload_to_github(state["answers"], user_id, current_elapsed)
+    st.info(f"📋 Your annotator ID: **{user_id}**  \nNote it down to resume your annotation later.")
+    ok, err = upload_to_github(state, user_id, current_elapsed)
     if ok:
         st.success("✅ Progress uploaded to GitHub!")
     else:
