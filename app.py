@@ -4,6 +4,61 @@ import random
 import os
 import glob
 import re
+import time
+import gspread
+from google.oauth2.service_account import Credentials
+
+
+# ===== Google Sheets 上传 =====
+def upload_to_sheets(answers, user_id, total_elapsed):
+    """把所有已完成答案批量写入 Google Sheet（先清旧数据再重写）。"""
+    try:
+        creds_dict = dict(st.secrets["gcp_service_account"])
+        sheet_id = st.secrets["sheets"]["sheet_id"]
+        scopes = [
+            "https://www.googleapis.com/auth/spreadsheets",
+            "https://www.googleapis.com/auth/drive",
+        ]
+        creds = Credentials.from_service_account_info(creds_dict, scopes=scopes)
+        gc = gspread.authorize(creds)
+        sh = gc.open_by_key(sheet_id)
+
+        # 用 user_id 作为 worksheet 名，不同标注者分不同 sheet
+        ws_title = user_id[:50]  # worksheet 名最长100字符，截保险
+        try:
+            ws = sh.worksheet(ws_title)
+            ws.clear()
+        except gspread.WorksheetNotFound:
+            ws = sh.add_worksheet(title=ws_title, rows=500, cols=20)
+
+        # 表头
+        headers = [
+            "uid", "reference", "baseline_1best", "gpt_output",
+            "selected_text", "copied_from_nbest", "category",
+            "behavior_type", "annotation_timestamp", "elapsed_seconds_at_submit",
+            "total_elapsed_seconds", "annotator",
+        ]
+        rows = [headers]
+        for ans in answers:
+            rows.append([
+                ans.get("uid", ""),
+                ans.get("reference", ""),
+                ans.get("baseline_1best", ""),
+                ans.get("gpt_output", ""),
+                ans.get("selected_text", ""),
+                str(ans.get("copied_from_nbest", "")),
+                ans.get("category", ""),
+                ans.get("behavior_type", ""),
+                ans.get("annotation_timestamp", ""),
+                str(ans.get("elapsed_seconds_at_submit", "")),
+                str(round(total_elapsed, 1)),
+                user_id,
+            ])
+        ws.update(rows, value_input_option="RAW")
+        return True, None
+    except Exception as e:
+        return False, str(e)
+
 
 st.set_page_config(page_title="Frisian ASR Human Annotation", layout="wide")
 
@@ -44,7 +99,6 @@ When reviewing the hypotheses:
 - If none of the candidates are completely correct, you may rewrite them to produce the most possible transcription.
 - If there are any spelling or grammatical errors, correct them so the sentence follows normal Frisian usage.
 - If dialectal forms appear, do not normalize them into standard Frisian; instead, infer and preserve what the speaker most likely said.
-- If you make additional modifications beyond the candidate sentences, indicate which original candidate is closest to your final answer and what errors it contains.
 - Ignore capitalization and punctuation differences — all texts have been normalized.
 """)
 
@@ -130,6 +184,11 @@ if 'annotation_state' not in st.session_state:
 
         # 保存到session state而不是文件
         st.session_state.annotation_state = state
+        # 初始化计时器
+        st.session_state.task_start_wall = time.time()
+        st.session_state.elapsed_before_pause = 0.0
+        st.session_state.last_resume_time = time.time()
+        st.session_state.is_paused = False
         st.success("✅ New annotation task created!")
         st.rerun()
     else:
@@ -163,17 +222,32 @@ if state["idx"] >= len(state["subset"]):
     if st.button("Download Results"):
         total_samples = len(state["subset"])
         completed_samples = len(state["answers"])
+        # 计算总用时
+        is_paused = st.session_state.get('is_paused', False)
+        elapsed_before_pause = st.session_state.get('elapsed_before_pause', 0.0)
+        last_resume_time = st.session_state.get('last_resume_time', time.time())
+        total_elapsed = elapsed_before_pause if is_paused else elapsed_before_pause + (time.time() - last_resume_time)
+        save_data = dict(state)
+        save_data["total_elapsed_seconds"] = round(total_elapsed, 1)
+        # 上传到 Google Sheets
+        ok, err = upload_to_sheets(state["answers"], user_id, total_elapsed)
+        if ok:
+            st.success("✅ Results uploaded to Google Sheets!")
+        else:
+            st.warning(f"⚠️ Upload failed: {err}")
         st.download_button(
             label="📥 Download Annotation Results",
-            data=json.dumps(state, ensure_ascii=False, indent=2),
+            data=json.dumps(save_data, ensure_ascii=False, indent=2),
             file_name=f"{user_id}_{completed_samples}of{total_samples}_annotations.json",
             mime="application/json"
         )
     
     if st.button("🔄 Start New Task"):
         # 清除session state重新开始
-        if 'annotation_state' in st.session_state:
-            del st.session_state.annotation_state
+        for k in ['annotation_state', 'task_start_wall', 'elapsed_before_pause',
+                  'last_resume_time', 'is_paused']:
+            if k in st.session_state:
+                del st.session_state[k]
         st.rerun()
     
     st.stop()
@@ -226,28 +300,6 @@ if correction.strip():
             copied_from_nbest = i + 1  # 1-based
             break
 
-# ===== 错误类型（修改了内容时显示） =====
-error_types = []
-closest_candidate = None
-
-if correction.strip() and copied_from_nbest is None:
-    st.markdown("**Which candidate is closest to your answer?** (optional)")
-    closest_options = ["(None / not sure)"] + [f"{i+1}: {text}" for i, text in enumerate(nbest)]
-    closest_choice = st.selectbox("", closest_options, key=f"closest_{idx}")
-    if closest_choice != "(None / not sure)":
-        closest_candidate = int(closest_choice.split(":")[0])
-
-    st.markdown("**What types of errors did you correct? (Select all that apply)**")
-    col1, col2, col3, col4 = st.columns(4)
-    with col1:
-        if st.checkbox("Spelling (wrong characters, typos)", key=f"err_spell_{idx}"):   error_types.append("spelling")
-    with col2:
-        if st.checkbox("Lexical (wrong word choice)",         key=f"err_lex_{idx}"):     error_types.append("lexical")
-    with col3:
-        if st.checkbox("Grammar (morphology/syntax)",         key=f"err_gram_{idx}"):    error_types.append("grammar")
-    with col4:
-        if st.checkbox("Others",              key=f"err_other_{idx}"):   error_types.append("others")
-
 # ===== 验证和提交 =====
 st.divider()
 
@@ -284,6 +336,14 @@ with col3:
     if st.button(submit_label, type="primary", disabled=not can_submit, use_container_width=True):
         selected_text = correction.strip()
 
+        # 计算当前已用时间
+        if not st.session_state.get('is_paused', False):
+            cur_elapsed = st.session_state.get('elapsed_before_pause', 0.0) + (
+                time.time() - st.session_state.get('last_resume_time', time.time())
+            )
+        else:
+            cur_elapsed = st.session_state.get('elapsed_before_pause', 0.0)
+
         answer = {
             "uid": item["uid"],
             "reference": item["reference"],
@@ -294,9 +354,8 @@ with col3:
             "behavior_type": item["behavior_type"],
             "selected_text": selected_text,
             "copied_from_nbest": copied_from_nbest,   # 1-based index if exact copy, else None
-            "closest_candidate": closest_candidate,    # 1-based, for modified answers
-            "error_types": error_types,
-            "annotation_timestamp": st.session_state.get('current_time', ''),
+            "annotation_timestamp": time.strftime('%Y-%m-%d %H:%M:%S'),
+            "elapsed_seconds_at_submit": round(cur_elapsed, 1),
         }
 
         state["answers"].append(answer)
@@ -304,7 +363,7 @@ with col3:
         st.session_state.annotation_state = state
 
         # 清理当前样本的 session state
-        for key in [correction_key, f"closest_{idx}"]:
+        for key in [correction_key]:
             if key in st.session_state:
                 del st.session_state[key]
 
@@ -313,6 +372,38 @@ with col3:
 
 # ===== 侧边栏信息 =====
 with st.sidebar:
+    # ---- 计时器 ----
+    st.subheader("⏱️ Timer")
+    is_paused = st.session_state.get('is_paused', False)
+    elapsed_before_pause = st.session_state.get('elapsed_before_pause', 0.0)
+    last_resume_time = st.session_state.get('last_resume_time', time.time())
+
+    if is_paused:
+        current_elapsed = elapsed_before_pause
+    else:
+        current_elapsed = elapsed_before_pause + (time.time() - last_resume_time)
+
+    mins, secs = divmod(int(current_elapsed), 60)
+    hours, mins = divmod(mins, 60)
+    st.metric("Elapsed", f"{hours:02d}:{mins:02d}:{secs:02d}")
+
+    if is_paused:
+        if st.button("▶️ Resume", use_container_width=True):
+            st.session_state.last_resume_time = time.time()
+            st.session_state.is_paused = False
+            st.rerun()
+        st.warning("Paused")
+    else:
+        if st.button("⏸️ Pause", use_container_width=True):
+            st.session_state.elapsed_before_pause = elapsed_before_pause + (
+                time.time() - last_resume_time
+            )
+            st.session_state.is_paused = True
+            st.rerun()
+
+    st.divider()
+
+    # ---- 统计 ----
     if state["answers"]:
         total_ans = len(state["answers"])
         copied_count = sum(1 for ans in state["answers"] if ans.get("copied_from_nbest") is not None)
@@ -323,12 +414,35 @@ with st.sidebar:
         st.metric("Manually Written", modified_count)
         if total_ans > 0:
             st.metric("Manual Rate", f"{modified_count/total_ans*100:.1f}%")
-    
+
+    st.divider()
     st.subheader("💾 Actions")
-    
-    if st.button("🔄 Reset Progress"):
+
+    # 中途保存进度
+    if state["answers"]:
+        total_samples = len(state["subset"])
+        completed_samples = len(state["answers"])
+        save_data = dict(state)
+        save_data["total_elapsed_seconds"] = round(current_elapsed, 1)
+        if st.button(f"💾 Save Progress ({completed_samples}/{total_samples})", use_container_width=True):
+            ok, err = upload_to_sheets(state["answers"], user_id, current_elapsed)
+            if ok:
+                st.success("✅ Uploaded to Google Sheets!")
+            else:
+                st.warning(f"⚠️ Upload failed: {err}")
+        st.download_button(
+            label=f"📥 Download ({completed_samples}/{total_samples})",
+            data=json.dumps(save_data, ensure_ascii=False, indent=2),
+            file_name=f"{user_id}_{completed_samples}of{total_samples}_partial.json",
+            mime="application/json",
+            use_container_width=True,
+        )
+
+    if st.button("🔄 Reset Progress", use_container_width=True):
         # 清除session state重新开始
-        if 'annotation_state' in st.session_state:
-            del st.session_state.annotation_state
+        for k in ['annotation_state', 'task_start_wall', 'elapsed_before_pause',
+                  'last_resume_time', 'is_paused']:
+            if k in st.session_state:
+                del st.session_state[k]
         st.success("Progress reset!")
         st.rerun()
