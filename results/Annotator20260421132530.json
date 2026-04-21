@@ -1,0 +1,83 @@
+{
+  "user_id": "Annotator20260421132530",
+  "answers": [
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23759047.mp3",
+      "reference": "hja en har âldere suster marga ferskille as dei en nacht",
+      "baseline_1best": "hja en har âldere suster marga ferskille as dei en nacht",
+      "gpt_output": "hja en har âldere suster marga ferskille as dei en nacht",
+      "nbest": [
+        "hja en har âldere suster marga ferskille as dei en nacht",
+        "hja en har âldere suster manga ferskille as dei en nacht",
+        "hja en har âldere suster marga ferskille as dei en nacht'",
+        "hja en har âldere suster madga ferskille as dei en nacht",
+        "hja en har ldere suster marga ferskille as dei en nacht"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hja en har âldere suster marga ferskille as dei en nacht",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-21 13:26:12",
+      "elapsed_seconds_at_submit": 7.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23757623.mp3",
+      "reference": "sis dan ris wat ik kin it net rûke",
+      "baseline_1best": "sis dan ris wat ik kin it net rûke",
+      "gpt_output": "sis dan ris wat ik kin it net rûke",
+      "nbest": [
+        "sis dan ris wat ik kin it net rûke",
+        "sis dan ris wat ik kin it net rke",
+        "sis dan ris wat it kin it net rûke",
+        "sis dan ris wat ik kin 't net rûke",
+        "sis dan ris wat ik kin it net roûke"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "sis dan ris wat ik kin it net rûke",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-21 13:26:17",
+      "elapsed_seconds_at_submit": 12.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35769857.mp3",
+      "reference": "hy betelle en rûn de winkel út sûnder te groetsjen",
+      "baseline_1best": "hy betelle en rûn de winkel út sûnder te groedsjen",
+      "gpt_output": "hy betelle en rûn de winkel út sûnder te groetsjen",
+      "nbest": [
+        "hy betelle en rûn de winkel út sûnder te groedsjen",
+        "hy betelle en rûn de winkel út sonder te groedsjen",
+        "hy betelle en rûn de winkel út sûonder te groedsjen",
+        "hy betelle en rûn de winkel út snder te groedsjen",
+        "hy betelle en rûn de winkel út sûnder te groedtsjen"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "hy betelle en rûn de winkel út sûnder te groedsjen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-21 13:26:21",
+      "elapsed_seconds_at_submit": 16.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35581253.mp3",
+      "reference": "ik sei tsjin mysels no de holle koel en meitsje it wer goed",
+      "baseline_1best": "ik suitsje myn sels no de holle koel en meitsje it wer goed",
+      "gpt_output": "ik suítsje mysels no de holle koel en meitsje it wer goed",
+      "nbest": [
+        "ik suitsje myn sels no de holle koel en meitsje it wer goed",
+        "ik suitsje myn sels no de holle kûel en meitsje it wer goed",
+        "ik suitsje myn sels no de holle kol en meitsje it wer goed",
+        "ik suitsje myn sels no de holle kûl en meitsje it wer goed",
+        "ik suitsje myn sels no de holle kel en meitsje it wer goed"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "ik suitsje myn sels no de holle koel en meitsje it wer goed",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-21 13:26:24",
+      "elapsed_seconds_at_submit": 19.8
+    }
+  ],
+  "total_elapsed_seconds": 23.5,
+  "saved_at": "2026-04-21 13:26:28"
+}
