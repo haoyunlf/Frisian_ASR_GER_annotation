@@ -104,21 +104,11 @@ When reviewing the hypotheses:
 
 # 自动生成用户ID
 if 'user_id' not in st.session_state:
-    # 自动生成一个唯一的annotator编号（用户不可见）
-    import time
-    import random
-    
-    # 基于时间戳和随机数生成唯一ID
     timestamp = int(time.time())
     random_num = random.randint(100, 999)
-    auto_id = f"Annotator_{timestamp}_{random_num}"
-    
-    st.session_state.user_id = auto_id
+    st.session_state.user_id = f"Ann_{timestamp}_{random_num}"
 
 user_id = st.session_state.user_id
-
-# 确保annotation目录存在（用于下载功能）
-os.makedirs("annotation", exist_ok=True)
 
 # ===== 配置参数 =====
 # 管理员可在此修改标注任务的配置
@@ -167,11 +157,9 @@ if 'annotation_state' not in st.session_state:
     
     if st.button("🚀 Start New Annotation Task", type="primary"):
         if use_all:
-            # 使用全部数据，但先shuffle
             selected_samples = samples.copy()
-            random.shuffle(selected_samples)  # 确保数据被shuffle
+            random.shuffle(selected_samples)
         else:
-            # 随机抽样（random.sample自动shuffle）
             selected_samples = random.sample(samples, available_samples)
             
         state = {
@@ -181,15 +169,13 @@ if 'annotation_state' not in st.session_state:
             "task_type": task_description,
             "total_available": len(samples)
         }
-
-        # 保存到session state而不是文件
         st.session_state.annotation_state = state
-        # 初始化计时器
-        st.session_state.task_start_wall = time.time()
         st.session_state.elapsed_before_pause = 0.0
         st.session_state.last_resume_time = time.time()
         st.session_state.is_paused = False
-        st.success("✅ New annotation task created!")
+        # 显示ID给用户
+        st.info(f"📋 Your annotator ID: **{user_id}**  \nPlease save this ID — you will need it to identify your results.")
+        st.success("✅ Task created! The page will reload.")
         st.rerun()
     else:
         st.stop()
@@ -202,54 +188,37 @@ state = st.session_state.annotation_state
 
 # ===== 检查是否完成 =====
 if state["idx"] >= len(state["subset"]):
-    st.success("🎉 Annotation task completed!")
-    st.write("Thank you for your annotations!")
-    
-    # 显示统计信息
-    st.subheader("📊 Your Annotation Statistics:")
-    total_ans = len(state["answers"])
-    copied_count = sum(1 for ans in state["answers"] if ans.get("copied_from_nbest") is not None)
-    modified_count = total_ans - copied_count
+    st.success("🎉 Annotation task completed! Thank you!")
+    st.info(f"📋 Your annotator ID: **{user_id}**")
 
-    col1, col2 = st.columns(2)
-    with col1:
-        st.metric("Total Annotations", total_ans)
-        st.metric("Copied from N-best", copied_count)
-    with col2:
-        st.metric("Manually Written", modified_count)
-        st.metric("Manual Rate", f"{modified_count/total_ans*100:.1f}%" if total_ans > 0 else "0%")
-    
-    if st.button("Download Results"):
-        total_samples = len(state["subset"])
-        completed_samples = len(state["answers"])
-        # 计算总用时
-        is_paused = st.session_state.get('is_paused', False)
-        elapsed_before_pause = st.session_state.get('elapsed_before_pause', 0.0)
-        last_resume_time = st.session_state.get('last_resume_time', time.time())
-        total_elapsed = elapsed_before_pause if is_paused else elapsed_before_pause + (time.time() - last_resume_time)
-        save_data = dict(state)
-        save_data["total_elapsed_seconds"] = round(total_elapsed, 1)
-        # 上传到 Google Sheets
-        ok, err = upload_to_sheets(state["answers"], user_id, total_elapsed)
-        if ok:
-            st.success("✅ Results uploaded to Google Sheets!")
-        else:
-            st.warning(f"⚠️ Upload failed: {err}")
-        st.download_button(
-            label="📥 Download Annotation Results",
-            data=json.dumps(save_data, ensure_ascii=False, indent=2),
-            file_name=f"{user_id}_{completed_samples}of{total_samples}_annotations.json",
-            mime="application/json"
-        )
-    
+    total_ans = len(state["answers"])
+    is_paused = st.session_state.get('is_paused', False)
+    elapsed_before_pause = st.session_state.get('elapsed_before_pause', 0.0)
+    last_resume_time = st.session_state.get('last_resume_time', time.time())
+    total_elapsed = elapsed_before_pause if is_paused else elapsed_before_pause + (time.time() - last_resume_time)
+    total_samples = len(state["subset"])
+
+    ok, err = upload_to_sheets(state["answers"], user_id, total_elapsed)
+    if ok:
+        st.success("✅ Results uploaded to Google Sheets!")
+    else:
+        st.warning(f"⚠️ Upload failed: {err}")
+
+    save_data = dict(state)
+    save_data["total_elapsed_seconds"] = round(total_elapsed, 1)
+    st.download_button(
+        label="📥 Download Annotation Results",
+        data=json.dumps(save_data, ensure_ascii=False, indent=2),
+        file_name=f"{user_id}_{total_ans}of{total_samples}_annotations.json",
+        mime="application/json"
+    )
+
     if st.button("🔄 Start New Task"):
-        # 清除session state重新开始
-        for k in ['annotation_state', 'task_start_wall', 'elapsed_before_pause',
-                  'last_resume_time', 'is_paused']:
+        for k in ['annotation_state', 'elapsed_before_pause', 'last_resume_time', 'is_paused']:
             if k in st.session_state:
                 del st.session_state[k]
         st.rerun()
-    
+
     st.stop()
 
 # ===== 显示进度 =====
@@ -372,6 +341,9 @@ with col3:
 
 # ===== 侧边栏信息 =====
 with st.sidebar:
+    st.caption(f"🪪 ID: `{user_id}`")
+    st.divider()
+
     # ---- 计时器 ----
     st.subheader("⏱️ Timer")
     is_paused = st.session_state.get('is_paused', False)
@@ -395,54 +367,51 @@ with st.sidebar:
         st.warning("Paused")
     else:
         if st.button("⏸️ Pause", use_container_width=True):
-            st.session_state.elapsed_before_pause = elapsed_before_pause + (
-                time.time() - last_resume_time
-            )
+            st.session_state.elapsed_before_pause = elapsed_before_pause + (time.time() - last_resume_time)
             st.session_state.is_paused = True
             st.rerun()
 
     st.divider()
 
-    # ---- 统计 ----
-    if state["answers"]:
-        total_ans = len(state["answers"])
-        copied_count = sum(1 for ans in state["answers"] if ans.get("copied_from_nbest") is not None)
-        modified_count = total_ans - copied_count
-
-        st.subheader("📋 Annotation Stats")
-        st.metric("Copied from N-best", copied_count)
-        st.metric("Manually Written", modified_count)
-        if total_ans > 0:
-            st.metric("Manual Rate", f"{modified_count/total_ans*100:.1f}%")
+    # ---- 进度 ----
+    total_samples = len(state["subset"])
+    completed_samples = len(state["answers"])
+    st.metric("Progress", f"{completed_samples} / {total_samples}")
 
     st.divider()
-    st.subheader("💾 Actions")
 
-    # 中途保存进度
-    if state["answers"]:
-        total_samples = len(state["subset"])
-        completed_samples = len(state["answers"])
-        save_data = dict(state)
-        save_data["total_elapsed_seconds"] = round(current_elapsed, 1)
-        if st.button(f"💾 Save Progress ({completed_samples}/{total_samples})", use_container_width=True):
-            ok, err = upload_to_sheets(state["answers"], user_id, current_elapsed)
-            if ok:
-                st.success("✅ Uploaded to Google Sheets!")
-            else:
-                st.warning(f"⚠️ Upload failed: {err}")
-        st.download_button(
-            label=f"📥 Download ({completed_samples}/{total_samples})",
-            data=json.dumps(save_data, ensure_ascii=False, indent=2),
-            file_name=f"{user_id}_{completed_samples}of{total_samples}_partial.json",
-            mime="application/json",
-            use_container_width=True,
-        )
+    # ---- Save & Exit ----
+    if completed_samples > 0 and st.button("💾 Save & Exit", use_container_width=True):
+        st.session_state.save_and_exit = True
+        st.rerun()
 
     if st.button("🔄 Reset Progress", use_container_width=True):
-        # 清除session state重新开始
-        for k in ['annotation_state', 'task_start_wall', 'elapsed_before_pause',
-                  'last_resume_time', 'is_paused']:
+        for k in ['annotation_state', 'elapsed_before_pause', 'last_resume_time', 'is_paused']:
             if k in st.session_state:
                 del st.session_state[k]
         st.success("Progress reset!")
         st.rerun()
+
+# ===== Save & Exit 页面 =====
+if st.session_state.get('save_and_exit'):
+    st.session_state.save_and_exit = False
+    # 暂停计时
+    if not st.session_state.get('is_paused', False):
+        st.session_state.elapsed_before_pause = current_elapsed
+        st.session_state.is_paused = True
+
+    st.info(f"📋 Your annotator ID: **{user_id}**  \nNote it down to identify your results.")
+    ok, err = upload_to_sheets(state["answers"], user_id, current_elapsed)
+    if ok:
+        st.success("✅ Progress uploaded to Google Sheets!")
+    else:
+        st.warning(f"⚠️ Upload failed: {err}")
+    save_data = dict(state)
+    save_data["total_elapsed_seconds"] = round(current_elapsed, 1)
+    st.download_button(
+        label=f"📥 Download ({completed_samples}/{total_samples})",
+        data=json.dumps(save_data, ensure_ascii=False, indent=2),
+        file_name=f"{user_id}_{completed_samples}of{total_samples}_partial.json",
+        mime="application/json",
+    )
+    st.stop()
