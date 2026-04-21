@@ -135,7 +135,9 @@ ALLOW_CUSTOM_SIZE = True         # 是否允许用户自定义样本数量
 # ===== 创建新的标注任务 =====
 if 'annotation_state' not in st.session_state:
 
-    st.subheader(" Start New Task")
+    st.markdown("**You can start a new annotation task below, or if you have already started one, enter your annotator ID to resume where you left off.**")
+    st.divider()
+    st.subheader("🚀 Start New Task")
     st.write("**Choose annotation task type:**")
     task_option = st.radio(
         label="",  # 空标签
@@ -319,7 +321,10 @@ with col1:
     if state["idx"] > 0:
         if st.button("⬅️ Previous", use_container_width=True):
             state["idx"] -= 1
+            # 恢复之前填写的内容
             if state["answers"] and len(state["answers"]) > state["idx"]:
+                prev_answer = state["answers"][state["idx"]]
+                st.session_state[f"correction_text_{state['idx']}"] = prev_answer.get("selected_text", "")
                 state["answers"] = state["answers"][:state["idx"]]
             st.session_state.annotation_state = state
             st.rerun()
@@ -376,7 +381,6 @@ with st.sidebar:
     st.divider()
 
     # ---- 计时器 ----
-    st.subheader("⏱️ Timer")
     is_paused = st.session_state.get('is_paused', False)
     elapsed_before_pause = st.session_state.get('elapsed_before_pause', 0.0)
     last_resume_time = st.session_state.get('last_resume_time', time.time())
@@ -388,14 +392,14 @@ with st.sidebar:
 
     mins, secs = divmod(int(current_elapsed), 60)
     hours, mins = divmod(mins, 60)
-    st.metric("Elapsed", f"{hours:02d}:{mins:02d}:{secs:02d}")
+    paused_label = " (paused)" if is_paused else ""
+    st.caption(f"⏱️ {hours:02d}:{mins:02d}:{secs:02d}{paused_label}")
 
     if is_paused:
         if st.button("▶️ Resume", use_container_width=True):
             st.session_state.last_resume_time = time.time()
             st.session_state.is_paused = False
             st.rerun()
-        st.warning("Paused")
     else:
         if st.button("⏸️ Pause", use_container_width=True):
             st.session_state.elapsed_before_pause = elapsed_before_pause + (time.time() - last_resume_time)
