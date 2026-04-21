@@ -191,8 +191,6 @@ if 'annotation_state' not in st.session_state:
         st.info(f"📋 Your annotator ID: **{user_id}**  \nPlease save this ID so you can resume your annotation later!")
         st.success("✅ Task created! The page will reload.")
         st.rerun()
-    else:
-        st.stop()
 
     st.divider()
     st.subheader("🔄 Resume Previous Session")
