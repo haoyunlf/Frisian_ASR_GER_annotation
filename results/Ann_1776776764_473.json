@@ -1,0 +1,45 @@
+{
+  "user_id": "Ann_1776776764_473",
+  "answers": [
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23851486.mp3",
+      "reference": "annulearje rûte",
+      "baseline_1best": "annulearje rute",
+      "gpt_output": "annulearje rute",
+      "nbest": [
+        "annulearje rute",
+        "annuleêarje rute",
+        "annuleëarje rute",
+        "annulearje rite",
+        "annulearje rute'"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "annulearje rute",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-21 13:06:17",
+      "elapsed_seconds_at_submit": 8.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36990540.mp3",
+      "reference": "wêr kin ik jo mei fan tsjinst wêze",
+      "baseline_1best": "wêr kin ik jo my fan tsjinst wêze",
+      "gpt_output": "wêr kin ik jo my fan tsjinst wêze",
+      "nbest": [
+        "wêr kin ik jo my fan tsjinst wêze",
+        "wêr kin ik jo me fan tsjinst wêze",
+        "wêr kin ik jo myi fan tsjinst wêze",
+        "wêr kin ik je my fan tsjinst wêze",
+        "wêr kin ik jo mey fan tsjinst wêze"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "wêr kin ik jo my fan tsjinst wêze",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-21 13:06:20",
+      "elapsed_seconds_at_submit": 12.1
+    }
+  ],
+  "total_elapsed_seconds": 13.6,
+  "saved_at": "2026-04-21 13:06:22"
+}
