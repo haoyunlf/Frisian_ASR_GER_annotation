@@ -95,11 +95,35 @@ When reviewing the hypotheses:
 - Ignore capitalization and punctuation differences — all texts have been normalized.
 """)
 
+# ===== 从 GitHub 读取之前的进度 =====
+def load_from_github(user_id):
+    try:
+        token        = st.secrets["github"]["token"]
+        repo         = st.secrets["github"]["repo"]
+        branch       = st.secrets["github"]["branch"]
+        results_path = st.secrets["github"]["results_path"]
+        filepath = f"{results_path}/{user_id}.json"
+        url = f"https://api.github.com/repos/{repo}/contents/{filepath}"
+        headers = {
+            "Authorization": f"token {token}",
+            "Accept": "application/vnd.github.v3+json",
+        }
+        r = requests.get(url, headers=headers, params={"ref": branch})
+        if r.status_code == 200:
+            content = base64.b64decode(r.json()["content"]).decode()
+            return json.loads(content), None
+        elif r.status_code == 404:
+            return None, "ID not found. Please check and try again."
+        else:
+            return None, r.text
+    except Exception as e:
+        import traceback
+        return None, traceback.format_exc()
+
+
 # 自动生成用户ID
 if 'user_id' not in st.session_state:
-    timestamp = int(time.time())
-    random_num = random.randint(100, 999)
-    st.session_state.user_id = f"Ann_{timestamp}_{random_num}"
+    st.session_state.user_id = f"Annotator{time.strftime('%Y%m%d%H%M%S')}"
 
 user_id = st.session_state.user_id
 
@@ -110,11 +134,27 @@ ANNOTATION_SAMPLE_SIZE = 20      # 默认样本数量
 ALLOW_CUSTOM_SIZE = True         # 是否允许用户自定义样本数量
 
 # ===== 创建新的标注任务 =====
-# 网络部署时每次都从头开始
 if 'annotation_state' not in st.session_state:
-    # 创建新的标注任务
-    
-    # 让用户选择任务类型
+
+    st.subheader("🔄 Resume Previous Session")
+    resume_id = st.text_input("Enter your annotator ID to resume:", placeholder="e.g. Annotator20260421153000")
+    if st.button("Resume", disabled=not resume_id.strip()):
+        saved, err = load_from_github(resume_id.strip())
+        if saved:
+            st.session_state.user_id = resume_id.strip()
+            user_id = resume_id.strip()
+            st.session_state.annotation_state = saved
+            # 恢复计时（从保存时的时间继续）
+            st.session_state.elapsed_before_pause = saved.get("total_elapsed_seconds", 0.0)
+            st.session_state.last_resume_time = time.time()
+            st.session_state.is_paused = False
+            st.success(f"✅ Resumed! Progress: {len(saved['answers'])} / {len(saved['subset'])} completed.")
+            st.rerun()
+        else:
+            st.error(f"❌ {err}")
+
+    st.divider()
+    st.subheader("🚀 Start New Task")
     st.write("**Choose annotation task type:**")
     task_option = st.radio(
         label="",  # 空标签
