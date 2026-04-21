@@ -129,31 +129,13 @@ user_id = st.session_state.user_id
 # ===== 配置参数 =====
 # 管理员可在此修改标注任务的配置
 USE_ALL_DATA = False             # 默认使用随机抽样而不是全部数据
-ANNOTATION_SAMPLE_SIZE = 20      # 默认样本数量
+ANNOTATION_SAMPLE_SIZE = 10    # 默认样本数量
 ALLOW_CUSTOM_SIZE = True         # 是否允许用户自定义样本数量
 
 # ===== 创建新的标注任务 =====
 if 'annotation_state' not in st.session_state:
 
-    st.subheader("🔄 Resume Previous Session")
-    resume_id = st.text_input("Enter your annotator ID to resume:", placeholder="e.g. Annotator20260421153000")
-    if st.button("Resume", disabled=not resume_id.strip()):
-        saved, err = load_from_github(resume_id.strip())
-        if saved:
-            st.session_state.user_id = resume_id.strip()
-            user_id = resume_id.strip()
-            st.session_state.annotation_state = saved
-            # 恢复计时（从保存时的时间继续）
-            st.session_state.elapsed_before_pause = saved.get("total_elapsed_seconds", 0.0)
-            st.session_state.last_resume_time = time.time()
-            st.session_state.is_paused = False
-            st.success(f"✅ Resumed! Progress: {len(saved['answers'])} / {len(saved['subset'])} completed.")
-            st.rerun()
-        else:
-            st.error(f"❌ {err}")
-
-    st.divider()
-    st.subheader("🚀 Start New Task")
+    st.subheader(" Start New Task")
     st.write("**Choose annotation task type:**")
     task_option = st.radio(
         label="",  # 空标签
@@ -211,6 +193,23 @@ if 'annotation_state' not in st.session_state:
         st.rerun()
     else:
         st.stop()
+
+    st.divider()
+    st.subheader("🔄 Resume Previous Session")
+    resume_id = st.text_input("Enter your annotator ID to resume:", placeholder="e.g. Annotator20260421153000")
+    if st.button("Resume", disabled=not resume_id.strip()):
+        saved, err = load_from_github(resume_id.strip())
+        if saved:
+            st.session_state.user_id = resume_id.strip()
+            user_id = resume_id.strip()
+            st.session_state.annotation_state = saved
+            st.session_state.elapsed_before_pause = saved.get("total_elapsed_seconds", 0.0)
+            st.session_state.last_resume_time = time.time()
+            st.session_state.is_paused = False
+            st.success(f"✅ Resumed! Progress: {len(saved['answers'])} / {len(saved['subset'])} completed.")
+            st.rerun()
+        else:
+            st.error(f"❌ {err}")
 
 # 从session state获取state
 if 'annotation_state' not in st.session_state:
