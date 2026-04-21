@@ -44,7 +44,7 @@ When reviewing the hypotheses:
 - If none of the candidates are completely correct, you may rewrite them to produce the most possible transcription.
 - If there are any spelling or grammatical errors, correct them so the sentence follows normal Frisian usage.
 - If dialectal forms appear, do not normalize them into standard Frisian; instead, infer and preserve what the speaker most likely said.
-- If you make additional modifications beyond the candidate sentences, indicate which original candidate is closest to your final answer and briefly describe what errors it contains.
+- If you make additional modifications beyond the candidate sentences, indicate which original candidate is closest to your final answer and what errors it contains.
 - Ignore capitalization and punctuation differences — all texts have been normalized.
 """)
 
