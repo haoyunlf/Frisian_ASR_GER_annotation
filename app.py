@@ -2,62 +2,55 @@ import streamlit as st
 import json
 import random
 import os
-import glob
-import re
 import time
-import gspread
-from google.oauth2.service_account import Credentials
+import base64
+import requests
 
 
-# ===== Google Sheets 上传 =====
-def upload_to_sheets(answers, user_id, total_elapsed):
-    """把所有已完成答案批量写入 Google Sheet（先清旧数据再重写）。"""
+# ===== GitHub 上传 =====
+def upload_to_github(answers, user_id, total_elapsed):
+    """push 结果 JSON 到 GitHub repo。"""
     try:
-        creds_dict = dict(st.secrets["gcp_service_account"])
-        sheet_id = st.secrets["sheets"]["sheet_id"]
-        scopes = [
-            "https://www.googleapis.com/auth/spreadsheets",
-            "https://www.googleapis.com/auth/drive",
-        ]
-        creds = Credentials.from_service_account_info(creds_dict, scopes=scopes)
-        gc = gspread.authorize(creds)
-        sh = gc.open_by_key(sheet_id)
+        token        = st.secrets["github"]["token"]
+        repo         = st.secrets["github"]["repo"]
+        branch       = st.secrets["github"]["branch"]
+        results_path = st.secrets["github"]["results_path"]
 
-        # 用 user_id 作为 worksheet 名，不同标注者分不同 sheet
-        ws_title = user_id[:50]  # worksheet 名最长100字符，截保险
-        try:
-            ws = sh.worksheet(ws_title)
-            ws.clear()
-        except gspread.WorksheetNotFound:
-            ws = sh.add_worksheet(title=ws_title, rows=500, cols=20)
+        content = json.dumps({
+            "user_id": user_id,
+            "answers": answers,
+            "total_elapsed_seconds": round(total_elapsed, 1),
+            "saved_at": time.strftime('%Y-%m-%d %H:%M:%S'),
+        }, ensure_ascii=False, indent=2)
 
-        # 表头
-        headers = [
-            "uid", "reference", "baseline_1best", "gpt_output",
-            "selected_text", "copied_from_nbest", "category",
-            "behavior_type", "annotation_timestamp", "elapsed_seconds_at_submit",
-            "total_elapsed_seconds", "annotator",
-        ]
-        rows = [headers]
-        for ans in answers:
-            rows.append([
-                ans.get("uid", ""),
-                ans.get("reference", ""),
-                ans.get("baseline_1best", ""),
-                ans.get("gpt_output", ""),
-                ans.get("selected_text", ""),
-                str(ans.get("copied_from_nbest", "")),
-                ans.get("category", ""),
-                ans.get("behavior_type", ""),
-                ans.get("annotation_timestamp", ""),
-                str(ans.get("elapsed_seconds_at_submit", "")),
-                str(round(total_elapsed, 1)),
-                user_id,
-            ])
-        ws.update(rows, value_input_option="RAW")
-        return True, None
+        encoded = base64.b64encode(content.encode()).decode()
+        filepath = f"{results_path}/{user_id}.json"
+        url = f"https://api.github.com/repos/{repo}/contents/{filepath}"
+        headers = {
+            "Authorization": f"token {token}",
+            "Accept": "application/vnd.github.v3+json",
+        }
+
+        # 如果文件已存在，需要当前 SHA 才能更新
+        r = requests.get(url, headers=headers, params={"ref": branch})
+        sha = r.json().get("sha") if r.status_code == 200 else None
+
+        payload = {
+            "message": f"annotation: {user_id}",
+            "content": encoded,
+            "branch": branch,
+        }
+        if sha:
+            payload["sha"] = sha
+
+        r = requests.put(url, headers=headers, json=payload)
+        if r.status_code in (200, 201):
+            return True, None
+        else:
+            return False, r.text
     except Exception as e:
-        return False, str(e)
+        import traceback
+        return False, traceback.format_exc()
 
 
 st.set_page_config(page_title="Frisian ASR Human Annotation", layout="wide")
@@ -198,11 +191,13 @@ if state["idx"] >= len(state["subset"]):
     total_elapsed = elapsed_before_pause if is_paused else elapsed_before_pause + (time.time() - last_resume_time)
     total_samples = len(state["subset"])
 
-    ok, err = upload_to_sheets(state["answers"], user_id, total_elapsed)
+    ok, err = upload_to_github(state["answers"], user_id, total_elapsed)
     if ok:
-        st.success("✅ Results uploaded to Google Sheets!")
+        st.success("✅ Results uploaded to GitHub!")
     else:
-        st.warning(f"⚠️ Upload failed: {err}")
+        st.warning("⚠️ Upload failed")
+        with st.expander("Show error details"):
+            st.code(err)
 
     save_data = dict(state)
     save_data["total_elapsed_seconds"] = round(total_elapsed, 1)
@@ -401,11 +396,13 @@ if st.session_state.get('save_and_exit'):
         st.session_state.is_paused = True
 
     st.info(f"📋 Your annotator ID: **{user_id}**  \nNote it down to identify your results.")
-    ok, err = upload_to_sheets(state["answers"], user_id, current_elapsed)
+    ok, err = upload_to_github(state["answers"], user_id, current_elapsed)
     if ok:
-        st.success("✅ Progress uploaded to Google Sheets!")
+        st.success("✅ Progress uploaded to GitHub!")
     else:
-        st.warning(f"⚠️ Upload failed: {err}")
+        st.warning("⚠️ Upload failed")
+        with st.expander("Show error details"):
+            st.code(err)
     save_data = dict(state)
     save_data["total_elapsed_seconds"] = round(current_elapsed, 1)
     st.download_button(
