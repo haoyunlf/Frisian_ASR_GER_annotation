@@ -381,7 +381,7 @@
       "gpt_wer": 0.2222
     }
   ],
-  "idx": 5,
+  "idx": 6,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36354414.mp3",
@@ -477,11 +477,30 @@
       "copied_from_nbest": 4,
       "annotation_timestamp": "2026-04-21 13:38:09",
       "elapsed_seconds_at_submit": 83.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_20800711.mp3",
+      "reference": "ik leau dat er der krekt sa oer tinkt",
+      "baseline_1best": "ik leau dat er der krekt sa oer tiket",
+      "gpt_output": "ik leau dat er der krekt sa oer tinket",
+      "nbest": [
+        "ik leau dat er der krekt sa oer tiket",
+        "ik leau dat er der krekt sa oer tikt",
+        "ik leau dat er der krekt sa oer tinket",
+        "ik leau dat er der krekt sa oer tinkt",
+        "ik leau dat der der krekt sa oer tiket"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_wrong",
+      "selected_text": "ik leau dat er der krekt sa oer tikt",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-21 13:38:50",
+      "elapsed_seconds_at_submit": 103.8
     }
   ],
   "task_type": "Quick test - 10 samples",
   "total_available": 311,
   "user_id": "Annotator20260421133605",
-  "total_elapsed_seconds": 85.8,
-  "saved_at": "2026-04-21 13:38:11"
+  "total_elapsed_seconds": 106.2,
+  "saved_at": "2026-04-21 13:38:52"
 }
