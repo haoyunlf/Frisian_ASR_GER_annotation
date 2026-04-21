@@ -381,7 +381,7 @@
       "gpt_wer": 0.2222
     }
   ],
-  "idx": 2,
+  "idx": 5,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36354414.mp3",
@@ -420,11 +420,68 @@
       "copied_from_nbest": 3,
       "annotation_timestamp": "2026-04-21 13:36:33",
       "elapsed_seconds_at_submit": 8.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36777071.mp3",
+      "reference": "de bedriuwsadviseurs steane de ûndernimmers mei ried en died by",
+      "baseline_1best": "de bedriuwsadviseurs steane de ûndernimmers mei read en died by",
+      "gpt_output": "de bedriuwsadviseurs steane de ûndernimmers mei raad en died by",
+      "nbest": [
+        "de bedriuwsadviseurs steane de ûndernimmers mei read en died by",
+        "de bedriuwsadviseurs steane de ûndernimmers mei ead en died by",
+        "de bedriuwsadviseur steane de ûndernimmers mei read en died by",
+        "de bedriuwsadviseurss steane de ûndernimmers mei read en died by",
+        "de bedriuwsadviseurs steane de ûndernimmers mei read en die by"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "de bedriuwsadviseurs steane de ûndernimmers mei ead en died by",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-21 13:37:03",
+      "elapsed_seconds_at_submit": 17.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21407798.mp3",
+      "reference": "de plysje sil boetes fange fan minsken dy't fierstente let fan beteljen binne",
+      "baseline_1best": "de polysje sil boerte sfange fan minsken dy't fiersten te let fan beteljen binne",
+      "gpt_output": "de plysje sil boete sfange fan minsken dy't fiersten te let fan beteljen binne",
+      "nbest": [
+        "de polysje sil boerte sfange fan minsken dy't fiersten te let fan beteljen binne",
+        "de polysje sil boerte sfange fan minsken dy't fierstente let fan beteljen binne",
+        "de plysje sil boerte sfange fan minsken dy't fiersten te let fan beteljen binne",
+        "de plysje sil boerte sfange fan minsken dy't fierstente let fan beteljen binne",
+        "de polysje sil boerdte sfange fan minsken dy't fiersten te let fan beteljen binne"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "de polysje sil boerdte sfange fan minsken dy't fiersten te let fan beteljen binne",
+      "copied_from_nbest": 5,
+      "annotation_timestamp": "2026-04-21 13:37:07",
+      "elapsed_seconds_at_submit": 21.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35550432.mp3",
+      "reference": "hylke hie noch nea fan dizze dichter heard",
+      "baseline_1best": "hielke hie noch nea fan dizze dichter heard",
+      "gpt_output": "hielke hie noch nea fan dizze dichter heard",
+      "nbest": [
+        "hielke hie noch nea fan dizze dichter heard",
+        "hilke hie noch nea fan dizze dichter heard",
+        "hielke hie noch nean fan dizze dichter heard",
+        "hyelke hie noch nea fan dizze dichter heard",
+        "hielke hie noch neat fan dizze dichter heard"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "hyelke hie noch nea fan dizze dichter heard",
+      "copied_from_nbest": 4,
+      "annotation_timestamp": "2026-04-21 13:38:09",
+      "elapsed_seconds_at_submit": 83.1
     }
   ],
   "task_type": "Quick test - 10 samples",
   "total_available": 311,
   "user_id": "Annotator20260421133605",
-  "total_elapsed_seconds": 10.2,
-  "saved_at": "2026-04-21 13:36:34"
+  "total_elapsed_seconds": 85.8,
+  "saved_at": "2026-04-21 13:38:11"
 }
