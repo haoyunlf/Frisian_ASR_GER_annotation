@@ -381,7 +381,7 @@
       "gpt_wer": 0.2222
     }
   ],
-  "idx": 6,
+  "idx": 9,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36354414.mp3",
@@ -496,11 +496,68 @@
       "copied_from_nbest": 2,
       "annotation_timestamp": "2026-04-21 13:38:50",
       "elapsed_seconds_at_submit": 103.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28359163.mp3",
+      "reference": "hy smookte de iene sigaret nei de oare",
+      "baseline_1best": "hy smookte de iene sigaret nei de oare",
+      "gpt_output": "hy smookte de iene sigaret nei de oare",
+      "nbest": [
+        "hy smookte de iene sigaret nei de oare",
+        "hy smookte de iene sigearet nei de oare",
+        "hy smokte de iene sigaret nei de oare",
+        "hy smookte de iene sigeret nei de oare",
+        "hy smookte de iene sigret nei de oare"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hy smookte de iene sigeret nei de oare",
+      "copied_from_nbest": 4,
+      "annotation_timestamp": "2026-04-21 13:52:47",
+      "elapsed_seconds_at_submit": 112.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23783620.mp3",
+      "reference": "sil dat wetter yn de takomst ek streamen bliuwe",
+      "baseline_1best": "sil dat wetter yn 'e takomst ekstreamen bliuwe",
+      "gpt_output": "sil dat wetter yn 'e takomst ekstremen bliuwe",
+      "nbest": [
+        "sil dat wetter yn 'e takomst ekstreamen bliuwe",
+        "sil dat wetter yn de takomst ekstreamen bliuwe",
+        "sil dat wetter yn 'e takomst ekstreamer bliuwe",
+        "sil dat wetter yn 'e takomst ekstreame bliuwe",
+        "sil dat wetter yn 'e takomst ekstremen bliuwe"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "sil dat wetter yn 'e takomst ekstreamen bliuwe",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-21 13:52:54",
+      "elapsed_seconds_at_submit": 119.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24722681.mp3",
+      "reference": "hy is sneintemiddei oppakt om't er in doarpsgenoat mei in bakstien slein hat",
+      "baseline_1best": "hy is sneintemiddei oppakt om't er in doarpsgenoat nei in bakstie slein hat",
+      "gpt_output": "hy is sneintemiddei oppakt om't er in doarpsgenoat nei in bakstien slein hat",
+      "nbest": [
+        "hy is sneintemiddei oppakt om't er in doarpsgenoat nei in bakstie slein hat",
+        "hy is sneintemiddei oppakt om't er in doarpsgenoat nei in bakstien slein hat",
+        "hy is sneintemiddei oppakt om't er in doarpsgenoat nei in bakstier slein hat",
+        "hy is sneintemiddei oppakt omt er in doarpsgenoat nei in bakstie slein hat",
+        "hy is sneintemiddei oppakt om't er in doarpsgenoat nei in bagstie slein hat"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "hy is sneintemiddei oppakt om't er in doarpsgenoat nei in bagstie slein hat",
+      "copied_from_nbest": 5,
+      "annotation_timestamp": "2026-04-21 13:53:01",
+      "elapsed_seconds_at_submit": 126.4
     }
   ],
   "task_type": "Quick test - 10 samples",
   "total_available": 311,
   "user_id": "Annotator20260421133605",
-  "total_elapsed_seconds": 106.2,
-  "saved_at": "2026-04-21 13:38:52"
+  "total_elapsed_seconds": 138.7,
+  "saved_at": "2026-04-21 13:53:13"
 }
