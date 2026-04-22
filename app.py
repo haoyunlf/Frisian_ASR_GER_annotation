@@ -392,19 +392,7 @@ with st.sidebar:
 
     mins, secs = divmod(int(current_elapsed), 60)
     hours, mins = divmod(mins, 60)
-    paused_label = " (paused)" if is_paused else ""
-    st.caption(f"⏱️ {hours:02d}:{mins:02d}:{secs:02d}{paused_label}")
-
-    if is_paused:
-        if st.button("▶️ Resume", use_container_width=True):
-            st.session_state.last_resume_time = time.time()
-            st.session_state.is_paused = False
-            st.rerun()
-    else:
-        if st.button("⏸️ Pause", use_container_width=True):
-            st.session_state.elapsed_before_pause = elapsed_before_pause + (time.time() - last_resume_time)
-            st.session_state.is_paused = True
-            st.rerun()
+    st.caption(f"⏱️ {hours:02d}:{mins:02d}:{secs:02d}")
 
     st.divider()
 
