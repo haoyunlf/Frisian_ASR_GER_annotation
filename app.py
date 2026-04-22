@@ -89,7 +89,7 @@ When reviewing the hypotheses:
 
 - Infer the most likely spoken Frisian from the candidate hypotheses and write your answer in the text box.
 - If you think a candidate is completely correct, you can click the **copy button** to copy it into the text box.
-- If none of the candidates are completely correct, e.g. there are spelling or grammatical errors, **rewrite them to produce the most plausible transcription**.
+- If none of the candidates are completely correct, e.g. there are spelling or grammatical errors, rewrite them to produce the most plausible transcription.
 - If dialectal forms appear, do not normalize them into standard Frisian; instead, infer and preserve what the speaker most likely said.
 - Ignore capitalization and punctuation differences — all texts have been normalized.
 
