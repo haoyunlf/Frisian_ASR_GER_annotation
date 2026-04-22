@@ -87,10 +87,10 @@ On each page, you will be presented with a list of ASR (automatic speech recogni
 
 When reviewing the hypotheses:
 
-- **Infer the most likely spoken Frisian** from the candidate hypotheses and write your answer in the text box.
-- If you think a candidate is completely correct, you can click the copy button to copy it into the text box.
+- Infer the most likely spoken Frisian from the candidate hypotheses and write your answer in the text box.
+- If you think a candidate is completely correct, you can click the **copy button** to copy it into the text box.
 - If none of the candidates are completely correct, e.g. there are spelling or grammatical errors, **rewrite them to produce the most plausible transcription**.
-- If dialectal forms appear, **do not normalize them** into standard Frisian; instead, infer and preserve what the speaker most likely said.
+- If dialectal forms appear, do not normalize them into standard Frisian; instead, infer and preserve what the speaker most likely said.
 - Ignore capitalization and punctuation differences — all texts have been normalized.
 
 The timer in the top-left sidebar is just there to know how long the annotation takes. There is no time limit, and you can pause and resume the task at any time by clicking the **Save & Exit** button in the sidebar. When you click it, your progress will be saved, and you can resume later by entering your annotator ID.
