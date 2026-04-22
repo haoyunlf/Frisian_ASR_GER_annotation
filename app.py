@@ -23,7 +23,8 @@ def upload_to_github(state, user_id, total_elapsed):
         content = json.dumps(save_data, ensure_ascii=False, indent=2)
 
         encoded = base64.b64encode(content.encode()).decode()
-        filepath = f"{results_path}/{user_id}.json"
+        task_slug = state.get("task_slug", "full")
+        filepath = f"{results_path}/{user_id}_{task_slug}.json"
         url = f"https://api.github.com/repos/{repo}/contents/{filepath}"
         headers = {
             "Authorization": f"token {token}",
@@ -80,18 +81,19 @@ st.title("Frisian ASR Error Annotation")
 
 # 添加任务描述
 st.markdown("""
-On each page, you will be presented with a list of ASR (automatic speech recognition) transcriptions for the same utterance. These are multiple alternative transcription candidates ordered by confidence, with the most likely transcription appearing first.
+On each page, you will be presented with a list of ASR (automatic speech recognition) transcriptions for the same utterance. These are multiple alternative transcription candidates **ordered by confidence**, with the most likely transcription appearing first.
 
 **Your task is to write a single corrected transcription.**
 
 When reviewing the hypotheses:
 
-- Infer the most likely spoken Frisian from the candidate hypotheses and write your answer in the text box.
+- **Infer the most likely spoken Frisian** from the candidate hypotheses and write your answer in the text box.
 - If you think a candidate is completely correct, you can click the copy button to copy it into the text box.
-- If none of the candidates are completely correct, you may rewrite them to produce the most possible transcription.
-- If there are any spelling or grammatical errors, correct them so the sentence follows normal Frisian usage.
-- If dialectal forms appear, do not normalize them into standard Frisian; instead, infer and preserve what the speaker most likely said.
+- If none of the candidates are completely correct, e.g. there are spelling or grammatical errors, **rewrite them to produce the most plausible transcription**.
+- If dialectal forms appear, **do not normalize them** into standard Frisian; instead, infer and preserve what the speaker most likely said.
 - Ignore capitalization and punctuation differences — all texts have been normalized.
+
+The timer in the top-left sidebar is just there to know how long the annotation takes. There is no time limit, and you can pause and resume the task at any time by clicking the **Save & Exit** button in the sidebar. When you click it, your progress will be saved, and you can resume later by entering your annotator ID.
 """)
 
 # ===== 从 GitHub 读取之前的进度 =====
@@ -101,20 +103,18 @@ def load_from_github(user_id):
         repo         = st.secrets["github"]["repo"]
         branch       = st.secrets["github"]["branch"]
         results_path = st.secrets["github"]["results_path"]
-        filepath = f"{results_path}/{user_id}.json"
-        url = f"https://api.github.com/repos/{repo}/contents/{filepath}"
         headers = {
             "Authorization": f"token {token}",
             "Accept": "application/vnd.github.v3+json",
         }
-        r = requests.get(url, headers=headers, params={"ref": branch})
-        if r.status_code == 200:
-            content = base64.b64decode(r.json()["content"]).decode()
-            return json.loads(content), None
-        elif r.status_code == 404:
-            return None, "ID not found. Please check and try again."
-        else:
-            return None, r.text
+        for slug in ("quick", "full"):
+            filepath = f"{results_path}/{user_id}_{slug}.json"
+            url = f"https://api.github.com/repos/{repo}/contents/{filepath}"
+            r = requests.get(url, headers=headers, params={"ref": branch})
+            if r.status_code == 200:
+                content = base64.b64decode(r.json()["content"]).decode()
+                return json.loads(content), None
+        return None, "ID not found. Please check and try again."
     except Exception as e:
         import traceback
         return None, traceback.format_exc()
@@ -126,12 +126,6 @@ if 'user_id' not in st.session_state:
 
 user_id = st.session_state.user_id
 
-# ===== 配置参数 =====
-# 管理员可在此修改标注任务的配置
-USE_ALL_DATA = False             # 默认使用随机抽样而不是全部数据
-ANNOTATION_SAMPLE_SIZE = 10    # 默认样本数量
-ALLOW_CUSTOM_SIZE = True         # 是否允许用户自定义样本数量
-
 # ===== 创建新的标注任务 =====
 if 'annotation_state' not in st.session_state:
 
@@ -141,35 +135,23 @@ if 'annotation_state' not in st.session_state:
     st.write("**Choose annotation task type:**")
     task_option = st.radio(
         label="",  # 空标签
-        options=["Quick test (10 random samples)", "Full dataset (all samples)", "Custom size"],
+        options=["Quick test (10 random samples)", "Full dataset (all samples)"],
         index=0,
         key="task_type_radio"
-)
-    
+    )
+
     if task_option == "Quick test (10 random samples)":
-        sample_size = 10
-        available_samples = min(sample_size, len(samples))
+        available_samples = min(10, len(samples))
         st.info(f"This task will include **{available_samples}** randomly selected samples for annotation.")
         task_description = f"Quick test - {available_samples} samples"
+        task_slug = "quick"
         use_all = False
-        
-    elif task_option == "Full dataset (all samples)":
+    else:  # Full dataset
         available_samples = len(samples)
         st.info(f"This task will include **all {available_samples}** samples from the dataset for annotation.")
         task_description = "Complete dataset annotation"
+        task_slug = "full"
         use_all = True
-        
-    else:  # Custom size
-        sample_size = st.number_input(
-            "Enter number of samples:", 
-            min_value=1, 
-            max_value=len(samples), 
-            value=50
-        )
-        available_samples = min(sample_size, len(samples))
-        st.info(f"This task will include **{available_samples}** randomly selected samples for annotation.")
-        task_description = f"Custom task - {available_samples} samples"
-        use_all = False
     
     if st.button("🚀 Start New Annotation Task", type="primary"):
         if use_all:
@@ -183,6 +165,7 @@ if 'annotation_state' not in st.session_state:
             "idx": 0,
             "answers": [],
             "task_type": task_description,
+            "task_slug": task_slug,
             "total_available": len(samples)
         }
         st.session_state.annotation_state = state
@@ -231,7 +214,7 @@ if state["idx"] >= len(state["subset"]):
 
     ok, err = upload_to_github(state, user_id, total_elapsed)
     if ok:
-        st.success("✅ Results uploaded to GitHub!")
+        st.success("✅ Results uploaded!")
     else:
         st.warning("⚠️ Upload failed")
         with st.expander("Show error details"):
@@ -336,7 +319,7 @@ with col2:
 
 with col3:
     can_submit = bool(correction and correction.strip())
-    submit_label = "➡️ Submit & Next" if can_submit else "⚠️ Enter Correction First"
+    submit_label = "➡️ Next" if can_submit else "⚠️ Enter Correction First"
 
     if st.button(submit_label, type="primary", disabled=not can_submit, use_container_width=True):
         selected_text = correction.strip()
@@ -378,7 +361,6 @@ with col3:
 # ===== 侧边栏信息 =====
 with st.sidebar:
     st.caption(f"🪪 ID: `{user_id}`")
-    st.divider()
 
     # ---- 计时器 ----
     is_paused = st.session_state.get('is_paused', False)
@@ -396,14 +378,9 @@ with st.sidebar:
 
     st.divider()
 
-    # ---- 进度 ----
+    # ---- Save & Exit ----
     total_samples = len(state["subset"])
     completed_samples = len(state["answers"])
-    st.metric("Progress", f"{completed_samples} / {total_samples}")
-
-    st.divider()
-
-    # ---- Save & Exit ----
     if completed_samples > 0 and st.button("💾 Save & Exit", use_container_width=True):
         st.session_state.save_and_exit = True
         st.rerun()
@@ -426,7 +403,7 @@ if st.session_state.get('save_and_exit'):
     st.info(f"📋 Your annotator ID: **{user_id}**  \nNote it down to resume your annotation later.")
     ok, err = upload_to_github(state, user_id, current_elapsed)
     if ok:
-        st.success("✅ Progress uploaded to GitHub!")
+        st.success("✅ Progress saved!")
     else:
         st.warning("⚠️ Upload failed")
         with st.expander("Show error details"):
