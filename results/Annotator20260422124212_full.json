@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.0
     }
   ],
-  "idx": 20,
+  "idx": 40,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28373403.mp3",
@@ -12200,12 +12200,392 @@
       "copied_from_nbest": 1,
       "annotation_timestamp": "2026-04-22 13:37:04",
       "elapsed_seconds_at_submit": 669.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28352953.mp3",
+      "reference": "jou dysels de romte om it rouproses troch te libjen dat hjirby heart",
+      "baseline_1best": "jou dysels de rûmte om it rouproses troch te libjen dat hjir by heat",
+      "gpt_output": "jou dysels de rûmte om it rouproses troch te libjen dat hjir by heart",
+      "nbest": [
+        "jou dysels de rûmte om it rouproses troch te libjen dat hjir by heat",
+        "jou dysels de rûmte om it rouproses troch te libjen dat hjir byheat",
+        "jou dysels de rûmte om it rouproses troch te libjen dat hjir by eat",
+        "jou dysels de rûmte om it rouproses troch te libjen dat hjir byeat",
+        "jou dysels de rûmte om it rouproses troch te libjen dat hjir by het"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "jou dysels de rûmte om it rouproses troch te libjen dat hjir by heart",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 13:37:50",
+      "elapsed_seconds_at_submit": 715.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28444310.mp3",
+      "reference": "seleksje rjochts útwreidzje",
+      "baseline_1best": "ksammen seleksje rjocht út wreaidzsje",
+      "gpt_output": "ksammen seleksje rjocht út wraidsje",
+      "nbest": [
+        "ksammen seleksje rjocht út wreaidzsje",
+        "ksammen seleksje rjocht út wreaidsje",
+        "ksammen seleksje rjocht út wraidzsje",
+        "ksammen seleksje rjocht út wraidsje",
+        "ksammen seleksje rjocht út wreaidzje"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "ik sil myn? seleksje rjocht útwreidzje",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 13:41:21",
+      "elapsed_seconds_at_submit": 926.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24750183.mp3",
+      "reference": "it giet oer want hy wol net mear",
+      "baseline_1best": "it giet oer want hy wol net mear",
+      "gpt_output": "it giet oer want hy wol net mear",
+      "nbest": [
+        "it giet oer want hy wol net mear",
+        "it giet oer want hjy wol net mear",
+        "it giet oer want ihy wol net mear",
+        "it giet oerr want hy wol net mear",
+        "it giet oear want hy wol net mear"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "it giet oer want hy wol net mear",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 13:41:34",
+      "elapsed_seconds_at_submit": 939.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24741675.mp3",
+      "reference": "sylvia waard de sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "baseline_1best": "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "gpt_output": "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "nbest": [
+        "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+        "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehús",
+        "sylvia waard esneintenachts mei hertklachten opnommen yn it sikehûs",
+        "sylvia waard sneintenachts mei herdklachten opnommen yn it sikehûs",
+        "sylvia waard sneintenachts mei heartklachten opnommen yn it sikehûs"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 13:41:54",
+      "elapsed_seconds_at_submit": 959.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24672018.mp3",
+      "reference": "meitsje dat courier achttjin fet",
+      "baseline_1best": "meitsje dat koerjer achttjin fet",
+      "gpt_output": "meitsje dat koerjer achttjin fet",
+      "nbest": [
+        "meitsje dat koerjer achttjin fet",
+        "meitsje dat koerjier achttjin fet",
+        "meitsje dat coerjer achttjin fet",
+        "meitsje dat koerrjer achttjin fet",
+        "meitsje dat korjer achttjin fet"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "meitsje dat Courier achttjin fet",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 13:42:31",
+      "elapsed_seconds_at_submit": 996.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28363159.mp3",
+      "reference": "fan hjir oant it swimbad is it wol gau in kilometer",
+      "baseline_1best": "fan hjir oant it swimbard is it wol gau in kilometer",
+      "gpt_output": "fan hjir oant it swimbad is it wol gau in kilometer",
+      "nbest": [
+        "fan hjir oant it swimbard is it wol gau in kilometer",
+        "fan hjir oant it swimbad is it wol gau in kilometer",
+        "fan hjir oant it swimbart is it wol gau in kilometer",
+        "fan hjir oant it swimbat is it wol gau in kilometer",
+        "fan hjir oant it swim bard is it wol gau in kilometer"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "fan hjir oant it swimbad is it wol gau in kilometer",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-22 13:43:05",
+      "elapsed_seconds_at_submit": 1030.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36635432.mp3",
+      "reference": "it giet derom dat minsken meiinoar dingen dogge",
+      "baseline_1best": "it gie derom dat minsken meielkoar dingen dogge",
+      "gpt_output": "it gie derom dat minsken mei elkoar dingen dogge",
+      "nbest": [
+        "it gie derom dat minsken meielkoar dingen dogge",
+        "it gie deromdat minsken meielkoar dingen dogge",
+        "it gie derom dat minsken mei elkoar dingen dogge",
+        "it gie deromdat minsken mei elkoar dingen dogge",
+        "it gie derom dat minsken meielkoar dinngen dogge"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "it gie derom dat minsken mei elkoar dingen dogge",
+      "copied_from_nbest": 3,
+      "annotation_timestamp": "2026-04-22 13:43:53",
+      "elapsed_seconds_at_submit": 1078.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23763746.mp3",
+      "reference": "men sjocht yn de betide jûnsoeren in oare stjerrehimel as letter yn 'e nacht",
+      "baseline_1best": "men sjut yn 'e betearde jûnsoaren in oare stjerrich himmel as weterjean moat",
+      "gpt_output": "men sjut yn 'e betearde jûnsoaren in oare stjerrich himmel as wetterjaan moat",
+      "nbest": [
+        "men sjut yn 'e betearde jûnsoaren in oare stjerrich himmel as weterjean moat",
+        "men sjut yn 'e betearde jûnsoaren in oare stjerrichhimmel as weterjean moat",
+        "men sjut yn 'e betearde jûnsoaren in oare stjerrich himmel as leterjean moat",
+        "men sjut yn 'e betearde jûnsoaren in oare stjerrichhimmel as leterjean moat",
+        "men sjut yn 'e betearde jûnsoaren in oare stjerrich himmel as weterjeane moat"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "men sjut yn 'e betide jûnsoeren in oare stjerrehimel as[...]",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 13:49:31",
+      "elapsed_seconds_at_submit": 1416.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35705349.mp3",
+      "reference": "mark wol yn nij seelân in nij libben opbouwe",
+      "baseline_1best": "mark wol yn nij senân in nij libben opbouwe",
+      "gpt_output": "mark wol yn nij seelân in nij libben opbouwe",
+      "nbest": [
+        "mark wol yn nij senân in nij libben opbouwe",
+        "mark wol yn nijsenân in nij libben opbouwe",
+        "mark wol yn nij selân in nij libben opbouwe",
+        "mark wol yn nij senân in nij libben op bouwe",
+        "mark wol yn nijesenân in nij libben opbouwe"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "mark wol yn nij-seelân in nij libben opbouwe",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 13:50:29",
+      "elapsed_seconds_at_submit": 1474.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_27411151.mp3",
+      "reference": "sels myn frou seit dat ik net gau in wurd te folle brûke sil",
+      "baseline_1best": "sels myn frou seit dat ik net gau in wurd te folle brûke sil",
+      "gpt_output": "sels myn frou seit dat ik net gau in wurd te folle brûke sil",
+      "nbest": [
+        "sels myn frou seit dat ik net gau in wurd te folle brûke sil",
+        "sels myn frou seit dat ik net gau in wurd tefolle brûke sil",
+        "sels myn frou seit dat 'k net gau in wurd te folle brûke sil",
+        "sels myn frou seit dat yk net gau in wurd te folle brûke sil",
+        "sels myn frou seit dat ik net gau in wurd te folle berûke sil"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "sels myn frou seit dat ik net gau in wurd te folle brûke sil",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 13:50:51",
+      "elapsed_seconds_at_submit": 1496.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28392504.mp3",
+      "reference": "ik moast it heft yn eigen hannen nimme",
+      "baseline_1best": "ik moast der heft yn eigen hannen nimme",
+      "gpt_output": "ik moast de heft yn eigen hannen nimme",
+      "nbest": [
+        "ik moast der heft yn eigen hannen nimme",
+        "ik moast de heft yn eigen hannen nimme",
+        "ik moast det heft yn eigen hannen nimme",
+        "ik moast dir heft yn eigen hannen nimme",
+        "ik moast di heft yn eigen hannen nimme"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "ik moast de heft yn eigen hannen nimme",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-22 13:51:07",
+      "elapsed_seconds_at_submit": 1512.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28370164.mp3",
+      "reference": "do hiest tink ik noait ferwachte datst sa heech yn it klassemint komme soest",
+      "baseline_1best": "do hiest tink ik noait ferwachte dat sa heech yn it klassemint komme soest",
+      "gpt_output": "do hiest tink ik noait ferwachte datst sa heech yn it klassemint komme soest",
+      "nbest": [
+        "do hiest tink ik noait ferwachte dat sa heech yn it klassemint komme soest",
+        "do hiest tinkik noait ferwachte dat sa heech yn it klassemint komme soest",
+        "do hiest tink ik noait ferwachte datst sa heech yn it klassemint komme soest",
+        "do hiest tink ik noait ferwachte dats sa heech yn it klassemint komme soest",
+        "do hiest tink ik noait ferwachte datt sa heech yn it klassemint komme soest"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "do hiest tink ik noait ferwachte datst sa heech yn it klassemint komme soest",
+      "copied_from_nbest": 3,
+      "annotation_timestamp": "2026-04-22 13:51:34",
+      "elapsed_seconds_at_submit": 1539.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21600722.mp3",
+      "reference": "blêdzje troch gurbe douwstra",
+      "baseline_1best": "lêdzje troch gurbe doustne",
+      "gpt_output": "lêdzje troch gurbe doustne",
+      "nbest": [
+        "lêdzje troch gurbe doustne",
+        "lêdzje troch gurbe doustna",
+        "lêdje troch gurbe doustne",
+        "lêdzje troch gurbe doustn",
+        "lêdje troch gurbe doustna"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "lietsje? troch Gurbe Douwstra",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 13:54:36",
+      "elapsed_seconds_at_submit": 1721.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36601915.mp3",
+      "reference": "ik woe eartiids graach model wurde",
+      "baseline_1best": "ik woe eardieis graach model wurde",
+      "gpt_output": "ik woe earderis graach model wurde",
+      "nbest": [
+        "ik woe eardieis graach model wurde",
+        "ik woe eardeis graach model wurde",
+        "ik woe earddieis graach model wurde",
+        "ik woe eardjieis graach model wurde",
+        "ik woe eardis graach model wurde"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "ik woe eartiids graach model wurde",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 13:55:34",
+      "elapsed_seconds_at_submit": 1779.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21407815.mp3",
+      "reference": "troch hoe't se praten tocht ik dat se troud wienen",
+      "baseline_1best": "trochhoe't se praten tocht ik dat se troud wienen",
+      "gpt_output": "troch hoe't se praten tocht ik dat se troud wiene",
+      "nbest": [
+        "trochhoe't se praten tocht ik dat se troud wienen",
+        "troch hoe't se praten tocht ik dat se troud wienen",
+        "trochhoe't se praten tocht ik dat se troud wiene",
+        "troch hoe't se praten tocht ik dat se troud wiene",
+        "trochhoe't se praten tocht ik dat se troud wiennen"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_wrong",
+      "selected_text": "troch hoe't se praten tocht ik dat se troud wienen",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-22 13:56:40",
+      "elapsed_seconds_at_submit": 1845.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28504297.mp3",
+      "reference": "allinnich ús mem haw ik noch nea rûzje meitsjen heard",
+      "baseline_1best": "allinnich ús mem haw ik noch nea rúzje meitsjen heard",
+      "gpt_output": "allinnich ús mem haw ik noch nea rúzje meitsjen heard",
+      "nbest": [
+        "allinnich ús mem haw ik noch nea rúzje meitsjen heard",
+        "allinnich us mem haw ik noch nea rúzje meitsjen heard",
+        "allinnich ús mem haw ik noch nea rúzjemeitsjen heard",
+        "allinnich ús mem haw ik noch nea rûzje meitsjen heard",
+        "allinnich ús mem haw ik noch nea rúsje meitsjen heard"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "allinnich ús mem haw ik noch nea rúzje meitsjen heard",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 13:57:13",
+      "elapsed_seconds_at_submit": 1878.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24723749.mp3",
+      "reference": "meitsje dat kursyf",
+      "baseline_1best": "meitsje dat kursyf",
+      "gpt_output": "meitsje dat kursyf",
+      "nbest": [
+        "meitsje dat kursyf",
+        "meitsjge dat kursyf",
+        "meitsje dat kuursyf",
+        "meitsje dàt kursyf",
+        "meitsje 'at kursyf"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "meitsje dat kursyf",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 13:57:19",
+      "elapsed_seconds_at_submit": 1884.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21429693.mp3",
+      "reference": "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+      "baseline_1best": "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+      "gpt_output": "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+      "nbest": [
+        "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+        "ik sjoc hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+        "ik sjoch hielendal gjin wôâl mear sa mistich wurdt it no ynienen",
+        "ik sjoch hielendal gjin wâôl mear sa mistich wurdt it no ynienen",
+        "ik sjoch hielendal gjin wâld mear sa mistich wurdt it no ynienen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 13:57:32",
+      "elapsed_seconds_at_submit": 1896.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28468410.mp3",
+      "reference": "neist pianolessen yn 'e betide middei kinne der alderhanne oare lessen folge wurde",
+      "baseline_1best": "neist pianolessen yn de betierde middei kinne der allenhanne oare lessen folge wurde",
+      "gpt_output": "neist pianolessen yn de betide middei kinne der allerlei oare lessen folge wurde",
+      "nbest": [
+        "neist pianolessen yn de betierde middei kinne der allenhanne oare lessen folge wurde",
+        "neist pianolessen yn de betierde middei kinne der alenhanne oare lessen folge wurde",
+        "neist pianolessen yn de betierde middei kinne der allen hanne oare lessen folge wurde",
+        "neist pianolessen yn de betierde middei kinne der allnhanne oare lessen folge wurde",
+        "neist pianolessen yn de betierde middei kinne der alen hanne oare lessen folge wurde"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "neist pianolessen yn de betide middei kinne der allerhanne oare lessen folge wurde",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 13:59:30",
+      "elapsed_seconds_at_submit": 2015.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_25789729.mp3",
+      "reference": "ik wurkje mei hynstehier en brûk ek lekkense stoffen fan hûndert persint wolle",
+      "baseline_1best": "ik wurkje mei hynstehier en brûk ek lekkerske stoffen fan hûndert persint wolle",
+      "gpt_output": "ik wurkje mei hynstehier en brûk ek lekkerske stoffen fan hûndert persint wol",
+      "nbest": [
+        "ik wurkje mei hynstehier en brûk ek lekkerske stoffen fan hûndert persint wolle",
+        "ik wurkje mei hynstehier en brûk ek lekkenske stoffen fan hûndert persint wolle",
+        "ik wurkje mei hynstehier en brûk ek lekkerse stoffen fan hûndert persint wolle",
+        "ik wurkje mei hynstehier en brûk ek lekkerske stoffen fan hûndertpersint wolle",
+        "ik wurkje mei hynstehier en brûk ek lekkense stoffen fan hûndert persint wolle"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "ik wurkje mei hynstehier en brûk ek de lekkerste? stoffen fan hûndert persint wolle",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 14:01:53",
+      "elapsed_seconds_at_submit": 2158.0
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260422124212",
-  "total_elapsed_seconds": 669.6,
-  "saved_at": "2026-04-22 13:37:04"
+  "total_elapsed_seconds": 2158.0,
+  "saved_at": "2026-04-22 14:01:53"
 }
