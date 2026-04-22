@@ -381,7 +381,7 @@
       "gpt_wer": 0.0
     }
   ],
-  "idx": 8,
+  "idx": 9,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23765029.mp3",
@@ -534,6 +534,25 @@
       "copied_from_nbest": 5,
       "annotation_timestamp": "2026-04-22 10:40:24",
       "elapsed_seconds_at_submit": 136.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21431998.mp3",
+      "reference": "it ûngelok hat gjin gefolgen foar de iepeningsdatum",
+      "baseline_1best": "it ûngelok hat gjin gefolgen foar de iepeningsdatum",
+      "gpt_output": "it ûngelok hat gjin gefolgen foar de iepeningsdatum",
+      "nbest": [
+        "it ûngelok hat gjin gefolgen foar de iepeningsdatum",
+        "it ûngelok hat gjin gefolgen foar de iepeningesdatum",
+        "it ûngelok hat gjin gefolgen foar de iepeningksdatum",
+        "t ûngelok hat gjin gefolgen foar de iepeningsdatum",
+        "it ngelok hat gjin gefolgen foar de iepeningsdatum"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "it ngelok hat gjin gefolgen foar de iepeningsdatum",
+      "copied_from_nbest": 5,
+      "annotation_timestamp": "2026-04-22 10:42:13",
+      "elapsed_seconds_at_submit": 140.2
     }
   ],
   "task_type": "Quick test - 10 samples",
@@ -541,5 +560,5 @@
   "total_available": 311,
   "user_id": "Annotator20260422103803",
   "total_elapsed_seconds": 140.2,
-  "saved_at": "2026-04-22 10:40:28"
+  "saved_at": "2026-04-22 10:42:16"
 }
