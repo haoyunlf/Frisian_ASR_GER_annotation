@@ -381,7 +381,7 @@
       "gpt_wer": 0.0
     }
   ],
-  "idx": 9,
+  "idx": 10,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23765029.mp3",
@@ -553,6 +553,25 @@
       "copied_from_nbest": 5,
       "annotation_timestamp": "2026-04-22 10:42:13",
       "elapsed_seconds_at_submit": 140.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28455998.mp3",
+      "reference": "op dy moandeitemoarn wiene de gerdinen fan har wenning ticht",
+      "baseline_1best": "op dy moandeitemoarn wiene de gerdinen fan har wenning ticht",
+      "gpt_output": "op dy moandeitemoarn wiene de gerdinen fan har wenning ticht",
+      "nbest": [
+        "op dy moandeitemoarn wiene de gerdinen fan har wenning ticht",
+        "op dey moandeitemoarn wiene de gerdinen fan har wenning ticht",
+        "op dye moandeitemoarn wiene de gerdinen fan har wenning ticht",
+        "op de moandeitemoarn wiene de gerdinen fan har wenning ticht",
+        "op dy moandeitemoarn wiene de gerdinen fan harr wenning ticht"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "op dye moandeitemoarn wiene de gerdinen fan har wenning ticht",
+      "copied_from_nbest": 3,
+      "annotation_timestamp": "2026-04-22 10:42:53",
+      "elapsed_seconds_at_submit": 140.2
     }
   ],
   "task_type": "Quick test - 10 samples",
@@ -560,5 +579,5 @@
   "total_available": 311,
   "user_id": "Annotator20260422103803",
   "total_elapsed_seconds": 140.2,
-  "saved_at": "2026-04-22 10:42:16"
+  "saved_at": "2026-04-22 10:42:53"
 }
