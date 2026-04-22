@@ -214,7 +214,7 @@ if state["idx"] >= len(state["subset"]):
 
     ok, err = upload_to_github(state, user_id, total_elapsed)
     if ok:
-        st.success("✅ Results uploaded!")
+        st.success("✅ Results uploaded! You can also download your annotation data below.")
     else:
         st.warning("⚠️ Upload failed")
         with st.expander("Show error details"):
@@ -350,6 +350,10 @@ with col3:
         state["idx"] += 1
         st.session_state.annotation_state = state
 
+        # 每完成 20 个自动保存一次
+        if len(state["answers"]) % 20 == 0:
+            upload_to_github(state, user_id, cur_elapsed)
+
         # 清理当前样本的 session state
         for key in [correction_key]:
             if key in st.session_state:
@@ -403,7 +407,7 @@ if st.session_state.get('save_and_exit'):
     st.info(f"📋 Your annotator ID: **{user_id}**  \nNote it down to resume your annotation later.")
     ok, err = upload_to_github(state, user_id, current_elapsed)
     if ok:
-        st.success("✅ Progress saved!")
+        st.success("✅ Progress saved! You can also download your current annotation below.")
     else:
         st.warning("⚠️ Upload failed")
         with st.expander("Show error details"):
