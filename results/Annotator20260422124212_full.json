@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.0
     }
   ],
-  "idx": 60,
+  "idx": 64,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28373403.mp3",
@@ -12960,12 +12960,88 @@
       "copied_from_nbest": 1,
       "annotation_timestamp": "2026-04-22 14:10:51",
       "elapsed_seconds_at_submit": 2696.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28339907.mp3",
+      "reference": "nei in oantal meagere jierren ferwachtet de organisaasje dit jier wer folop besikers",
+      "baseline_1best": "nei in oantal mear re jieren ferwachtet de organisaasje dit jier wer folle besikers",
+      "gpt_output": "nei in oantal mear jierren ferwachtet de organisaasje dit jier wer folle besikers",
+      "nbest": [
+        "nei in oantal mear re jieren ferwachtet de organisaasje dit jier wer folle besikers",
+        "nei in oantal mear rejieren ferwachtet de organisaasje dit jier wer folle besikers",
+        "nei in oantal mear re jierren ferwachtet de organisaasje dit jier wer folle besikers",
+        "nei in oantal mear rejierren ferwachtet de organisaasje dit jier wer folle besikers",
+        "nei in oantal mear re jieren ferwachtet de organisaasje dit jier wer folleo besikers"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "nei in oantal mindere jierren ferwachtet de organisaasje dit jier wer folle besikers",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 14:12:45",
+      "elapsed_seconds_at_submit": 2810.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35775129.mp3",
+      "reference": "dat sjogge wy dan wol at dat rapport der is",
+      "baseline_1best": "dat sjogge we dan wol oft dat rapport der is",
+      "gpt_output": "dat sjogge we dan wol oft dat rapport der is",
+      "nbest": [
+        "dat sjogge we dan wol oft dat rapport der is",
+        "dat sjogge we dan wol oaft dat rapport der is",
+        "dat sjogge we dan wol aft dat rapport der is",
+        "dat sjogge we dan wol ot dat rapport der is",
+        "dat sjogge we dan wol oat dat rapport der is"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "dat sjogge we dan wol oft dat rapport der is",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:13:07",
+      "elapsed_seconds_at_submit": 2832.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24723066.mp3",
+      "reference": "ferheegje temperatuer plus trije graden",
+      "baseline_1best": "ferheegje temperatuer plus trije graden",
+      "gpt_output": "ferheegje temperatuer plus trije graden",
+      "nbest": [
+        "ferheegje temperatuer plus trije graden",
+        "ferheegje temperatuer lus trije graden",
+        "ferheeggje temperatuer plus trije graden",
+        "ferheegje temperatuer plus trije graaden",
+        "ferheegje temperatuer blus trije graden"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "ferheegje temperatuer plus trije graden",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:13:20",
+      "elapsed_seconds_at_submit": 2845.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21636354.mp3",
+      "reference": "wy giene noch efkes thús oan en dêr siet koos mei twa maten",
+      "baseline_1best": "wy giene noch efkes thús oan en dêr siet koos mei twa maten",
+      "gpt_output": "wy giene noch efkes thús oan en dêr siet koos mei twa maten",
+      "nbest": [
+        "wy giene noch efkes thús oan en dêr siet koos mei twa maten",
+        "wy giene noch efkes thús oan en dêr siet goos mei twa maten",
+        "wy giene noch eefkes thús oan en dêr siet koos mei twa maten",
+        "wy giene noch efkes thús oan en dêr siet kos mei twa maten",
+        "wy giene noch efkes thús oan en dêr siet coos mei twa maten"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "wy giene noch efkes thús oan en dêr siet koos mei twa maten",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:13:45",
+      "elapsed_seconds_at_submit": 2870.6
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260422124212",
-  "total_elapsed_seconds": 2696.1,
-  "saved_at": "2026-04-22 14:10:51"
+  "total_elapsed_seconds": 2879.7,
+  "saved_at": "2026-04-22 14:13:54"
 }
