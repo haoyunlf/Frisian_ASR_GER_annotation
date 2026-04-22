@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.0
     }
   ],
-  "idx": 40,
+  "idx": 60,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28373403.mp3",
@@ -12580,12 +12580,392 @@
       "copied_from_nbest": null,
       "annotation_timestamp": "2026-04-22 14:01:53",
       "elapsed_seconds_at_submit": 2158.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28461676.mp3",
+      "reference": "neffens my is dat hielendal gjin goed idee",
+      "baseline_1best": "neffens my is dat hielendal gjin goed idee",
+      "gpt_output": "neffens my is dat hielendal gjin goed idee",
+      "nbest": [
+        "neffens my is dat hielendal gjin goed idee",
+        "neffens my is dat hielendal gjin goedidee",
+        "neffens my is dit hielendal gjin goed idee",
+        "neffens my is dàt hielendal gjin goed idee",
+        "neffens my is dat hielendal gjin goed ideeë"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "neffens my is dat hielendal gjin goed idee",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:02:05",
+      "elapsed_seconds_at_submit": 2170.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35769860.mp3",
+      "reference": "fryske boeren ha it swier",
+      "baseline_1best": "fryske boeren ha it swier",
+      "gpt_output": "fryske boeren ha it swier",
+      "nbest": [
+        "fryske boeren ha it swier",
+        "fryske boeren haw it swier",
+        "fryske boren ha it swier",
+        "fryske woeren ha it swier",
+        "fryske boeren ha it sjwier"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "fryske boeren ha it swier",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:02:57",
+      "elapsed_seconds_at_submit": 2222.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24761187.mp3",
+      "reference": "besikers fan de iepen monumintedagen besjogge ek graach de monuminten fan de takomst",
+      "baseline_1best": "besikers fan de iepen monuminte dagen besjogge ek graach de monuminten fan de takomst",
+      "gpt_output": "besikers fan de iepen monumintedagen besjogge ek graach de monuminten fan de takomst",
+      "nbest": [
+        "besikers fan de iepen monuminte dagen besjogge ek graach de monuminten fan de takomst",
+        "besikers fan de iepen monumintedagen besjogge ek graach de monuminten fan de takomst",
+        "besikers fan de iepenmonuminte dagen besjogge ek graach de monuminten fan de takomst",
+        "besikers fan 'e iepen monuminte dagen besjogge ek graach de monuminten fan de takomst",
+        "besikers fan de iepenmonumintedagen besjogge ek graach de monuminten fan de takomst"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "besikers fan de iepen monumintedagen besjogge ek graach de monuminten fan de takomst",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-22 14:03:11",
+      "elapsed_seconds_at_submit": 2235.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35581253.mp3",
+      "reference": "ik sei tsjin mysels no de holle koel en meitsje it wer goed",
+      "baseline_1best": "ik suitsje myn sels no de holle koel en meitsje it wer goed",
+      "gpt_output": "ik suítsje mysels no de holle koel en meitsje it wer goed",
+      "nbest": [
+        "ik suitsje myn sels no de holle koel en meitsje it wer goed",
+        "ik suitsje myn sels no de holle kûel en meitsje it wer goed",
+        "ik suitsje myn sels no de holle kol en meitsje it wer goed",
+        "ik suitsje myn sels no de holle kûl en meitsje it wer goed",
+        "ik suitsje myn sels no de holle kel en meitsje it wer goed"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "ik spuitsje mysels no de holle koel en meitsje it wer goed",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 14:04:05",
+      "elapsed_seconds_at_submit": 2290.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28387521.mp3",
+      "reference": "hja krigen de motor oan 'e praat en setten as lêsten útein",
+      "baseline_1best": "hja krigen de motor oan 'e praat en setten at lêsten útein",
+      "gpt_output": "hja krigen de motor oan 'e praat en setten at lêsten útein",
+      "nbest": [
+        "hja krigen de motor oan 'e praat en setten at lêsten útein",
+        "hja krigen de motor oan 'e praat en setten as lêsten útein",
+        "hja krigen de motor oan 'e praat en setten ar lêsten útein",
+        "hja krigen de motor oan de praat en setten at lêsten útein",
+        "hja krigen de motor oan 'e praat en setten it lêsten útein"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "hja krigen de motor oan 'e praat en setten as lêsten útein",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-22 14:04:22",
+      "elapsed_seconds_at_submit": 2307.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23759043.mp3",
+      "reference": "hy kin it ek net helpe dat er sa is",
+      "baseline_1best": "hy kin it ek net helpe dat er sa is",
+      "gpt_output": "hy kin it ek net helpe dat er sa is",
+      "nbest": [
+        "hy kin it ek net helpe dat er sa is",
+        "hy kin it ek net helpe dat er say is",
+        "hy kin it ek net helpe dat er sy is",
+        "hy kin it ek net helpe dat er s is",
+        "hy kin it ek net helpe dat er se is"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hy kin it ek net helpe dat er sa is",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:04:30",
+      "elapsed_seconds_at_submit": 2315.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23812000.mp3",
+      "reference": "in trekker sit ûnder de reade ferve en in doar is bekladde",
+      "baseline_1best": "in trekker sit ûnder de reade ferve en in doar is bekladde",
+      "gpt_output": "in trekker sit ûnder de reade ferve en in doar is bekladde",
+      "nbest": [
+        "in trekker sit ûnder de reade ferve en in doar is bekladde",
+        "in trekke sit ûnder de reade ferve en in doar is bekladde",
+        "in trekker sit ûnder de reade ferfe en in doar is bekladde",
+        "in trekke sit ûnder de reade ferfe en in doar is bekladde",
+        "in trekker sit nder de reade ferve en in doar is bekladde"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "in trekker sit ûnder de reade ferve en in doar is bekladde",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:04:44",
+      "elapsed_seconds_at_submit": 2329.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_20800711.mp3",
+      "reference": "ik leau dat er der krekt sa oer tinkt",
+      "baseline_1best": "ik leau dat er der krekt sa oer tiket",
+      "gpt_output": "ik leau dat er der krekt sa oer tinket",
+      "nbest": [
+        "ik leau dat er der krekt sa oer tiket",
+        "ik leau dat er der krekt sa oer tikt",
+        "ik leau dat er der krekt sa oer tinket",
+        "ik leau dat er der krekt sa oer tinkt",
+        "ik leau dat der der krekt sa oer tiket"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_wrong",
+      "selected_text": "ik leau dat er der krekt sa oer tinkt",
+      "copied_from_nbest": 4,
+      "annotation_timestamp": "2026-04-22 14:05:00",
+      "elapsed_seconds_at_submit": 2345.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28462321.mp3",
+      "reference": "de boer en syn frou wolle altyd yn eastermar wenjen bliuwe",
+      "baseline_1best": "de boer en syn frou wolle altyd ynearstermar wenjen bliuwe",
+      "gpt_output": "de boer en syn frou wolle altyd ynearstermar wenjen bliuwe",
+      "nbest": [
+        "de boer en syn frou wolle altyd ynearstermar wenjen bliuwe",
+        "de boer en syn frou wolle altyd ynearsteremar wenjen bliuwe",
+        "de boer en syn frou wolle altyd ynearstermar wenje bliuwe",
+        "de boer en syn frou wolle altyd ynearstemar wenjen bliuwe",
+        "de boer en syn frou wolle altyd ynearsteemar wenjen bliuwe"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "de boer en syn frou wolle altyd yn earstermar wenjen bliuwe",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 14:05:26",
+      "elapsed_seconds_at_submit": 2371.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23834306.mp3",
+      "reference": "moandei is ús frije dei dan kinne wy bytanke",
+      "baseline_1best": "moandei is ús in frije dei dan kinne wy bytinke",
+      "gpt_output": "moandei is ús in frije dei dan kinne wy bytinke",
+      "nbest": [
+        "moandei is ús in frije dei dan kinne wy bytinke",
+        "moandei is ús en frije dei dan kinne wy bytinke",
+        "moandei is ús in frijge dei dan kinne wy bytinke",
+        "moandei is ús dn frije dei dan kinne wy bytinke",
+        "moandei is ús in frije dei dan kinne wy bytenke"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "moandei is ús in frije dei dan kinne wy bytanke",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 14:06:05",
+      "elapsed_seconds_at_submit": 2410.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35960082.mp3",
+      "reference": "der foel neat mei him te begjinnen",
+      "baseline_1best": "der foel neat mei him te begjinnen",
+      "gpt_output": "der foel neat mei him te begjinnen",
+      "nbest": [
+        "der foel neat mei him te begjinnen",
+        "der voel neat mei him te begjinnen",
+        "dêr foel neat mei him te begjinnen",
+        "der foel neat mei him te begjinn",
+        "der foel neat mei him te begjinneën"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "der foel neat mei him te begjinnen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:06:21",
+      "elapsed_seconds_at_submit": 2426.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36841562.mp3",
+      "reference": "allegearre oant sjen en oant in oare kear",
+      "baseline_1best": "allegearre oant sjen en oant in oare kear",
+      "gpt_output": "allegearre oant sjen en oant in oare kear",
+      "nbest": [
+        "allegearre oant sjen en oant in oare kear",
+        "allegeare oant sjen en oant in oare kear",
+        "allegeaarre oant sjen en oant in oare kear",
+        "allegearre oant sjen en oant in oare kea",
+        "allegearre' oant sjen en oant in oare kear"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "allegearre oant sjen en oant in oare kear",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:06:33",
+      "elapsed_seconds_at_submit": 2438.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28653182.mp3",
+      "reference": "om hoefolle persoanen giet it",
+      "baseline_1best": "om hoefolle persoanen giet it",
+      "gpt_output": "om hoefolle persoanen giet it",
+      "nbest": [
+        "om hoefolle persoanen giet it",
+        "om hoe folle persoanen giet it",
+        "om hoefolle persoanein giet it",
+        "om hoefolle persoane giet it",
+        "om hoefolle persoann giet it"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "om hoefolle persoanen giet it",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:06:47",
+      "elapsed_seconds_at_submit": 2452.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28379992.mp3",
+      "reference": "alle froulju binne moai mar in stikmannich binne moaier",
+      "baseline_1best": "alle froulju binne moai mar in stik mannich binne moaier",
+      "gpt_output": "alle froulju binne moai mar in stik mannich binne moaier",
+      "nbest": [
+        "alle froulju binne moai mar in stik mannich binne moaier",
+        "alle froulju binne moai mar in stik mannich bin ne moaier",
+        "alle froulju binne moai mar in stik mannich bin e moaier",
+        "alle froulju binne moai mar in stik mannich binni moaier",
+        "alle froulju binne moai mar in stik mannich binnet moaier"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "alle froulju binne moai mar in stik mannich binne moaier",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:08:21",
+      "elapsed_seconds_at_submit": 2546.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23777036.mp3",
+      "reference": "ik ferfeel my hjir en der komt net ien mear op besite",
+      "baseline_1best": "ik ferfiel my hjir en der komt net ien mear op besite",
+      "gpt_output": "ik ferfiel my hjir en der komt net ien mear op besite",
+      "nbest": [
+        "ik ferfiel my hjir en der komt net ien mear op besite",
+        "ik ferfiel my hjir en dêr komt net ien mear op besite",
+        "ik ferfeel my hjir en der komt net ien mear op besite",
+        "ik ferfel my hjir en der komt net ien mear op besite",
+        "ik ferfeel my hjir en dêr komt net ien mear op besite"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "ik ferfeel my hjir en der komt net ien mear op besite",
+      "copied_from_nbest": 3,
+      "annotation_timestamp": "2026-04-22 14:09:03",
+      "elapsed_seconds_at_submit": 2588.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23780372.mp3",
+      "reference": "dy kennis kinne hja goed brûke yn 'e klasse",
+      "baseline_1best": "dy kennirs kinne ja goed brûke yn 'e klasse",
+      "gpt_output": "dy kennis kinne hja goed brûke yn 'e klasse",
+      "nbest": [
+        "dy kennirs kinne ja goed brûke yn 'e klasse",
+        "dy kennirs kinne hja goed brûke yn 'e klasse",
+        "dy kennis kinne ja goed brûke yn 'e klasse",
+        "dy kennis kinne hja goed brûke yn 'e klasse",
+        "dy kenners kinne ja goed brûke yn 'e klasse"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "dy kennis kinne hja goed brûke yn 'e klasse",
+      "copied_from_nbest": 4,
+      "annotation_timestamp": "2026-04-22 14:09:19",
+      "elapsed_seconds_at_submit": 2604.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28385260.mp3",
+      "reference": "sjoch op ús webside foar mear ynformaasje oer ús produkten",
+      "baseline_1best": "sjoch op ús website foar mear ynformaasje oer ús produkten",
+      "gpt_output": "sjoch op ús webside foar mear ynformaasje oer ús produkten",
+      "nbest": [
+        "sjoch op ús website foar mear ynformaasje oer ús produkten",
+        "sjoch op ús webside foar mear ynformaasje oer ús produkten",
+        "sjoch op ús websie foar mear ynformaasje oer ús produkten",
+        "sjoch op ús websize foar mear ynformaasje oer ús produkten",
+        "sjoch op ús websiie foar mear ynformaasje oer ús produkten"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "sjoch op ús website foar mear ynformaasje oer ús produkten",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:09:35",
+      "elapsed_seconds_at_submit": 2620.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28423687.mp3",
+      "reference": "ik haw gjin sint yn 'e bûse",
+      "baseline_1best": "ik haw gjin sint yn 'e boese",
+      "gpt_output": "ik haw gjin sint yn 'e bûse",
+      "nbest": [
+        "ik haw gjin sint yn 'e boese",
+        "ik ha gjin sint yn 'e boese",
+        "ik haw gjn sint yn 'e boese",
+        "ik haw gjin sint yn 'e boeske",
+        "ik haw gjin sint yn 'e boetse"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "ik haw gjin sint yn 'e bûse",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-22 14:10:24",
+      "elapsed_seconds_at_submit": 2669.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28359309.mp3",
+      "reference": "doch mar in útstel",
+      "baseline_1best": "doch mar in útstel",
+      "gpt_output": "doch mar in útstel",
+      "nbest": [
+        "doch mar in útstel",
+        "doch maar in útstel",
+        "dogch mar in útstel",
+        "dochk mar in útstel",
+        "dorch mar in útstel"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "doch mar in útstel",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:10:40",
+      "elapsed_seconds_at_submit": 2685.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24694301.mp3",
+      "reference": "dokter kaam de oare moarns om alve oere",
+      "baseline_1best": "dokter kaam de oare moarns om alve oere",
+      "gpt_output": "dokter kaam de oare moarns om alve oere",
+      "nbest": [
+        "dokter kaam de oare moarns om alve oere",
+        "dokter kaam de oare mooarns om alve oere",
+        "dokter kaam de oare marns om alve oere",
+        "dokter kaam de oare moarns om halve oere",
+        "dokter kaam de oare moarns om alfve oere"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "dokter kaam de oare moarns om alve oere",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-22 14:10:51",
+      "elapsed_seconds_at_submit": 2696.1
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260422124212",
-  "total_elapsed_seconds": 2158.0,
-  "saved_at": "2026-04-22 14:01:53"
+  "total_elapsed_seconds": 2696.1,
+  "saved_at": "2026-04-22 14:10:51"
 }
