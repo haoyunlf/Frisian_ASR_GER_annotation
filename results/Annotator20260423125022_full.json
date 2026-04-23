@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 20,
+  "idx": 30,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -12200,12 +12200,202 @@
       "copied_from_nbest": null,
       "annotation_timestamp": "2026-04-23 13:27:38",
       "elapsed_seconds_at_submit": 772.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24748352.mp3",
+      "reference": "hy wol altiten foar in dûbeltsje op 'e earste rang sitte",
+      "baseline_1best": "hy wol altiden foar in dûbeltsje op 'e earste rang sitte",
+      "gpt_output": "hy wol altyd foar in dûbeltsje op 'e earste rang sitte",
+      "nbest": [
+        "hy wol altiden foar in dûbeltsje op 'e earste rang sitte",
+        "hy wol altiden foar in dûbeltsje op de earste rang sitte",
+        "hy wol altiten foar in dûbeltsje op 'e earste rang sitte",
+        "hy wol altiten foar in dûbeltsje op de earste rang sitte",
+        "hy wol altidten foar in dûbeltsje op 'e earste rang sitte"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "hy wol altiten foar in dûbeltsje op 'e earste rang sitte",
+      "copied_from_nbest": 3,
+      "annotation_timestamp": "2026-04-23 13:28:07",
+      "elapsed_seconds_at_submit": 801.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28468410.mp3",
+      "reference": "neist pianolessen yn 'e betide middei kinne der alderhanne oare lessen folge wurde",
+      "baseline_1best": "neist pianolessen yn de betierde middei kinne der allenhanne oare lessen folge wurde",
+      "gpt_output": "neist pianolessen yn de betide middei kinne der allerlei oare lessen folge wurde",
+      "nbest": [
+        "neist pianolessen yn de betierde middei kinne der allenhanne oare lessen folge wurde",
+        "neist pianolessen yn de betierde middei kinne der alenhanne oare lessen folge wurde",
+        "neist pianolessen yn de betierde middei kinne der allen hanne oare lessen folge wurde",
+        "neist pianolessen yn de betierde middei kinne der allnhanne oare lessen folge wurde",
+        "neist pianolessen yn de betierde middei kinne der alen hanne oare lessen folge wurde"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "neist pianolessen yn de betide middei kinne der allenhanne oare lessen folge wurde",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-23 13:28:56",
+      "elapsed_seconds_at_submit": 850.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36626942.mp3",
+      "reference": "de earste priis fan de middei dy gong nei it hearrenfean",
+      "baseline_1best": "de earste priis fan 'e middei dy gong nei it hearrefean",
+      "gpt_output": "de earste priis fan 'e middei dy gong nei it hearrefean",
+      "nbest": [
+        "de earste priis fan 'e middei dy gong nei it hearrefean",
+        "de earste priis fan 'e middei dy gong nei it hearrerfean",
+        "de earste priis fan de middei dy gong nei it hearrefean",
+        "de earste priis fan 'e middei dy gong nei it hearrenfean",
+        "de earste priis fan 'e middei dy gong nei it hearre fean"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "de earste priis fan 'e middei dy gong nei it hearrefean",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-23 13:29:44",
+      "elapsed_seconds_at_submit": 898.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36380865.mp3",
+      "reference": "sneintemoarn in wike hoopje wy wer in soad bern te begroetsjen",
+      "baseline_1best": "sneintemoarn in wike hoopje wy wer in soad bern te begroedsjen",
+      "gpt_output": "sneintemoarn oer in wike hoopje wy wer in soad bern te begroetsjen",
+      "nbest": [
+        "sneintemoarn in wike hoopje wy wer in soad bern te begroedsjen",
+        "sneintemoarn in wike hoopje wy wer in soad bern te begroetsjen",
+        "sneintemoarn in wike hoopje wy wer in soad bern te begroedzjen",
+        "sneintemoarn in wike hoopje wy wer in soad bern te begroedzsjen",
+        "sneintemoarn in wike choopje wy wer in soad bern te begroedsjen"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "sneintemoarn in wike hoopje wy wer in soad bern te begroetsjen",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-23 13:30:19",
+      "elapsed_seconds_at_submit": 934.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_20507004.mp3",
+      "reference": "de gemeente moat mear ynvestearje om de ynwenners oan in baan te helpen",
+      "baseline_1best": "de gemeente moat mear ynvestearje om de ynwenners oan in baan te helpen",
+      "gpt_output": "de gemeente moat mear ynvestearje om de ynwenners oan in baan te helpen",
+      "nbest": [
+        "de gemeente moat mear ynvestearje om de ynwenners oan in baan te helpen",
+        "de gemeente moat mear ynvestearje om de ynwenners oan din baan te helpen",
+        "de gemeente moat mear ynvestearje om de ynwenners oan hin baan te helpen",
+        "de gemeente moat mear ynvestearje om de ynwenners oan i baan te helpen",
+        "de gemeente moat mear ynvestearje om de ynwenners oan en baan te helpen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de gemeente moat mear ynvestearje om de ynwenners oan in baan te helpen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-23 13:30:35",
+      "elapsed_seconds_at_submit": 950.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24641326.mp3",
+      "reference": "it meitsjen fan in dúdlike regeling foar alle gemeenten blykt dreech te wêze",
+      "baseline_1best": "it meitsjen fan in dúdlike regeling foar alle gemeenten blykt dreech te wêze",
+      "gpt_output": "it meitsjen fan in dúdlike regeling foar alle gemeenten blykt dreech te wêze",
+      "nbest": [
+        "it meitsjen fan in dúdlike regeling foar alle gemeenten blykt dreech te wêze",
+        "it meitsjen fan in dúdlike regeling foar alle gemeenten blykt dreech te wêzen",
+        "it meitsjen fan in dúdlike regeling foar alle gemeenten blyykt dreech te wêze",
+        "it meitsjen fan in dúdlike regeling foar alle gemeenten blyúkt dreech te wêze",
+        "it meitsjen fan in dúdlike regeling foar alle gemeenten blyykt dreech te wêzen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "it meitsjen fan in dúdlike regeling foar alle gemeenten blykt dreech te wêzen",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-23 13:30:48",
+      "elapsed_seconds_at_submit": 963.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28454334.mp3",
+      "reference": "ik skriuw altiten wat dinkjes op",
+      "baseline_1best": "ik skriuw altiden wat dinkjes op",
+      "gpt_output": "ik skriuw altiten wat dinkjes op",
+      "nbest": [
+        "ik skriuw altiden wat dinkjes op",
+        "ik skriuw altiten wat dinkjes op",
+        "ik skriuw altizen wat dinkjes op",
+        "ik skriuw altiven wat dinkjes op",
+        "ik skriuw altidten wat dinkjes op"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "ik skriuw altiten wat dinkjes op",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-23 13:30:57",
+      "elapsed_seconds_at_submit": 972.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35761262.mp3",
+      "reference": "hûnderten blikken kondinsmolke bedarren op it krúspunt",
+      "baseline_1best": "hûnderten blikken komt diensmolke bedarren op it krúspunt",
+      "gpt_output": "hûnderten blikken kondensmolke bedarren op it krúspunt",
+      "nbest": [
+        "hûnderten blikken komt diensmolke bedarren op it krúspunt",
+        "hûnderten blikken komt deensmolke bedarren op it krúspunt",
+        "hûnderten blikken komt deinsmolke bedarren op it krúspunt",
+        "hûnderten blikken komt diinsmolke bedarren op it krúspunt",
+        "hûnderten blikken komt deiensmolke bedarren op it krúspunt"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "hûnderten blikken komt [...] molke bedarren op it krúspunt",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-23 13:35:51",
+      "elapsed_seconds_at_submit": 1266.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28347979.mp3",
+      "reference": "de skilder hie it flamjende read fan 'e jûnssinne skildere",
+      "baseline_1best": "de skilder hie it flamjende read fan 'e jûnssinne skildere",
+      "gpt_output": "de skilder hie it flamjende read fan 'e jûnssinne skildere",
+      "nbest": [
+        "de skilder hie it flamjende read fan 'e jûnssinne skildere",
+        "de skilder hie it flamjende read fan de jûnssinne skildere",
+        "de skilder hie ite flamjende read fan 'e jûnssinne skildere",
+        "de skilder hie id flamjende read fan 'e jûnssinne skildere",
+        "de skilder hie it flamjende read fan 'e jûnssinne skilderet"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de skilder hie it flamjende read fan 'e jûnssinne skildere",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-23 13:36:20",
+      "elapsed_seconds_at_submit": 1294.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21411886.mp3",
+      "reference": "troch dy sitte wy yn dit parket",
+      "baseline_1best": "troch dy sitte wy yn dit parket",
+      "gpt_output": "troch dy sitte wy yn dit parket",
+      "nbest": [
+        "troch dy sitte wy yn dit parket",
+        "troch dy siette wy yn dit parket",
+        "troch dy sitte we yn dit parket",
+        "troch dy sitten wy yn dit parket",
+        "troch dy site wy yn dit parket"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "troch dy sitte wy yn dit parket",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-23 13:36:28",
+      "elapsed_seconds_at_submit": 1302.7
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 772.7,
-  "saved_at": "2026-04-23 13:27:38"
+  "total_elapsed_seconds": 1308.2,
+  "saved_at": "2026-04-23 13:36:33"
 }
