@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 3,
+  "idx": 20,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -11877,12 +11877,335 @@
       "copied_from_nbest": 1,
       "annotation_timestamp": "2026-04-23 13:15:34",
       "elapsed_seconds_at_submit": 82.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28445772.mp3",
+      "reference": "it kolleezje komt alle wiken op tiisdeitemoarn gear",
+      "baseline_1best": "it kolleezje komt alle wiken op tiisdeitemoarn gear",
+      "gpt_output": "it kolleezje komt alle wiken op tiisdeitemoarn gear",
+      "nbest": [
+        "it kolleezje komt alle wiken op tiisdeitemoarn gear",
+        "it kolleezje komt alle wiken op tiisdeitemoarns gear",
+        "it kolleezjge komt alle wiken op tiisdeitemoarn gear",
+        "it kolleeczje komt alle wiken op tiisdeitemoarn gear",
+        "it kolleerzje komt alle wiken op tiisdeitemoarn gear"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "it kolleezje komt alle wiken op tiisdeitemoarn gear",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-23 13:16:25",
+      "elapsed_seconds_at_submit": 100.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28394425.mp3",
+      "reference": "wy sille ek yn de einfaze skerp bliuwe moatte",
+      "baseline_1best": "we sille ek yn de einfaze skerp bliuwe moatte",
+      "gpt_output": "wy sille ek yn de einfaze skerp bliuwe moatte",
+      "nbest": [
+        "we sille ek yn de einfaze skerp bliuwe moatte",
+        "wy sille ek yn de einfaze skerp bliuwe moatte",
+        "we sille ek yn 'e einfaze skerp bliuwe moatte",
+        "wy sille ek yn 'e einfaze skerp bliuwe moatte",
+        "we sille ek yn de einfazen skerp bliuwe moatte"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "we sille ek yn de einfaze skerp bliuwe moatte",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-23 13:16:45",
+      "elapsed_seconds_at_submit": 120.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28359309.mp3",
+      "reference": "doch mar in útstel",
+      "baseline_1best": "doch mar in útstel",
+      "gpt_output": "doch mar in útstel",
+      "nbest": [
+        "doch mar in útstel",
+        "doch maar in útstel",
+        "dogch mar in útstel",
+        "dochk mar in útstel",
+        "dorch mar in útstel"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "doch mar in útstel",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-23 13:16:54",
+      "elapsed_seconds_at_submit": 128.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21407798.mp3",
+      "reference": "de plysje sil boetes fange fan minsken dy't fierstente let fan beteljen binne",
+      "baseline_1best": "de polysje sil boerte sfange fan minsken dy't fiersten te let fan beteljen binne",
+      "gpt_output": "de plysje sil boete sfange fan minsken dy't fiersten te let fan beteljen binne",
+      "nbest": [
+        "de polysje sil boerte sfange fan minsken dy't fiersten te let fan beteljen binne",
+        "de polysje sil boerte sfange fan minsken dy't fierstente let fan beteljen binne",
+        "de plysje sil boerte sfange fan minsken dy't fiersten te let fan beteljen binne",
+        "de plysje sil boerte sfange fan minsken dy't fierstente let fan beteljen binne",
+        "de polysje sil boerdte sfange fan minsken dy't fiersten te let fan beteljen binne"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "de plysje sil boetes fange fan minsken dy't fiersten te let fan beteljen binne",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-23 13:17:50",
+      "elapsed_seconds_at_submit": 184.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23780880.mp3",
+      "reference": "fierwei it grutste part fan de omset komt fan de fersekeringsaktiviteiten",
+      "baseline_1best": "fierwei it grutste paart fan de omset komt fan de fersekeringsaktiviteiten",
+      "gpt_output": "fierwei it grutste part fan de omset komt fan de fersekeringsaktiviteiten",
+      "nbest": [
+        "fierwei it grutste paart fan de omset komt fan de fersekeringsaktiviteiten",
+        "fierwei it grutste paart fan 'e omset komt fan de fersekeringsaktiviteiten",
+        "fierwei it grutste paard fan de omset komt fan de fersekeringsaktiviteiten",
+        "fierwei it grutste paart fan de omset komt fan 'e fersekeringsaktiviteiten",
+        "fierwei it grutste paart fan de omset komt fan de fersekeringaktiviteiten"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "fierwei it grutste part fan de omset komt fan de fersekeringsaktiviteiten",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-23 13:18:16",
+      "elapsed_seconds_at_submit": 211.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28343424.mp3",
+      "reference": "de tún mei palmen en orchideeën sjocht der paradyslik út yn 'e moarnssinne",
+      "baseline_1best": "de tún mei palmen en archideeën sjocht de paradyslik út yn 'e moarnssinne",
+      "gpt_output": "de tún mei palmen en archideeën sjocht der paradyslik út yn 'e moarnssinne",
+      "nbest": [
+        "de tún mei palmen en archideeën sjocht de paradyslik út yn 'e moarnssinne",
+        "de tún mei palmen en archideeën sjocht der paradyslik út yn 'e moarnssinne",
+        "de tún mei palmen en arhideeën sjocht de paradyslik út yn 'e moarnssinne",
+        "de tún mei palmen en arhideeën sjocht der paradyslik út yn 'e moarnssinne",
+        "de tún mei palmen en archideën sjocht de paradyslik út yn 'e moarnssinne"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "de tún mei palmen en orchideeën sjocht der paradyslik út yn 'e moarnssinne",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-23 13:18:53",
+      "elapsed_seconds_at_submit": 247.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_29844748.mp3",
+      "reference": "in bataljon oan fotografen ferskynde om dat momint foar de ivichheid fêst te lizzen",
+      "baseline_1best": "in pattalion oan fotografen ferskynde om dat momint foar de ivichheid fêst te lizzen",
+      "gpt_output": "in bataljon oan fotografen ferskynde om dat momint foar de ivichheid fêst te lizzen",
+      "nbest": [
+        "in pattalion oan fotografen ferskynde om dat momint foar de ivichheid fêst te lizzen",
+        "in patalion oan fotografen ferskynde om dat momint foar de ivichheid fêst te lizzen",
+        "in battalion oan fotografen ferskynde om dat momint foar de ivichheid fêst te lizzen",
+        "in batalion oan fotografen ferskynde om dat momint foar de ivichheid fêst te lizzen",
+        "in pattalion oan fotograafen ferskynde om dat momint foar de ivichheid fêst te lizzen"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "in bataljon oan fotografen ferskynde om dat momint foar de ivichheid fêst te lizzen",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-23 13:19:53",
+      "elapsed_seconds_at_submit": 308.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28370034.mp3",
+      "reference": "nei in wike mei in soad rein wie it dy saterdeitemoarns aldergelokst drûch",
+      "baseline_1best": "nei in wike mei in soad rein wie it dy saterdeitemoarns allergelokst drûch",
+      "gpt_output": "nei in wike mei in soad rein wie it dy saterdeitemoarns aldergelokst drûch",
+      "nbest": [
+        "nei in wike mei in soad rein wie it dy saterdeitemoarns allergelokst drûch",
+        "nei in wike mei in soad rein wie it dy saterdeitemoarns aldergelokst drûch",
+        "nei in wike mei in soad rein wie it dy saterdeitemoarns aller gelokst drûch",
+        "nei in wike mei in soad rein wie it dy saterdeitemoarns alder gelokst drûch",
+        "nei in wike mei in soad rein wie it dy saterdeitemoarns alergelokst drûch"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "nei in wike mei in soad rein wie it dy saterdeitemoarns aldergelokst drûch",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-23 13:20:33",
+      "elapsed_seconds_at_submit": 348.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24761223.mp3",
+      "reference": "ik hie oan de hals ta kâlde fuotten",
+      "baseline_1best": "ik hie oan de hols ta kâlde fuotten",
+      "gpt_output": "ik hie oan de hols ta kâlde fuotten",
+      "nbest": [
+        "ik hie oan de hols ta kâlde fuotten",
+        "ik hie oan de holse ta kâlde fuotten",
+        "ik hie oan de holes ta kâlde fuotten",
+        "ik hie oan de holss ta kâlde fuotten",
+        "ik hie oant de hols ta kâlde fuotten"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "ik hie oan de hals ta kâlde fuotten",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-23 13:22:18",
+      "elapsed_seconds_at_submit": 453.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_27411151.mp3",
+      "reference": "sels myn frou seit dat ik net gau in wurd te folle brûke sil",
+      "baseline_1best": "sels myn frou seit dat ik net gau in wurd te folle brûke sil",
+      "gpt_output": "sels myn frou seit dat ik net gau in wurd te folle brûke sil",
+      "nbest": [
+        "sels myn frou seit dat ik net gau in wurd te folle brûke sil",
+        "sels myn frou seit dat ik net gau in wurd tefolle brûke sil",
+        "sels myn frou seit dat 'k net gau in wurd te folle brûke sil",
+        "sels myn frou seit dat yk net gau in wurd te folle brûke sil",
+        "sels myn frou seit dat ik net gau in wurd te folle berûke sil"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "sels myn frou seit dat ik net gau in wurd tefolle brûke sil",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-23 13:22:42",
+      "elapsed_seconds_at_submit": 477.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24716812.mp3",
+      "reference": "hy wie sa âld dat er wol wist dat er hast deagean soe",
+      "baseline_1best": "hy wie sa âld dat er wol wist daft er hast deargean soe",
+      "gpt_output": "hy wie sa âld dat er wol wist dat er hast deargean soe",
+      "nbest": [
+        "hy wie sa âld dat er wol wist daft er hast deargean soe",
+        "hy wie sa âld dat her wol wist daft er hast deargean soe",
+        "hy wie sa âd dat er wol wist daft er hast deargean soe",
+        "hy wie sa âd dat her wol wist daft er hast deargean soe",
+        "hy wie sa âld dat er wol wist dat er hast deargean soe"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_wrong",
+      "selected_text": "hy wie sa âld dat er wol wist dat er hast dea gean soe",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-23 13:23:21",
+      "elapsed_seconds_at_submit": 516.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28352496.mp3",
+      "reference": "it giet ek gjinien wat oan wat ik dêr krekt by de ein hie",
+      "baseline_1best": "it giet ek gjinien wat oan wat ik dek rekt bedein hie",
+      "gpt_output": "it giet ek gjinien wat oan wat ik ek rekt betocht hie",
+      "nbest": [
+        "it giet ek gjinien wat oan wat ik dek rekt bedein hie",
+        "it giet ek gjinien wat oan wat ik ek rekt bedein hie",
+        "it giet ek gjinien wat oan wat ik dêk rekt bedein hie",
+        "it giet ek gjinien wat oan wat ik êk rekt bedein hie",
+        "it giet ek gjinien wat oan wat ik tek rekt bedein hie"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "it giet ek gjinien wat oan wat ik dêr krekt bedein hie",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-23 13:25:28",
+      "elapsed_seconds_at_submit": 643.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35581253.mp3",
+      "reference": "ik sei tsjin mysels no de holle koel en meitsje it wer goed",
+      "baseline_1best": "ik suitsje myn sels no de holle koel en meitsje it wer goed",
+      "gpt_output": "ik suítsje mysels no de holle koel en meitsje it wer goed",
+      "nbest": [
+        "ik suitsje myn sels no de holle koel en meitsje it wer goed",
+        "ik suitsje myn sels no de holle kûel en meitsje it wer goed",
+        "ik suitsje myn sels no de holle kol en meitsje it wer goed",
+        "ik suitsje myn sels no de holle kûl en meitsje it wer goed",
+        "ik suitsje myn sels no de holle kel en meitsje it wer goed"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "ik spuitsje? mysels no de holle koel en meitsje it wer goed",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-23 13:25:53",
+      "elapsed_seconds_at_submit": 667.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36914890.mp3",
+      "reference": "wizigje myn privacyynstellingen",
+      "baseline_1best": "wizigje myn privacyynstellingen",
+      "gpt_output": "wizigje myn privacyynstellingen",
+      "nbest": [
+        "wizigje myn privacyynstellingen",
+        "wizigje myn privarcyynstellingen",
+        "wizigje myn privasyynstellingen",
+        "wizigje myn privascyynstellingen",
+        "wizigje myn privoacyynstellingen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "wizigje myn privacyynstellingen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-23 13:26:12",
+      "elapsed_seconds_at_submit": 687.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28383462.mp3",
+      "reference": "dêr is it gat fan 'e doar",
+      "baseline_1best": "dêr is it gat fan 'e doer",
+      "gpt_output": "dêr is it gat fan 'e doar",
+      "nbest": [
+        "dêr is it gat fan 'e doer",
+        "dêr is it gat fan de doer",
+        "dêr is it gat fan 'e doar",
+        "dêr is it gat fan 'e doe",
+        "dêr is it gat fan 'e doear"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "dêr is it gat fan 'e doar",
+      "copied_from_nbest": 3,
+      "annotation_timestamp": "2026-04-23 13:26:20",
+      "elapsed_seconds_at_submit": 694.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23808688.mp3",
+      "reference": "dêr moat in winkelman it fan ha no",
+      "baseline_1best": "dêr moat de winkel manit fan harn no",
+      "gpt_output": "dêr moat de winkelmannen fan harren no",
+      "nbest": [
+        "dêr moat de winkel manit fan harn no",
+        "dêr moat de winkelmanit fan harn no",
+        "dêr moat de winkel manet fan harn no",
+        "dêr moat de winkelmanet fan harn no",
+        "dêr moat de winkel man it fan harn no"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "dêr moat de winkelman it fan ha no",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-23 13:27:01",
+      "elapsed_seconds_at_submit": 735.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28376657.mp3",
+      "reference": "nee it is neat feroare it is praktysk noch allegear persys gelyk",
+      "baseline_1best": "nee it is neat feroaren it is praktysk noch allegear presiis gelyk",
+      "gpt_output": "nee it is neat feroare it is praktysk noch allegear presiis gelyk",
+      "nbest": [
+        "nee it is neat feroaren it is praktysk noch allegear presiis gelyk",
+        "nee it is neat feroare it is praktysk noch allegear presiis gelyk",
+        "nee it is neat feroaren it is praktysk noch allegearr presiis gelyk",
+        "nee it is neat feroaren it is praktysk noch allegear prersiis gelyk",
+        "nee it is neat feroaren it is praktysk noch allegear pesiis gelyk"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "nee it is neat feroare it is praktysk noch allegear presys gelyk",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-23 13:27:38",
+      "elapsed_seconds_at_submit": 772.7
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 87.1,
-  "saved_at": "2026-04-23 13:15:45"
+  "total_elapsed_seconds": 772.7,
+  "saved_at": "2026-04-23 13:27:38"
 }
