@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 40,
+  "idx": 60,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -12580,12 +12580,392 @@
       "copied_from_nbest": 2,
       "annotation_timestamp": "2026-04-24 09:27:21",
       "elapsed_seconds_at_submit": 1762.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35607263.mp3",
+      "reference": "ik mailde juster mei ús beppe",
+      "baseline_1best": "ik mailde juster mei ús beppe",
+      "gpt_output": "ik mailde juster mei ús beppe",
+      "nbest": [
+        "ik mailde juster mei ús beppe",
+        "ik mail de juster mei ús beppe",
+        "ik mailde juster nei ús beppe",
+        "ik mailde juster meti ús beppe",
+        "ik mailde yjuster mei ús beppe"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "ik mailde juster mei ús beppe",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:27:34",
+      "elapsed_seconds_at_submit": 1775.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28414725.mp3",
+      "reference": "hy wurdt leaver net mei namme en tanamme neamd yn 'e krante",
+      "baseline_1best": "hy wurdt leaver net mei namme en tanamme niamd yn 'e krante",
+      "gpt_output": "hy wurdt leaver net mei namme en tanamme neamd yn 'e krante",
+      "nbest": [
+        "hy wurdt leaver net mei namme en tanamme niamd yn 'e krante",
+        "hy wurdt leaver net mei namme en tanamme nimd yn 'e krante",
+        "hy wurdt leaver net mei namme en tanamme niamd yn de krante",
+        "hy wurdt leaver net mei namme en tanamme nimd yn de krante",
+        "hy wurdt leaver net mei namme en tanamme neamd yn 'e krante"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "hy wurdt leaver net mei namme en tanamme neamd yn 'e krante",
+      "copied_from_nbest": 5,
+      "annotation_timestamp": "2026-04-24 09:27:49",
+      "elapsed_seconds_at_submit": 1790.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36376613.mp3",
+      "reference": "de sinne skynde al folop nei binnen ta troch de kieren fan de gerdinen",
+      "baseline_1best": "de sinne skynde al fol op ne bin ta troch de kieren fan de gerdinen",
+      "gpt_output": "de sinne skynde al fol op ne bint ta troch de kieren fan de gerdinen",
+      "nbest": [
+        "de sinne skynde al fol op ne bin ta troch de kieren fan de gerdinen",
+        "de sinnen skynde al fol op ne bin ta troch de kieren fan de gerdinen",
+        "de sinne skynde al fol op ne binta troch de kieren fan de gerdinen",
+        "de sinnen skynde al fol op ne binta troch de kieren fan de gerdinen",
+        "de sinne skynde al folop ne bin ta troch de kieren fan de gerdinen"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "de sinne skynde al fol op nei binnen ta troch de kieren fan de gerdinen",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 09:28:38",
+      "elapsed_seconds_at_submit": 1839.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_20800711.mp3",
+      "reference": "ik leau dat er der krekt sa oer tinkt",
+      "baseline_1best": "ik leau dat er der krekt sa oer tiket",
+      "gpt_output": "ik leau dat er der krekt sa oer tinket",
+      "nbest": [
+        "ik leau dat er der krekt sa oer tiket",
+        "ik leau dat er der krekt sa oer tikt",
+        "ik leau dat er der krekt sa oer tinket",
+        "ik leau dat er der krekt sa oer tinkt",
+        "ik leau dat der der krekt sa oer tiket"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_wrong",
+      "selected_text": "ik leau dat er der krekt sa oer tinkt",
+      "copied_from_nbest": 4,
+      "annotation_timestamp": "2026-04-24 09:28:54",
+      "elapsed_seconds_at_submit": 1855.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21526180.mp3",
+      "reference": "hy sit der net sa bêst foar",
+      "baseline_1best": "hy siet der net sa bêst foar",
+      "gpt_output": "hy siet der net sa bêst foar",
+      "nbest": [
+        "hy siet der net sa bêst foar",
+        "hy stiet der net sa bêst foar",
+        "hy sit der net sa bêst foar",
+        "hy s iet der net sa bêst foar",
+        "hiy siet der net sa bêst foar"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "hy stiet der net sa bêst foar",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-24 09:29:04",
+      "elapsed_seconds_at_submit": 1864.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23760463.mp3",
+      "reference": "neffens de polysje flechte it slachtoffer nei kunde dy't in pear huzen fierderop wenne",
+      "baseline_1best": "neffens de polysje flechte it slachtoffer nei kunde dy't yn pearhuzen fierder op binne",
+      "gpt_output": "neffens de polysje flechte it slachtoffer nei kunde dy't in pear huzen fierderop binne",
+      "nbest": [
+        "neffens de polysje flechte it slachtoffer nei kunde dy't yn pearhuzen fierder op binne",
+        "neffens de polysje flechte it slachtoffer nei kunde dy't yn pearhuzen fierder opbinne",
+        "neffens de polysje flechte it slachtoffer nei kunden dy't yn pearhuzen fierder op binne",
+        "neffens de polysje flechte it slachtoffer nei kunden dy't yn pearhuzen fierder opbinne",
+        "neffens de polysje flechte it slachtoffer nei kunde dy't yn pearhuzen fierder rop binne"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "neffens de plysje flechte it slachtoffer nei kunden dy't in pear huzen fierderop binne",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 09:31:04",
+      "elapsed_seconds_at_submit": 1984.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36990508.mp3",
+      "reference": "it plan waard freed troch it kabinet goedkard",
+      "baseline_1best": "it plan waard freed troch it kabinet goedkaard",
+      "gpt_output": "it plan waard freed troch it kabinet goedkaard",
+      "nbest": [
+        "it plan waard freed troch it kabinet goedkaard",
+        "it plan waard freedtroch it kabinet goedkaard",
+        "dt plan waard freed troch it kabinet goedkaard",
+        "dit plan waard freed troch it kabinet goedkaard",
+        "it plan waard freed troh it kabinet goedkaard"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "it plan waard freed troch it kabinet goedkard",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 09:31:44",
+      "elapsed_seconds_at_submit": 2024.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24681953.mp3",
+      "reference": "de aaikes brutsen iepen en de einepykjes kamen mei de kopkes foar it ljocht",
+      "baseline_1best": "de aaikes brutsen iepen en de eine pykjes kamen mei de kopkes foar it ljocht",
+      "gpt_output": "de aaikes brutsen iepen en de einepykjes kamen mei de kopkes foar it ljocht",
+      "nbest": [
+        "de aaikes brutsen iepen en de eine pykjes kamen mei de kopkes foar it ljocht",
+        "de aikes brutsen iepen en de eine pykjes kamen mei de kopkes foar it ljocht",
+        "de aaikers brutsen iepen en de eine pykjes kamen mei de kopkes foar it ljocht",
+        "de aaikes brutsen iepen en deeine pykjes kamen mei de kopkes foar it ljocht",
+        "de aaikes brutsen iepen en de einepykjes kamen mei de kopkes foar it ljocht"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "de aaikes brutsen iepen en de einepykjes kamen mei de kopkes foar it ljocht",
+      "copied_from_nbest": 5,
+      "annotation_timestamp": "2026-04-24 09:32:03",
+      "elapsed_seconds_at_submit": 2044.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23762737.mp3",
+      "reference": "nei de oare oerfaller wurdt noch socht",
+      "baseline_1best": "nei de oare oerfaller wurdt noch socht",
+      "gpt_output": "nei de oare oerfaller wurdt noch socht",
+      "nbest": [
+        "nei de oare oerfaller wurdt noch socht",
+        "nei de oare oerfaller wurdt noch soccht",
+        "nei de oare oerfaller wurd noch socht",
+        "nei de oare oerfaler wurdt noch socht",
+        "nei de oarre oerfaller wurdt noch socht"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "nei de oare oerfaller wurdt noch socht",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:32:27",
+      "elapsed_seconds_at_submit": 2068.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36777071.mp3",
+      "reference": "de bedriuwsadviseurs steane de ûndernimmers mei ried en died by",
+      "baseline_1best": "de bedriuwsadviseurs steane de ûndernimmers mei read en died by",
+      "gpt_output": "de bedriuwsadviseurs steane de ûndernimmers mei raad en died by",
+      "nbest": [
+        "de bedriuwsadviseurs steane de ûndernimmers mei read en died by",
+        "de bedriuwsadviseurs steane de ûndernimmers mei ead en died by",
+        "de bedriuwsadviseur steane de ûndernimmers mei read en died by",
+        "de bedriuwsadviseurss steane de ûndernimmers mei read en died by",
+        "de bedriuwsadviseurs steane de ûndernimmers mei read en die by"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "de bedriuwsadviseurs steane de ûndernimmers mei ried en died by",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 09:33:02",
+      "elapsed_seconds_at_submit": 2103.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21445130.mp3",
+      "reference": "brek my de bek net iepen",
+      "baseline_1best": "brek mei de bak net iepen",
+      "gpt_output": "brek mei de bak net iepen",
+      "nbest": [
+        "brek mei de bak net iepen",
+        "berek mei de bak net iepen",
+        "brek mei de bag net iepen",
+        "berek mei de bag net iepen",
+        "brek mei de baak net iepen"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "brek my de bek net iepen",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 09:33:42",
+      "elapsed_seconds_at_submit": 2143.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23811443.mp3",
+      "reference": "ferleegje de temperatuer mei twa graden",
+      "baseline_1best": "ferleegje de temperatuer mei twa graden",
+      "gpt_output": "ferleegje de temperatuer mei twa graden",
+      "nbest": [
+        "ferleegje de temperatuer mei twa graden",
+        "ferleegje de temperatuer meit twa graden",
+        "ferleegje de temperatuer meti twa graden",
+        "ferleegje de tempratuer mei twa graden",
+        "ferleegje de temperatuer mei twa graaden"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "ferleegje de temperatuer mei twa graden",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:35:36",
+      "elapsed_seconds_at_submit": 2256.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28504297.mp3",
+      "reference": "allinnich ús mem haw ik noch nea rûzje meitsjen heard",
+      "baseline_1best": "allinnich ús mem haw ik noch nea rúzje meitsjen heard",
+      "gpt_output": "allinnich ús mem haw ik noch nea rúzje meitsjen heard",
+      "nbest": [
+        "allinnich ús mem haw ik noch nea rúzje meitsjen heard",
+        "allinnich us mem haw ik noch nea rúzje meitsjen heard",
+        "allinnich ús mem haw ik noch nea rúzjemeitsjen heard",
+        "allinnich ús mem haw ik noch nea rûzje meitsjen heard",
+        "allinnich ús mem haw ik noch nea rúsje meitsjen heard"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "allinnich ús mem haw ik noch nea rúzje meitsjen heard",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:35:56",
+      "elapsed_seconds_at_submit": 2276.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28434057.mp3",
+      "reference": "chantal komt altyd sonder koos want wy hawwe wurden mei him hân",
+      "baseline_1best": "sjin taal komt altyd sûnder koos want wy hawwe wurden mei jim hân",
+      "gpt_output": "sjen taal komt altyd sûnder koos want wy hawwe wurden mei jim hân",
+      "nbest": [
+        "sjin taal komt altyd sûnder koos want wy hawwe wurden mei jim hân",
+        "sjin taal komt altyd sûnder koos want wy hawwe wurden mei hjim hân",
+        "sjen taal komt altyd sûnder koos want wy hawwe wurden mei jim hân",
+        "sjin taal komt altyd sonder koos want wy hawwe wurden mei jim hân",
+        "cjin taal komt altyd sûnder koos want wy hawwe wurden mei jim hân"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "chantal komt altyd sûnder koos want wy hawwe wurden mei jim hân",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 09:36:36",
+      "elapsed_seconds_at_submit": 2316.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28746482.mp3",
+      "reference": "do hast it sa drok as in lyts baaske",
+      "baseline_1best": "do hast it sa drok as in lyts paaske",
+      "gpt_output": "do hast it sa drok as in lyts paaske",
+      "nbest": [
+        "do hast it sa drok as in lyts paaske",
+        "do hast it sa trok as in lyts paaske",
+        "do hast it sa drok as in lyts paske",
+        "do hast it sa drok as in lyt paaske",
+        "do hast it sa drok as in lyts paask"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "do hast it sa drok as in lyts baaske",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 09:37:01",
+      "elapsed_seconds_at_submit": 2341.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21526631.mp3",
+      "reference": "dêrwei hast in moai útsjoch oer de âlde stêd en de see",
+      "baseline_1best": "dêrwei hast in moai útsjoch oer de âlde stêd en de see",
+      "gpt_output": "dêrwei hast in moai útsjoch oer de âlde stêd en de see",
+      "nbest": [
+        "dêrwei hast in moai útsjoch oer de âlde stêd en de see",
+        "dêrwei hatst in moai útsjoch oer de âlde stêd en de see",
+        "dêrwei hast in moai útsjoch oer de alde stêd en de see",
+        "dêrwei hast in moai útsjocch oer de âlde stêd en de see",
+        "dêrwei hast in moai útsjocht oer de âlde stêd en de see"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "dêrwei hast in moai útsjoch oer de âlde stêd en de see",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:37:21",
+      "elapsed_seconds_at_submit": 2361.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24728063.mp3",
+      "reference": "altyd as ik dy dichtbondel sjoch tink ik oan jo",
+      "baseline_1best": "altyd as ik dy tichtwondel sjoch tink ik oan jo",
+      "gpt_output": "altyd as ik dy dichtbondel sjoch tink ik oan jo",
+      "nbest": [
+        "altyd as ik dy tichtwondel sjoch tink ik oan jo",
+        "altyd as ik dy dichtwondel sjoch tink ik oan jo",
+        "altyd as ik dy ticht wondel sjoch tink ik oan jo",
+        "altyd as ik dy tichtbondel sjoch tink ik oan jo",
+        "altyd as ik dy dicht wondel sjoch tink ik oan jo"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "altyd as ik dy dichtbondel sjoch tink ik oan jo",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 09:37:52",
+      "elapsed_seconds_at_submit": 2392.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21429693.mp3",
+      "reference": "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+      "baseline_1best": "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+      "gpt_output": "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+      "nbest": [
+        "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+        "ik sjoc hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+        "ik sjoch hielendal gjin wôâl mear sa mistich wurdt it no ynienen",
+        "ik sjoch hielendal gjin wâôl mear sa mistich wurdt it no ynienen",
+        "ik sjoch hielendal gjin wâld mear sa mistich wurdt it no ynienen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:38:01",
+      "elapsed_seconds_at_submit": 2402.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28162177.mp3",
+      "reference": "ik bin op alle fokdagen yn fryslân",
+      "baseline_1best": "ik bin om alle fokdagen yn fryslân",
+      "gpt_output": "ik bin op alle fokdagen yn fryslân",
+      "nbest": [
+        "ik bin om alle fokdagen yn fryslân",
+        "ik bin om alle fok dagen yn fryslân",
+        "ik bin op alle fokdagen yn fryslân",
+        "ik bin on alle fokdagen yn fryslân",
+        "ik bin op alle fok dagen yn fryslân"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "ik bin om alle fokdagen yn fryslân",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:38:41",
+      "elapsed_seconds_at_submit": 2441.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28417959.mp3",
+      "reference": "yn it tiidrek fan de keazen boargemaster soe hy hege eagen smite",
+      "baseline_1best": "yn it tiidrek fan de kearzen boargemaster soe hy hege eagen smite",
+      "gpt_output": "yn it tiidrek fan de keazen boargemaster soe hy hege eagen smite",
+      "nbest": [
+        "yn it tiidrek fan de kearzen boargemaster soe hy hege eagen smite",
+        "yn it tiidrek fan de keazen boargemaster soe hy hege eagen smite",
+        "yn it tiidrek fan de kearz en boargemaster soe hy hege eagen smite",
+        "yn it tiidrek fan de keaz en boargemaster soe hy hege eagen smite",
+        "yn 't tiidrek fan de kearzen boargemaster soe hy hege eagen smite"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "yn it tiidrek fan de keazen boargemaster soe hy hege eagen smite",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-24 09:38:57",
+      "elapsed_seconds_at_submit": 2458.3
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 1762.2,
-  "saved_at": "2026-04-24 09:27:21"
+  "total_elapsed_seconds": 2458.3,
+  "saved_at": "2026-04-24 09:38:57"
 }
