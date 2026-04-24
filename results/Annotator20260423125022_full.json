@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 30,
+  "idx": 40,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -12390,12 +12390,202 @@
       "copied_from_nbest": 1,
       "annotation_timestamp": "2026-04-23 13:36:28",
       "elapsed_seconds_at_submit": 1302.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23907882.mp3",
+      "reference": "asto har oertsjûgje kinst om werom te kommen sil ik dy ivich tankber wêze",
+      "baseline_1best": "asto har oertsjûgje kinst om werom te kommen sil ik dy ivich tankber wêze",
+      "gpt_output": "asto har oertsjûgje kinst om werom te kommen sil ik dy ivich tankber wêze",
+      "nbest": [
+        "asto har oertsjûgje kinst om werom te kommen sil ik dy ivich tankber wêze",
+        "asto har oer tsjûgje kinst om werom te kommen sil ik dy ivich tankber wêze",
+        "asto har oertsjûegje kinst om werom te kommen sil ik dy ivich tankber wêze",
+        "asto har oeretsjûgje kinst om werom te kommen sil ik dy ivich tankber wêze",
+        "asto har oersjûgje kinst om werom te kommen sil ik dy ivich tankber wêze"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "asto har oertsjûgje kinst om werom te kommen sil ik dy ivich tankber wêze",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:20:01",
+      "elapsed_seconds_at_submit": 1322.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23763746.mp3",
+      "reference": "men sjocht yn de betide jûnsoeren in oare stjerrehimel as letter yn 'e nacht",
+      "baseline_1best": "men sjut yn 'e betearde jûnsoaren in oare stjerrich himmel as weterjean moat",
+      "gpt_output": "men sjut yn 'e betearde jûnsoaren in oare stjerrich himmel as wetterjaan moat",
+      "nbest": [
+        "men sjut yn 'e betearde jûnsoaren in oare stjerrich himmel as weterjean moat",
+        "men sjut yn 'e betearde jûnsoaren in oare stjerrichhimmel as weterjean moat",
+        "men sjut yn 'e betearde jûnsoaren in oare stjerrich himmel as leterjean moat",
+        "men sjut yn 'e betearde jûnsoaren in oare stjerrichhimmel as leterjean moat",
+        "men sjut yn 'e betearde jûnsoaren in oare stjerrich himmel as weterjeane moat"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "men sjocht yn 'e betide jûnsoaren in oare stjerrehimel as [...]",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 09:22:33",
+      "elapsed_seconds_at_submit": 1474.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35774217.mp3",
+      "reference": "wêr makket elkenien him no sa drok oer",
+      "baseline_1best": "wêr makket elkenien him no sa drok oer",
+      "gpt_output": "wêr makket elkenien him no sa drok oer",
+      "nbest": [
+        "wêr makket elkenien him no sa drok oer",
+        "dêr makket elkenien him no sa drok oer",
+        "wêr makket eltenien him no sa drok oer",
+        "wêr maket elkenien him no sa drok oer",
+        "wêr makket elenien him no sa drok oer"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "wêr makket elkenien him no sa drok oer",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:22:56",
+      "elapsed_seconds_at_submit": 1496.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28339659.mp3",
+      "reference": "italjaansk restaurant",
+      "baseline_1best": "itoliaansk restaurân",
+      "gpt_output": "italiaansk restaurân",
+      "nbest": [
+        "itoliaansk restaurân",
+        "itoliaansk restaurn",
+        "itoliaansk restauroân",
+        "itoaliaansk restaurân",
+        "itoliaansk restaurâan"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "italiaansk restaurant",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 09:23:45",
+      "elapsed_seconds_at_submit": 1545.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807992.mp3",
+      "reference": "gean nei wurd",
+      "baseline_1best": "gjin nij wurd",
+      "gpt_output": "gjin nij wurd",
+      "nbest": [
+        "gjin nij wurd",
+        "gjen nij wurd",
+        "gjein nij wurd",
+        "gjian nij wurd",
+        "gjan nij wurd"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "gjin nij wurd",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:23:51",
+      "elapsed_seconds_at_submit": 1551.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35558810.mp3",
+      "reference": "hja wist it kampioenskip yn de dressuer op har namme te setten",
+      "baseline_1best": "hja wist it kampioenskip yn de dressuer op har namme te setten",
+      "gpt_output": "hja wist it kampioenskip yn de dressuer op har namme te setten",
+      "nbest": [
+        "hja wist it kampioenskip yn de dressuer op har namme te setten",
+        "hja wist it kampioenskip yn 'e dressuer op har namme te setten",
+        "hja wist it kampioensskip yn de dressuer op har namme te setten",
+        "hja wist it kampioensskip yn 'e dressuer op har namme te setten",
+        "hja wist it kampioenskip yn d'e dressuer op har namme te setten"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hja wist it kampioenskip yn de dressuer op har namme te setten",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:24:04",
+      "elapsed_seconds_at_submit": 1564.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35769798.mp3",
+      "reference": "it publyk bestie meastal foaral út de hegerein",
+      "baseline_1best": "it publyk bestie meastal foaral út de hege rein",
+      "gpt_output": "it publyk bestie meastal foaral út de hege rein",
+      "nbest": [
+        "it publyk bestie meastal foaral út de hege rein",
+        "it publyk bestie meastal foaral út 'e hege rein",
+        "it publyk bestie meastal foaral út ie hege rein",
+        "it publyk bestie meastal foaral út de hegerein",
+        "it publyk bestie meastal foaral yt de hege rein"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "it publyk bestie meastal foaral út de hege rein",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:26:04",
+      "elapsed_seconds_at_submit": 1685.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28316221.mp3",
+      "reference": "begjin tachtiger jierren wie it der mei it grienbehear min oan ta",
+      "baseline_1best": "begjin tachtiger jierren wie it der mei it grienbehear min oan ta",
+      "gpt_output": "begjin tachtiger jierren wie it der mei it grienbehear min oan ta",
+      "nbest": [
+        "begjin tachtiger jierren wie it der mei it grienbehear min oan ta",
+        "begjin tachtiger jierren wie it er mei it grienbehear min oan ta",
+        "begjin tachtiger jierren wie it der mei it grien behear min oan ta",
+        "begjin tachtiger jierren wie et der mei it grienbehear min oan ta",
+        "begjin tachtiger jierren wie 't der mei it grienbehear min oan ta"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "begjin tachtiger jierren wie it der mei it grienbehear min oan ta",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:26:22",
+      "elapsed_seconds_at_submit": 1703.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23758556.mp3",
+      "reference": "joop hie der gjin aan fan wat er dêrmei bedoelde",
+      "baseline_1best": "joop hie der gjin aan fan wat er dêrmei bedoelde",
+      "gpt_output": "joop hie der gjin aan fan wat er dêrmei bedoelde",
+      "nbest": [
+        "joop hie der gjin aan fan wat er dêrmei bedoelde",
+        "ijoop hie der gjin aan fan wat er dêrmei bedoelde",
+        "ioop hie der gjin aan fan wat er dêrmei bedoelde",
+        "yjoop hie der gjin aan fan wat er dêrmei bedoelde",
+        "yoop hie der gjin aan fan wat er dêrmei bedoelde"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "joop hie der gjin aan fan wat er dêrmei bedoelde",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 09:26:43",
+      "elapsed_seconds_at_submit": 1724.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23781845.mp3",
+      "reference": "der barden troch de glêdens trettjin iensidige ûngelokken",
+      "baseline_1best": "dêr barden troch de glêdens trettjin iensidige ûngelokken",
+      "gpt_output": "dêr barden troch de glêdens trettjin iensidige ûngelokken",
+      "nbest": [
+        "dêr barden troch de glêdens trettjin iensidige ûngelokken",
+        "der barden troch de glêdens trettjin iensidige ûngelokken",
+        "dêr barden troch de glêdens tretjin iensidige ûngelokken",
+        "der barden troch de glêdens tretjin iensidige ûngelokken",
+        "dêr barden troch de glêdens trettjin iensiedige ûngelokken"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "der barden troch de glêdens trettjin iensidige ûngelokken",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-24 09:27:21",
+      "elapsed_seconds_at_submit": 1762.2
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 1308.2,
-  "saved_at": "2026-04-23 13:36:33"
+  "total_elapsed_seconds": 1762.2,
+  "saved_at": "2026-04-24 09:27:21"
 }
