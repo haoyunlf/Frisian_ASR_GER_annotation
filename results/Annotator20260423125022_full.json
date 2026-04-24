@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 100,
+  "idx": 108,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -13720,12 +13720,164 @@
       "copied_from_nbest": 1,
       "annotation_timestamp": "2026-04-24 10:06:48",
       "elapsed_seconds_at_submit": 4128.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28396064.mp3",
+      "reference": "stel breedte yn op sân yn kolom alve",
+      "baseline_1best": "stel brete yn op sân yn kolom alve",
+      "gpt_output": "stel breedte yn op sân yn kolom alve",
+      "nbest": [
+        "stel brete yn op sân yn kolom alve",
+        "stel bredte yn op sân yn kolom alve",
+        "stel brete yn op sân yn kolom alve'",
+        "stel bredte yn op sân yn kolom alve'",
+        "stel breete yn op sân yn kolom alve"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "stel breedte yn op sân yn kolom alve",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 10:08:08",
+      "elapsed_seconds_at_submit": 4208.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21414162.mp3",
+      "reference": "twa sportfiskers fûnen it lichem en warskôgen de plysje",
+      "baseline_1best": "twa sportfiskers fûnen it lichem en warskôgen de plysje",
+      "gpt_output": "twa sportfiskers fûnen it lichem en warskôgen de plysje",
+      "nbest": [
+        "twa sportfiskers fûnen it lichem en warskôgen de plysje",
+        "twa sportfiskers fûnen it lichem en warskôgen de polysje",
+        "twa sportfiskers fûnen it lichhem en warskôgen de plysje",
+        "twa sportfiskers fûnen it lichhem en warskôgen de polysje",
+        "twa sportfiskers fûnen it lichem en warskôge de plysje"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "twa sportfiskers fûnen it lichem en warskôgen de plysje",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 10:08:24",
+      "elapsed_seconds_at_submit": 4225.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23776549.mp3",
+      "reference": "troch baggeraktiviteiten en sânwinning is it waad hieltyd troebeler wurden",
+      "baseline_1best": "troch baggeraktiviteiten en sânwenning is it waard hieltyd trûbele wurden",
+      "gpt_output": "troch baggeraktiviteiten en sânwinning is it waad hieltyd trûbeler wurden",
+      "nbest": [
+        "troch baggeraktiviteiten en sânwenning is it waard hieltyd trûbele wurden",
+        "troch baggeraktiviteiten en sânwenning is it waad hieltyd trûbele wurden",
+        "troch baggeraktiviteiten en sanwenning is it waard hieltyd trûbele wurden",
+        "troch baggeraktiviteiten en sanwenning is it waad hieltyd trûbele wurden",
+        "troch baggeraktiviteiten en sânwenning is it waard hieltyd drûbele wurden"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "troch baggeraktiviteiten en sânwinning is it waar hieltyd trûbeler wurden",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 10:09:01",
+      "elapsed_seconds_at_submit": 4262.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35774074.mp3",
+      "reference": "de plysje sil aktyf by ûndernimmers del om har te warskôgjen foar ynbraken",
+      "baseline_1best": "de plysje sil aktyf by ûndernimmers del om har te warskôgjen fan ynbraken",
+      "gpt_output": "de plysje sil aktyf by ûndernimmers del om har te warskôgjen fan ynbraken",
+      "nbest": [
+        "de plysje sil aktyf by ûndernimmers del om har te warskôgjen fan ynbraken",
+        "de polysje sil aktyf by ûndernimmers del om har te warskôgjen fan ynbraken",
+        "de plysje sil aktyf by ûndernimmers del om har te warskôgjen foan ynbraken",
+        "de polysje sil aktyf by ûndernimmers del om har te warskôgjen foan ynbraken",
+        "de plysje sil aktyf by ûndernimmers del om har te warskôgjen fan ynbraaken"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "de plysje sil aktyf by ûndernimmers del om har te warskôgjen fan ynbraken",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 10:09:20",
+      "elapsed_seconds_at_submit": 4281.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28235766.mp3",
+      "reference": "set alle apparaten yn 'e hûs út",
+      "baseline_1best": "set alle apperaten yn 'e hús út",
+      "gpt_output": "set alle apparaten yn 'e hûs út",
+      "nbest": [
+        "set alle apperaten yn 'e hús út",
+        "set alle aperaten yn 'e hús út",
+        "set alle apperaten yn 'e hûs út",
+        "set alle appearaten yn 'e hús út",
+        "set alle appaeraten yn 'e hús út"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "set alle apparaten yn 'e hûs út",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 10:10:01",
+      "elapsed_seconds_at_submit": 4322.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28445855.mp3",
+      "reference": "dizze aktiviteit is net oan in plak bûn",
+      "baseline_1best": "dizze aktiviteit is net oan in plakbûn",
+      "gpt_output": "dizze aktiviteit is net oan in plak bûn",
+      "nbest": [
+        "dizze aktiviteit is net oan in plakbûn",
+        "dizze aktiviteit is net oan in plak bûn",
+        "dizze aktiviteit is net oan 'n plakbûn",
+        "dizze aktiviteit is net oan 'n plak bûn",
+        "dizze aktiviteit is net oan ie plakbûn"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "dizze aktiviteit is net oan in plak bûn",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-24 10:10:15",
+      "elapsed_seconds_at_submit": 4336.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28359163.mp3",
+      "reference": "hy smookte de iene sigaret nei de oare",
+      "baseline_1best": "hy smookte de iene sigaret nei de oare",
+      "gpt_output": "hy smookte de iene sigaret nei de oare",
+      "nbest": [
+        "hy smookte de iene sigaret nei de oare",
+        "hy smookte de iene sigearet nei de oare",
+        "hy smokte de iene sigaret nei de oare",
+        "hy smookte de iene sigeret nei de oare",
+        "hy smookte de iene sigret nei de oare"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hy smookte de iene sigaret nei de oare",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 10:10:25",
+      "elapsed_seconds_at_submit": 4346.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21636354.mp3",
+      "reference": "wy giene noch efkes thús oan en dêr siet koos mei twa maten",
+      "baseline_1best": "wy giene noch efkes thús oan en dêr siet koos mei twa maten",
+      "gpt_output": "wy giene noch efkes thús oan en dêr siet koos mei twa maten",
+      "nbest": [
+        "wy giene noch efkes thús oan en dêr siet koos mei twa maten",
+        "wy giene noch efkes thús oan en dêr siet goos mei twa maten",
+        "wy giene noch eefkes thús oan en dêr siet koos mei twa maten",
+        "wy giene noch efkes thús oan en dêr siet kos mei twa maten",
+        "wy giene noch efkes thús oan en dêr siet coos mei twa maten"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "wy giene noch efkes thús oan en dêr siet koos mei twa maten",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 10:10:46",
+      "elapsed_seconds_at_submit": 4367.2
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 4128.9,
-  "saved_at": "2026-04-24 10:06:48"
+  "total_elapsed_seconds": 4402.1,
+  "saved_at": "2026-04-24 10:11:21"
 }
