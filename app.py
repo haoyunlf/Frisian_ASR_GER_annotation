@@ -107,7 +107,7 @@ def load_from_github(user_id):
             "Authorization": f"token {token}",
             "Accept": "application/vnd.github.v3+json",
         }
-        for slug in ("quick", "full"):
+        for slug in ("full", "quick"):
             filepath = f"{results_path}/{user_id}_{slug}.json"
             url = f"https://api.github.com/repos/{repo}/contents/{filepath}"
             r = requests.get(url, headers=headers, params={"ref": branch})
