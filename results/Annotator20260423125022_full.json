@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 140,
+  "idx": 141,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -14480,12 +14480,31 @@
       "copied_from_nbest": 1,
       "annotation_timestamp": "2026-04-24 12:44:33",
       "elapsed_seconds_at_submit": 6069.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28454396.mp3",
+      "reference": "as ik ryk wie kocht ik in hús yn spanje",
+      "baseline_1best": "as ik ryk wie kocht ik in hús yn spanje",
+      "gpt_output": "as ik ryk wie kocht ik in hûs yn spanje",
+      "nbest": [
+        "as ik ryk wie kocht ik in hús yn spanje",
+        "as ik ryk wie kocht ik in hûs yn spanje",
+        "as ik ryk wie kochte ik in hús yn spanje",
+        "as 'k ryk wie kocht ik in hús yn spanje",
+        "as ik ryk wie kochte ik in hûs yn spanje"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "choose_from_nbest",
+      "selected_text": "as ik ryk wie kocht ik in hûs yn spanje",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-24 12:44:44",
+      "elapsed_seconds_at_submit": 6080.4
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 6069.5,
-  "saved_at": "2026-04-24 12:44:33"
+  "total_elapsed_seconds": 6095.6,
+  "saved_at": "2026-04-24 12:44:59"
 }
