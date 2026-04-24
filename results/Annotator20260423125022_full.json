@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 108,
+  "idx": 120,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -13872,12 +13872,240 @@
       "copied_from_nbest": 1,
       "annotation_timestamp": "2026-04-24 10:10:46",
       "elapsed_seconds_at_submit": 4367.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28503416.mp3",
+      "reference": "de santiger jierren steane yn it teken fan de oaljekrisis",
+      "baseline_1best": "de santiger jierren steane yn teken fan de oarlikrisus",
+      "gpt_output": "de santiger jierren steane yn teken fan de oaljekrisis",
+      "nbest": [
+        "de santiger jierren steane yn teken fan de oarlikrisus",
+        "de santiger jierren steane yn teken fan de oarliekrisus",
+        "de santiger jierren steane yn teken fan de oarlykrisus",
+        "de santiger jierren steane yn teken fan de oarlyekrisus",
+        "de santiger jieren steane yn teken fan de oarlikrisus"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "de santiger jierren steane yn it teken fan de oaljekrisis",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:18:53",
+      "elapsed_seconds_at_submit": 4529.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35961758.mp3",
+      "reference": "der binne ferskate redenen om help te sykjen",
+      "baseline_1best": "der binne ferskate redenen om help te sykjen",
+      "gpt_output": "der binne ferskate redenen om help te sykjen",
+      "nbest": [
+        "der binne ferskate redenen om help te sykjen",
+        "der binne ferskate redenën om help te sykjen",
+        "der binne ferskate redennn om help te sykjen",
+        "der binne ferskate redenn om help te sykjen",
+        "der binne ferskate redennen om help te sykjen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "der binne ferskate redenen om help te sykjen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 12:19:51",
+      "elapsed_seconds_at_submit": 4587.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36493872.mp3",
+      "reference": "de man hat in alkoholferslaving en de kâns op in weromfal is grut",
+      "baseline_1best": "de man hat in alkohol ferslagging en de kâns op in weromfal is grut",
+      "gpt_output": "de man hat in alkoholferslaving en de kâns op in weromfal is grut",
+      "nbest": [
+        "de man hat in alkohol ferslagging en de kâns op in weromfal is grut",
+        "de man hat in alkoholferslagging en de kâns op in weromfal is grut",
+        "de man hat in alkohol ferslaging en de kâns op in weromfal is grut",
+        "de man hat in alkoholferslaging en de kâns op in weromfal is grut",
+        "de man hat in alkehol ferslagging en de kâns op in weromfal is grut"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "de man hat in alkoholferslaving en de kâns op in weromfal is grut",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:20:26",
+      "elapsed_seconds_at_submit": 4622.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28351793.mp3",
+      "reference": "elkenien seach as in hûs tsjin de bestjoersgearkomsten oan",
+      "baseline_1best": "elkenien seach as in hûs tsjin de bestjoersgearkomsten oan",
+      "gpt_output": "elkenien seach as in hûs tsjin de bestjoersgearkomsten oan",
+      "nbest": [
+        "elkenien seach as in hûs tsjin de bestjoersgearkomsten oan",
+        "elkenien seach as in hús tsjin de bestjoersgearkomsten oan",
+        "elk enien seach as in hûs tsjin de bestjoersgearkomsten oan",
+        "elk enien seach as in hús tsjin de bestjoersgearkomsten oan",
+        "elkkenien seach as in hûs tsjin de bestjoersgearkomsten oan"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "elkenien seach as in hûs tsjin de bestjoersgearkomsten oan",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 12:20:45",
+      "elapsed_seconds_at_submit": 4641.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35769914.mp3",
+      "reference": "de plysje docht in oprop om nije oanknopingspunten te krijen yn de fermissingssaak",
+      "baseline_1best": "de polysje docht in oprop om nije oanknoppingspunten te krijen yn de fermissingssaak",
+      "gpt_output": "de plysje docht in oprop om nije oanknoppingspunten te krijen yn de fermissingssaak",
+      "nbest": [
+        "de polysje docht in oprop om nije oanknoppingspunten te krijen yn de fermissingssaak",
+        "de plysje docht in oprop om nije oanknoppingspunten te krijen yn de fermissingssaak",
+        "de polysje docht in oprop om nije oanknopingspunten te krijen yn de fermissingssaak",
+        "de polysje docht in oprop om nije oanknoppingspunten te krijen yn de fermissingsaak",
+        "de plysje docht in oprop om nije oanknopingspunten te krijen yn de fermissingssaak"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_wrong",
+      "selected_text": "de plysje docht in oprop om nije oanknopingspunten te krijen yn de fermissingssaak",
+      "copied_from_nbest": 5,
+      "annotation_timestamp": "2026-04-24 12:21:24",
+      "elapsed_seconds_at_submit": 4680.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28373469.mp3",
+      "reference": "de himel wie mei swiere wolken oerdutsen",
+      "baseline_1best": "de himmel wie mei swiere wolken oerdutsen",
+      "gpt_output": "de himmel wie mei swiere wolken oerdutsen",
+      "nbest": [
+        "de himmel wie mei swiere wolken oerdutsen",
+        "de himmel wie meri swiere wolken oerdutsen",
+        "de himmel wie meir swiere wolken oerdutsen",
+        "de himmel wie mai swiere wolken oerdutsen",
+        "de himmel wie meai swiere wolken oerdutsen"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "de himel wie mei swiere wolken oerdutsen",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:22:00",
+      "elapsed_seconds_at_submit": 4716.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24727463.mp3",
+      "reference": "jou my de temperatuer op it stuit yn 'e hús",
+      "baseline_1best": "jou my de temperatuer op it stuit yn 'e hûs",
+      "gpt_output": "jou my de temperatuer op it stuit yn 'e hûs",
+      "nbest": [
+        "jou my de temperatuer op it stuit yn 'e hûs",
+        "jou my de temperatuer op it stuit yn 'e hús",
+        "jou my de temperatuer op it stuite yn 'e hûs",
+        "jou mi de temperatuer op it stuit yn 'e hûs",
+        "jou my de temperatuer op 't stuit yn 'e hûs"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "jou my de temperatuer op it stuit yn 'e hûs",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 12:24:00",
+      "elapsed_seconds_at_submit": 4836.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35550432.mp3",
+      "reference": "hylke hie noch nea fan dizze dichter heard",
+      "baseline_1best": "hielke hie noch nea fan dizze dichter heard",
+      "gpt_output": "hielke hie noch nea fan dizze dichter heard",
+      "nbest": [
+        "hielke hie noch nea fan dizze dichter heard",
+        "hilke hie noch nea fan dizze dichter heard",
+        "hielke hie noch nean fan dizze dichter heard",
+        "hyelke hie noch nea fan dizze dichter heard",
+        "hielke hie noch neat fan dizze dichter heard"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "hielke hie noch nea fan dizze dichter heard",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 12:24:08",
+      "elapsed_seconds_at_submit": 4844.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28314915.mp3",
+      "reference": "alle minsken gongen werom nei hús de iene nei de oare",
+      "baseline_1best": "alle minsken gongen werom nei hús de iene nei de oare",
+      "gpt_output": "alle minsken gongen werom nei hús de iene nei de oare",
+      "nbest": [
+        "alle minsken gongen werom nei hús de iene nei de oare",
+        "alle minsken gongen werom nei húûs de iene nei de oare",
+        "alle minsken gongen werom nei hûús de iene nei de oare",
+        "alle minsken gongen werom nei hûs de iene nei de oare",
+        "alle minsken gangen werom nei hús de iene nei de oare"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "alle minsken gongen werom nei hûs de iene nei de oare",
+      "copied_from_nbest": 4,
+      "annotation_timestamp": "2026-04-24 12:24:19",
+      "elapsed_seconds_at_submit": 4855.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28402272.mp3",
+      "reference": "de kosten fan de operaasje wurde rûsd op sa'n twa ton",
+      "baseline_1best": "de kosten fan de operaasje wurde rûsd op sa'n twa ton",
+      "gpt_output": "de kosten fan de operaasje wurde rûsd op sa'n twa ton",
+      "nbest": [
+        "de kosten fan de operaasje wurde rûsd op sa'n twa ton",
+        "de kosten fan de operaasje wurde rûst op sa'n twa ton",
+        "de kosten fan de opperaasje wurde rûsd op sa'n twa ton",
+        "de kosten fan de operaasje wurde rûsd op sa'tn twa ton",
+        "de kosten fan de operaasje wurde rûsd op sa'n twaton"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de kosten fan de operaasje wurde rûsd op sa'n twa ton",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 12:25:52",
+      "elapsed_seconds_at_submit": 4948.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28198987.mp3",
+      "reference": "der wurdt praat oer oplossingen om fytsen yn de winter better mooglik te meitsjen",
+      "baseline_1best": "der wurdt praat oer oplossingen om fytsen yn de winter better mooglik te meitsjen",
+      "gpt_output": "der wurdt praat oer oplossingen om fytsen yn de winter better mooglik te meitsjen",
+      "nbest": [
+        "der wurdt praat oer oplossingen om fytsen yn de winter better mooglik te meitsjen",
+        "der wurdt praat oer oplossingen om fytsen yn 'e winter better mooglik te meitsjen",
+        "der wurdt praat oer oplossingen om fytsen yn de winter better moglik te meitsjen",
+        "der wurd praat oer oplossingen om fytsen yn de winter better mooglik te meitsjen",
+        "der wurdt praat oer oplossingen om fetsen yn de winter better mooglik te meitsjen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "der wurdt praat oer oplossingen om fytsen yn de winter better mooglik te meitsjen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 12:26:21",
+      "elapsed_seconds_at_submit": 4977.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24723065.mp3",
+      "reference": "ja wat tochtsto dan' raasde se mei in read oanrûne holle",
+      "baseline_1best": "ja wat tochsto dan raasden se me in read oanrûne holle",
+      "gpt_output": "ja wat tochsto dan raasden se my in read oanrûne holle",
+      "nbest": [
+        "ja wat tochsto dan raasden se me in read oanrûne holle",
+        "ja wat tochsto dan raasten se me in read oanrûne holle",
+        "ja wat tochsto dan raasden se my in read oanrûne holle",
+        "ja wat tochsto dan raasten se my in read oanrûne holle",
+        "ja wat tochsto dan raasden se mei in read oanrûne holle"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "ja wat tochsto dan raasde se mei in read oanrûne holle",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:28:03",
+      "elapsed_seconds_at_submit": 5079.7
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 4402.1,
-  "saved_at": "2026-04-24 10:11:24"
+  "total_elapsed_seconds": 5079.7,
+  "saved_at": "2026-04-24 12:28:03"
 }
