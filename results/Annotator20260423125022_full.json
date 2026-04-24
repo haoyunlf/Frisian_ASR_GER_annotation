@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 120,
+  "idx": 140,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -14100,12 +14100,392 @@
       "copied_from_nbest": null,
       "annotation_timestamp": "2026-04-24 12:28:03",
       "elapsed_seconds_at_submit": 5079.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23825171.mp3",
+      "reference": "de boukommisje is drok oan it wurk mei de tariedingen",
+      "baseline_1best": "de boukommisje is drok oan it wurk mei de tariedingen",
+      "gpt_output": "de boukommisje is drok oan it wurk mei de tariedingen",
+      "nbest": [
+        "de boukommisje is drok oan it wurk mei de tariedingen",
+        "de boukomisje is drok oan it wurk mei de tariedingen",
+        "de boukommisje is drok oan it wurrk mei de tariedingen",
+        "de boukommisje is drok oan it wurk mei de tariedingeën",
+        "de boukommisje is drok oan it wurkk mei de tariedingen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de boukommisje is drok oan it wurk mei de tariedingen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 12:28:36",
+      "elapsed_seconds_at_submit": 5112.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36841562.mp3",
+      "reference": "allegearre oant sjen en oant in oare kear",
+      "baseline_1best": "allegearre oant sjen en oant in oare kear",
+      "gpt_output": "allegearre oant sjen en oant in oare kear",
+      "nbest": [
+        "allegearre oant sjen en oant in oare kear",
+        "allegeare oant sjen en oant in oare kear",
+        "allegeaarre oant sjen en oant in oare kear",
+        "allegearre oant sjen en oant in oare kea",
+        "allegearre' oant sjen en oant in oare kear"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "allegearre oant sjen en oant in oare kear",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 12:28:56",
+      "elapsed_seconds_at_submit": 5132.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24742234.mp3",
+      "reference": "kinne wy it rinnende dwaan",
+      "baseline_1best": "kinne wy it rinnen der dwaan",
+      "gpt_output": "kinne wy it rinnen der dwaan",
+      "nbest": [
+        "kinne wy it rinnen der dwaan",
+        "kinne wy it rinnen de dwaan",
+        "kinne wy it rinnender dwaan",
+        "kinn wy it rinnen der dwaan",
+        "kinne wy it rinnen det dwaan"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "kinne wy it rinnende dwaan",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:29:31",
+      "elapsed_seconds_at_submit": 5167.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28499182.mp3",
+      "reference": "dat tink ik net nee",
+      "baseline_1best": "dat tink ik net nee",
+      "gpt_output": "dat tink ik net nee",
+      "nbest": [
+        "dat tink ik net nee",
+        "dat tink ik net ne e",
+        "dat tink 'k net nee",
+        "dat tink ik net neeë",
+        "dit tink ik net nee"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "dat tink ik net nee",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 12:29:36",
+      "elapsed_seconds_at_submit": 5172.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28352953.mp3",
+      "reference": "jou dysels de romte om it rouproses troch te libjen dat hjirby heart",
+      "baseline_1best": "jou dysels de rûmte om it rouproses troch te libjen dat hjir by heat",
+      "gpt_output": "jou dysels de rûmte om it rouproses troch te libjen dat hjir by heart",
+      "nbest": [
+        "jou dysels de rûmte om it rouproses troch te libjen dat hjir by heat",
+        "jou dysels de rûmte om it rouproses troch te libjen dat hjir byheat",
+        "jou dysels de rûmte om it rouproses troch te libjen dat hjir by eat",
+        "jou dysels de rûmte om it rouproses troch te libjen dat hjir byeat",
+        "jou dysels de rûmte om it rouproses troch te libjen dat hjir by het"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "jou dysels de rûmte om it rouproses troch te libjen dat hjir by heart",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:30:30",
+      "elapsed_seconds_at_submit": 5226.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24698682.mp3",
+      "reference": "we ha net sa bêst spile",
+      "baseline_1best": "wa net sa bêst spile",
+      "gpt_output": "wa net sa bêst spile",
+      "nbest": [
+        "wa net sa bêst spile",
+        "waa net sa bêst spile",
+        "wai net sa bêst spile",
+        "wa i net sa bêst spile",
+        "wah net sa bêst spile"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "wy ha? net sa bêst spile",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:33:59",
+      "elapsed_seconds_at_submit": 5435.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_26039478.mp3",
+      "reference": "de famylje bestiet út heit mem en ien bern",
+      "baseline_1best": "de famylje bestiet út heit mem en ien ber",
+      "gpt_output": "de famylje bestiet út heit mem en ien bern",
+      "nbest": [
+        "de famylje bestiet út heit mem en ien ber",
+        "de famylje bestiet úd heit mem en ien ber",
+        "de famylje bestiet út heit mem en ien ben",
+        "de famylje bestiet út heit mem en ien be",
+        "de famylje bestiet úd heit mem en ien ben"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "de famylje bestiet út heit mem en ien bern",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:34:05",
+      "elapsed_seconds_at_submit": 5441.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36798686.mp3",
+      "reference": "alle prysters binne tsjin de nije wet",
+      "baseline_1best": "alle prysters binne tsjin de nije wet",
+      "gpt_output": "alle prysters binne tsjin de nije wet",
+      "nbest": [
+        "alle prysters binne tsjin de nije wet",
+        "alle prysters binne tsjin de nije wed",
+        "alle prynsters binne tsjin de nije wet",
+        "alle pryesters binne tsjin de nije wet",
+        "alle prysters binne tsjin de nijge wet"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "alle prysters binne tsjin de nije wet",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 12:34:10",
+      "elapsed_seconds_at_submit": 5446.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28294673.mp3",
+      "reference": "de pot ferwyt de tsjettel dat er swart is",
+      "baseline_1best": "de pat ferwitet tsjettel dat der swart is",
+      "gpt_output": "de pat ferwitet tsjettel dat er swart is",
+      "nbest": [
+        "de pat ferwitet tsjettel dat der swart is",
+        "de pat ferwitet tsjettel dat er swart is",
+        "de pat ferwite tsjettel dat der swart is",
+        "de pat ferwitet tsjeattel dat der swart is",
+        "de pat ferwitet tsjettel dat dêr swart is"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "de pot ferwitet tsjettel dat er swart is",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:34:30",
+      "elapsed_seconds_at_submit": 5466.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23773276.mp3",
+      "reference": "dy regel bepaalt dat nimmen syn eigen rjochter wêze kin",
+      "baseline_1best": "dy regel bepaalt dat nimmen syn eigen rjochter wêze kin",
+      "gpt_output": "dy regel bepaalt dat nimmen syn eigen rjochter wêze kin",
+      "nbest": [
+        "dy regel bepaalt dat nimmen syn eigen rjochter wêze kin",
+        "dy regel bepaalt dat nimmen syn eigen erjochter wêze kin",
+        "dy reëgel bepaalt dat nimmen syn eigen rjochter wêze kin",
+        "dy regel bepaald dat nimmen syn eigen rjochter wêze kin",
+        "dy regel bepaalt dat nimen syn eigen rjochter wêze kin"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "dy regel bepaalt dat nimmen syn eigen rjochter wêze kin",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 12:34:35",
+      "elapsed_seconds_at_submit": 5471.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24006595.mp3",
+      "reference": "wa fynsto de ferfelendste",
+      "baseline_1best": "wa fynsto de ferfelendste",
+      "gpt_output": "wa fynsto de ferfelendste",
+      "nbest": [
+        "wa fynsto de ferfelendste",
+        "wa fynsto de ferfeelendste",
+        "wa fynsto de verfelendste",
+        "wa fynsto de ferfelenste",
+        "waa fynsto de ferfelendste"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "wa fynsto de ferfelendste",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 12:34:43",
+      "elapsed_seconds_at_submit": 5479.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24640674.mp3",
+      "reference": "begriep er wêr't er mei oan 'e gong wie",
+      "baseline_1best": "begriepe wêr't de mei ûndergong wie",
+      "gpt_output": "begriepen wêr't dy mei ûndergong wie",
+      "nbest": [
+        "begriepe wêr't de mei ûndergong wie",
+        "begriepe wêr't de mei ûnder gong wie",
+        "begriepen wêr't de mei ûndergong wie",
+        "begrieper wêr't de mei ûndergong wie",
+        "begriepen wêr't de mei ûnder gong wie"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "begriep er? wêr't er? mei oan de gong? wie",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:37:11",
+      "elapsed_seconds_at_submit": 5627.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28386937.mp3",
+      "reference": "fan de twa miljard dy't útliend is sit ien miljard ûnder de fryske boeren",
+      "baseline_1best": "fan de twa miljart dy't útliend is sit ien miljart ûnder de fryske boeren",
+      "gpt_output": "fan de twa miljard dy't útliend is sit ien miljard ûnder de fryske boeren",
+      "nbest": [
+        "fan de twa miljart dy't útliend is sit ien miljart ûnder de fryske boeren",
+        "fan de twa miljart dy't útliend is sit ien miljard ûnder de fryske boeren",
+        "fan de twa miljart dy't útliend is sit ienmiljart ûnder de fryske boeren",
+        "fan de twa mailjart dy't útliend is sit ien miljart ûnder de fryske boeren",
+        "fan 'e twa miljart dy't útliend is sit ien miljart ûnder de fryske boeren"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "fan de twa miljard dy't útliend is sit ien miljard ûnder de fryske boeren",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:38:29",
+      "elapsed_seconds_at_submit": 5705.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24883199.mp3",
+      "reference": "kin ‘t ús wat skele",
+      "baseline_1best": "kinst ús wat skele",
+      "gpt_output": "kinst ús wat skele",
+      "nbest": [
+        "kinst ús wat skele",
+        "kint ús wat skele",
+        "kins't ús wat skele",
+        "kinst hús wat skele",
+        "kins t ús wat skele"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "kin 't ús wat skele",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:38:49",
+      "elapsed_seconds_at_submit": 5725.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24755235.mp3",
+      "reference": "ik wie it byderhantsje fan de klasse en helle in soad kattekwea út",
+      "baseline_1best": "ik wie it by de hantsje fan 'e klasse en helle in soad katte kwea út",
+      "gpt_output": "ik wie it by de hantsje fan 'e klasse en helle in soad kattekwea út",
+      "nbest": [
+        "ik wie it by de hantsje fan 'e klasse en helle in soad katte kwea út",
+        "ik wie it by de hantsje fan de klasse en helle in soad katte kwea út",
+        "ik wie it by de hantsje fan 'e klasse en helle in soad kattekwea út",
+        "ik wie it by de hantsje fan de klasse en helle in soad kattekwea út",
+        "ik wie it by de hantsje fan 'e klassse en helle in soad katte kwea út"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "ik wie it byderhantsje fan 'e klasse en helle in soad kattekwea út",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:39:51",
+      "elapsed_seconds_at_submit": 5787.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23780372.mp3",
+      "reference": "dy kennis kinne hja goed brûke yn 'e klasse",
+      "baseline_1best": "dy kennirs kinne ja goed brûke yn 'e klasse",
+      "gpt_output": "dy kennis kinne hja goed brûke yn 'e klasse",
+      "nbest": [
+        "dy kennirs kinne ja goed brûke yn 'e klasse",
+        "dy kennirs kinne hja goed brûke yn 'e klasse",
+        "dy kennis kinne ja goed brûke yn 'e klasse",
+        "dy kennis kinne hja goed brûke yn 'e klasse",
+        "dy kenners kinne ja goed brûke yn 'e klasse"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "dy kennis kinne hja goed brûke yn 'e klasse",
+      "copied_from_nbest": 4,
+      "annotation_timestamp": "2026-04-24 12:40:10",
+      "elapsed_seconds_at_submit": 5806.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28462321.mp3",
+      "reference": "de boer en syn frou wolle altyd yn eastermar wenjen bliuwe",
+      "baseline_1best": "de boer en syn frou wolle altyd ynearstermar wenjen bliuwe",
+      "gpt_output": "de boer en syn frou wolle altyd ynearstermar wenjen bliuwe",
+      "nbest": [
+        "de boer en syn frou wolle altyd ynearstermar wenjen bliuwe",
+        "de boer en syn frou wolle altyd ynearsteremar wenjen bliuwe",
+        "de boer en syn frou wolle altyd ynearstermar wenje bliuwe",
+        "de boer en syn frou wolle altyd ynearstemar wenjen bliuwe",
+        "de boer en syn frou wolle altyd ynearsteemar wenjen bliuwe"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "de boer en syn frou wolle altyd yn earstermar wenjen bliuwe",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:40:25",
+      "elapsed_seconds_at_submit": 5821.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23811427.mp3",
+      "reference": "we wolle in kuiertocht meitsje yn de natoer",
+      "baseline_1best": "we wolle in koietocht meitsje yn de natouer",
+      "gpt_output": "wy wolle in kuiertocht meitsje yn de natuer",
+      "nbest": [
+        "we wolle in koietocht meitsje yn de natouer",
+        "we wolle in koietocht meitsje yn de natuer",
+        "we wolle in koietocht meitsje yn de natoer",
+        "we wolle in koietocht meitsje yn de natuoer",
+        "wy wolle in koietocht meitsje yn de natouer"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "we wolle in kuiertocht meitsje yn de natuer",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:43:16",
+      "elapsed_seconds_at_submit": 5992.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35658919.mp3",
+      "reference": "ien fan de meast bekende fryske dichters is tsjêbbe hettinga",
+      "baseline_1best": "ien fan de meast bekende fryske dichters is tsjerbe hettinga",
+      "gpt_output": "ien fan de meast bekende fryske dichters is tsjerbe hettinga",
+      "nbest": [
+        "ien fan de meast bekende fryske dichters is tsjerbe hettinga",
+        "ien fan de meast bekende fryske dichters is tjerbe hettinga",
+        "ien fan de meast bekende fryske dichters is tsjerbe hettlinga",
+        "ien fan de meast bekende fryske dichters is tsjerbe hattinga",
+        "ien fan de meast bekende fryske dichters is tjerbe hettlinga"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "ien fan de meast bekende fryske dichters is tsjêbbe hettinga",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-24 12:44:22",
+      "elapsed_seconds_at_submit": 6058.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_37000487.mp3",
+      "reference": "belje de brânwacht",
+      "baseline_1best": "belje de brânwacht",
+      "gpt_output": "belje de brânwacht",
+      "nbest": [
+        "belje de brânwacht",
+        "belje de brânwacht'",
+        "belje de brnwacht",
+        "beljge de brânwacht",
+        "belje de brânwaccht"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "belje de brânwacht",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-24 12:44:33",
+      "elapsed_seconds_at_submit": 6069.5
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 5079.7,
-  "saved_at": "2026-04-24 12:28:03"
+  "total_elapsed_seconds": 6069.5,
+  "saved_at": "2026-04-24 12:44:33"
 }
