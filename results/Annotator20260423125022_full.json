@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 180,
+  "idx": 200,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -15240,12 +15240,392 @@
       "copied_from_nbest": 1,
       "annotation_timestamp": "2026-04-27 08:54:57",
       "elapsed_seconds_at_submit": 7923.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28335404.mp3",
+      "reference": "sy hat har nocht fan him hoe dan ek",
+      "baseline_1best": "sy hat har nocht fan him hoe dan ek",
+      "gpt_output": "sy hat har nocht fan him hoe dan ek",
+      "nbest": [
+        "sy hat har nocht fan him hoe dan ek",
+        "sa hat har nocht fan him hoe dan ek",
+        "sj hat har nocht fan him hoe dan ek",
+        "si hat har nocht fan him hoe dan ek",
+        "sy hat har nocht fan hïm hoe dan ek"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "sy hat har nocht fan him hoe dan ek",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:55:19",
+      "elapsed_seconds_at_submit": 7944.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_22442587.mp3",
+      "reference": "wat hat er by de ein",
+      "baseline_1best": "wat hat er by it ein",
+      "gpt_output": "wat hat er by it ein",
+      "nbest": [
+        "wat hat er by it ein",
+        "wat hat er by 't ein",
+        "wat hat er by dt ein",
+        "wat hat er by ït ein",
+        "wat hat er by t ein"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "wat hat er by it ein",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:55:28",
+      "elapsed_seconds_at_submit": 7953.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21412584.mp3",
+      "reference": "de iene is molkkontroleur en de oare is pastoar wurden",
+      "baseline_1best": "de iene is molkkontrolleur en de oare is pastoar wurden",
+      "gpt_output": "de iene is molkkontroleur en de oare is pastoar wurden",
+      "nbest": [
+        "de iene is molkkontrolleur en de oare is pastoar wurden",
+        "de iene is mlkkontrolleur en de oare is pastoar wurden",
+        "de iene is molkkontroleur en de oare is pastoar wurden",
+        "de iene is mokkontrolleur en de oare is pastoar wurden",
+        "de iene is maolkkontrolleur en de oare is pastoar wurden"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "de iene is molkkontrolleur en de oare is pastoar wurden",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:55:57",
+      "elapsed_seconds_at_submit": 7982.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28444310.mp3",
+      "reference": "seleksje rjochts útwreidzje",
+      "baseline_1best": "ksammen seleksje rjocht út wreaidzsje",
+      "gpt_output": "ksammen seleksje rjocht út wraidsje",
+      "nbest": [
+        "ksammen seleksje rjocht út wreaidzsje",
+        "ksammen seleksje rjocht út wreaidsje",
+        "ksammen seleksje rjocht út wraidzsje",
+        "ksammen seleksje rjocht út wraidsje",
+        "ksammen seleksje rjocht út wreaidzje"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "eksamen? seleksje rjocht útwreidzje",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 08:57:37",
+      "elapsed_seconds_at_submit": 8082.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_27762829.mp3",
+      "reference": "wolsto ek wat fan my drinke",
+      "baseline_1best": "wolsto ek wat foan my drinke",
+      "gpt_output": "wolsto ek wat fan my drinke",
+      "nbest": [
+        "wolsto ek wat foan my drinke",
+        "wolsto ek wat fan my drinke",
+        "wolsto ek wat foar my drinke",
+        "wolsto ek wat far my drinke",
+        "wolsto ek wat foanr my drinke"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "wolsto ek wat fan my drinke",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-27 08:57:50",
+      "elapsed_seconds_at_submit": 8096.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24723749.mp3",
+      "reference": "meitsje dat kursyf",
+      "baseline_1best": "meitsje dat kursyf",
+      "gpt_output": "meitsje dat kursyf",
+      "nbest": [
+        "meitsje dat kursyf",
+        "meitsjge dat kursyf",
+        "meitsje dat kuursyf",
+        "meitsje dàt kursyf",
+        "meitsje 'at kursyf"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "meitsje dat kursyf",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:57:58",
+      "elapsed_seconds_at_submit": 8104.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36812741.mp3",
+      "reference": "lústerje nei radiostasjon hûndert en fjouwer",
+      "baseline_1best": "lusterje nei radiostasjon hûndert en fjouwer",
+      "gpt_output": "lusterje nei radiostasjon hûndert en fjouwer",
+      "nbest": [
+        "lusterje nei radiostasjon hûndert en fjouwer",
+        "lusterje nei radiostasjon hondert en fjouwer",
+        "lusterje nei eradiostasjon hûndert en fjouwer",
+        "lusterje nei iradiostasjon hûndert en fjouwer",
+        "lusterje nei radiostasjon hundert en fjouwer"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "lústerje nei radiostasjon hûndert en fjouwer",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 08:58:30",
+      "elapsed_seconds_at_submit": 8135.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28455046.mp3",
+      "reference": "heit en ik binne nei de bushalte rûn dêr't wy bus fyftjin namen",
+      "baseline_1best": "heit en ik binne nei de bushalte rûn dêr't wy de bus fyftjin namen",
+      "gpt_output": "heit en ik binne nei de bushalte rûn dêr't wy de bus fyftjin namen",
+      "nbest": [
+        "heit en ik binne nei de bushalte rûn dêr't wy de bus fyftjin namen",
+        "heit en ik binne nei de busholte rûn dêr't wy de bus fyftjin namen",
+        "heit en ik binne nei de bushalte rûndêr't wy de bus fyftjin namen",
+        "heit en ik binne nei de bushâlte rûn dêr't wy de bus fyftjin namen",
+        "heit en ik binne nei de bushalte rûn dêr't wy de bus fyftjin naamen"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "heit en ik binne nei de bushalte rûn dêr't wy de bus fyftjin namen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:58:45",
+      "elapsed_seconds_at_submit": 8150.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24731561.mp3",
+      "reference": "ik hearde rare gelûden by jim yn 'e hús",
+      "baseline_1best": "ik hearde rare geloeden by jimme yn 'e hûs",
+      "gpt_output": "ik hearde rare lûden by jimme yn 'e hûs",
+      "nbest": [
+        "ik hearde rare geloeden by jimme yn 'e hûs",
+        "ik hearde rare geloeden by jimme yn 'e hús",
+        "ik hearde raare geloeden by jimme yn 'e hûs",
+        "ik hearde raregeloeden by jimme yn 'e hûs",
+        "ik hearde rade geloeden by jimme yn 'e hûs"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "ik hearde rare gelûden by jimme yn 'e hûs",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 08:59:18",
+      "elapsed_seconds_at_submit": 8183.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24621306.mp3",
+      "reference": "geandewei by it âlder wurden komme der allegear eleminten by",
+      "baseline_1best": "geandewei by it âlder wurden komme der allegear eleminten by",
+      "gpt_output": "geandewei by it âlder wurden komme der allegear eleminten by",
+      "nbest": [
+        "geandewei by it âlder wurden komme der allegear eleminten by",
+        "geande wei by it âlder wurden komme der allegear eleminten by",
+        "geandewei by it âlder wurden komme dêr allegear eleminten by",
+        "geande wei by it âlder wurden komme dêr allegear eleminten by",
+        "gean dewei by it âlder wurden komme der allegear eleminten by"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "geandewei by it âlder wurden komme der allegear eleminten by",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:59:31",
+      "elapsed_seconds_at_submit": 8196.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23800676.mp3",
+      "reference": "gean nei it begjin fan 'e rigel",
+      "baseline_1best": "gean nei it begjin fan 'e rigel",
+      "gpt_output": "gean nei it begjin fan 'e rigel",
+      "nbest": [
+        "gean nei it begjin fan 'e rigel",
+        "gean nei it begjin fan de rigel",
+        "gean nei it begjin fan 'e rige",
+        "gean nei it begyjin fan 'e rigel",
+        "gean nei it begjin fan de rige"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "gean nei it begjin fan 'e rigel",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:59:48",
+      "elapsed_seconds_at_submit": 8214.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35550261.mp3",
+      "reference": "ien tredde fan de befolking is fan hús en hear ferdreaun",
+      "baseline_1best": "ien tredde fan de befolking is fan hûs en hear ferdreaun",
+      "gpt_output": "ien tredde fan de befolking is fan hûs en hear ferdreaun",
+      "nbest": [
+        "ien tredde fan de befolking is fan hûs en hear ferdreaun",
+        "ien tredder fan de befolking is fan hûs en hear ferdreaun",
+        "ien tredde fan 'e befolking is fan hûs en hear ferdreaun",
+        "ien tredder fan 'e befolking is fan hûs en hear ferdreaun",
+        "ien tredde fan de befolking is fan hús en hear ferdreaun"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "ien tredde fan de befolking is fan hûs en hear ferdreaun",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 09:00:44",
+      "elapsed_seconds_at_submit": 8270.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28453372.mp3",
+      "reference": "ik tink dat ik mar ris op hûs oan gean",
+      "baseline_1best": "ik tink dat ik mar ris op hûs oan gean",
+      "gpt_output": "ik tink dat ik mar ris op hûs oan gean",
+      "nbest": [
+        "ik tink dat ik mar ris op hûs oan gean",
+        "ik tink dat ik mar ris op hús oan gean",
+        "ik tink dat ik mar ris op hûs oangean",
+        "ik tink dat ik mar ris op hús oangean",
+        "ik tink dat ik mar eris op hûs oan gean"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "ik tink dat ik mar ris op hûs oan gean",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 09:00:55",
+      "elapsed_seconds_at_submit": 8280.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24640640.mp3",
+      "reference": "wêr is it treinstasjon",
+      "baseline_1best": "wêr is it treinstasjon",
+      "gpt_output": "wêr is it treinstasjon",
+      "nbest": [
+        "wêr is it treinstasjon",
+        "wêr is it treinstaskjon",
+        "wêr ïs it treinstasjon",
+        "wêr is it treinestasjon",
+        "wêr is it treinstasyjon"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "wêr is it treinstasjon",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 09:01:02",
+      "elapsed_seconds_at_submit": 8288.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28331004.mp3",
+      "reference": "fan de achttjin klups wiene trije tsjin en fyftjin foar",
+      "baseline_1best": "fan de achttjin klups wiene trije tsjin en fyftjin foar",
+      "gpt_output": "fan de achttjin klups wiene trije tsjin en fyftjin foar",
+      "nbest": [
+        "fan de achttjin klups wiene trije tsjin en fyftjin foar",
+        "fan de achttsjin klups wiene trije tsjin en fyftjin foar",
+        "fan 'e achttjin klups wiene trije tsjin en fyftjin foar",
+        "fan de achttjin klups wiene trijge tsjin en fyftjin foar",
+        "fan 'e achttsjin klups wiene trije tsjin en fyftjin foar"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "fan de achttjin klups wiene trije tsjin en fyftjin foar",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 09:01:35",
+      "elapsed_seconds_at_submit": 8320.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24723066.mp3",
+      "reference": "ferheegje temperatuer plus trije graden",
+      "baseline_1best": "ferheegje temperatuer plus trije graden",
+      "gpt_output": "ferheegje temperatuer plus trije graden",
+      "nbest": [
+        "ferheegje temperatuer plus trije graden",
+        "ferheegje temperatuer lus trije graden",
+        "ferheeggje temperatuer plus trije graden",
+        "ferheegje temperatuer plus trije graaden",
+        "ferheegje temperatuer blus trije graden"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "ferheegje temperatuer plus trije graden",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 09:01:52",
+      "elapsed_seconds_at_submit": 8338.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21402913.mp3",
+      "reference": "sneintemiddei om fjouwer oere sil de finale spile wurde",
+      "baseline_1best": "sneintemiddei om fjouwer oere sil de finale spile wurde",
+      "gpt_output": "sneintemiddei om fjouwer oere sil de finale spile wurde",
+      "nbest": [
+        "sneintemiddei om fjouwer oere sil de finale spile wurde",
+        "sneintemiddei om fjouwer oere sil de final spile wurde",
+        "sneintemiddei om fjouwer oere sil de vinale spile wurde",
+        "sneintemiddei om fjouwer oere siil de finale spile wurde",
+        "sneijntemiddei om fjouwer oere sil de finale spile wurde"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "sneintemiddei om fjouwer oere sil de finale spile wurde",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 09:02:05",
+      "elapsed_seconds_at_submit": 8350.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23808635.mp3",
+      "reference": "lit my ris witte wat dy fan dat mantsje tinkt",
+      "baseline_1best": "nei't miis witte wat hy fan dat mantsje tinkt",
+      "gpt_output": "nei't my wit wat hy fan dat mantsje tinkt",
+      "nbest": [
+        "nei't miis witte wat hy fan dat mantsje tinkt",
+        "nei't miis witte wat hy fan at mantsje tinkt",
+        "nei't mi is witte wat hy fan dat mantsje tinkt",
+        "nei't myis witte wat hy fan dat mantsje tinkt",
+        "nei't mi is witte wat hy fan at mantsje tinkt"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "lit? my ris witte wat hy fan dat mantsje tinkt",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 09:08:53",
+      "elapsed_seconds_at_submit": 8758.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23758905.mp3",
+      "reference": "hawwe jimme ek de nijste spikerbroeken",
+      "baseline_1best": "hawwe jimme ek di neijste spike brûken",
+      "gpt_output": "hawwe jimme ek de nijste spike brûkt",
+      "nbest": [
+        "hawwe jimme ek di neijste spike brûken",
+        "hawwe jimme ek di nijste spike brûken",
+        "hawwe jimme ek de neijste spike brûken",
+        "hawwe jimme ek dit neijste spike brûken",
+        "hawwe jimme ek di neijste spiker brûken"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "hawwe jimme ek de nijste spikerbroeken",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 09:10:12",
+      "elapsed_seconds_at_submit": 8838.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36897695.mp3",
+      "reference": "der bestiet ek software om kompjûterbrûkers oan te trúnjen om te skoftsjen",
+      "baseline_1best": "der bestiet ek softwer oan kompjûterbrûekers oan te treaun om te skoftsjen",
+      "gpt_output": "der bestiet ek software oan kompjûterbrûkers oan te trunen om te skoftsjen",
+      "nbest": [
+        "der bestiet ek softwer oan kompjûterbrûekers oan te treaun om te skoftsjen",
+        "der bestiet ek softwer oan kompjûterbrûekers oan te treun om te skoftsjen",
+        "der bestiet ek softwer oan kompjûterbrûkers oan te treaun om te skoftsjen",
+        "der bestiet ek softwer oan kompjûterbrûkers oan te treun om te skoftsjen",
+        "der bestiet ek softwear oan kompjûterbrûekers oan te treaun om te skoftsjen"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "der bestiet ek software om kompjûterbrûkers oan te triuwen? om te skoftsjen",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 09:16:13",
+      "elapsed_seconds_at_submit": 9199.0
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 7923.3,
-  "saved_at": "2026-04-27 08:54:57"
+  "total_elapsed_seconds": 9199.0,
+  "saved_at": "2026-04-27 09:16:13"
 }
