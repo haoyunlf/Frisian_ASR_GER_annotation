@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 141,
+  "idx": 160,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -14499,12 +14499,373 @@
       "copied_from_nbest": 2,
       "annotation_timestamp": "2026-04-24 12:44:44",
       "elapsed_seconds_at_submit": 6080.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28359592.mp3",
+      "reference": "ik haw nea gjin fidúsje hân yn dat machogedoch",
+      "baseline_1best": "ik ha nea gjin ferdúsje hân yn dat mats jo gedoch",
+      "gpt_output": "ik ha nea gjin fertrouwen hân yn dat matsjo gedoch",
+      "nbest": [
+        "ik ha nea gjin ferdúsje hân yn dat mats jo gedoch",
+        "ik ha nea gjin ferdúsje hân yn dat matsjo gedoch",
+        "ik ha nea gjin ferdúsje hân yn dat mats jo gedocht",
+        "ik ha nea gjin ferdúsje hân yn dat marts jo gedoch",
+        "ik ha nea gjin ferdúsje hân yn dat matsjo gedocht"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "ik ha nea gjin ferdúsje hân yn dat macho gedoch",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 08:29:00",
+      "elapsed_seconds_at_submit": 6366.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36996214.mp3",
+      "reference": "it like har moai om krekt te dwaan as koene wy inoar net",
+      "baseline_1best": "it like har moai him krekt te dwaan as koenen wy inoar net",
+      "gpt_output": "it like har moai him krekt te dwaan as koenen wy inoar net",
+      "nbest": [
+        "it like har moai him krekt te dwaan as koenen wy inoar net",
+        "it like har moai im krekt te dwaan as koenen wy inoar net",
+        "it like har moaihim krekt te dwaan as koenen wy inoar net",
+        "it like har moaiim krekt te dwaan as koenen wy inoar net",
+        "it like har moai hom krekt te dwaan as koenen wy inoar net"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "it like har moai him krekt te dwaan as koenen wy inoar net",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:29:14",
+      "elapsed_seconds_at_submit": 6379.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24681950.mp3",
+      "reference": "hja hat yn de fraksje al frij gau it heechste wurd",
+      "baseline_1best": "hja hat yn de fraksje al frij gau it heechste wurd",
+      "gpt_output": "hja hat yn 'e fraksje al frij gau it heechste wurd",
+      "nbest": [
+        "hja hat yn de fraksje al frij gau it heechste wurd",
+        "hja hat yn 'e fraksje al frij gau it heechste wurd",
+        "hja hat yn de fraksje al frije gau it heechste wurd",
+        "hja hat yn 'e fraksje al frije gau it heechste wurd",
+        "hja hat yn de fraksje al frij gau it heechste hwurd"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "choose_from_nbest",
+      "selected_text": "hja hat yn de fraksje al frij gau it heechste wurd",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:29:23",
+      "elapsed_seconds_at_submit": 6388.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24627494.mp3",
+      "reference": "dat binne ús freonen",
+      "baseline_1best": "dat binne ús freonen",
+      "gpt_output": "dat binne ús freonen",
+      "nbest": [
+        "dat binne ús freonen",
+        "dat binne ús freoneen",
+        "dat binne ús freonenn",
+        "dat binne ús freeonen",
+        "dat binne ús freounen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "dat binne ús freonen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:29:41",
+      "elapsed_seconds_at_submit": 6407.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35549852.mp3",
+      "reference": "systeemflierren binne gaadlik foar ferskate romten en binne maklik skjin te hâlden",
+      "baseline_1best": "systeemflieden binne gaadlik foar ferskate romten en binne maklik skjin te hâlden",
+      "gpt_output": "systeemflierden binne gaadlik foar ferskate romten en binne maklik skjin te hâlden",
+      "nbest": [
+        "systeemflieden binne gaadlik foar ferskate romten en binne maklik skjin te hâlden",
+        "systeemflierden binne gaadlik foar ferskate romten en binne maklik skjin te hâlden",
+        "systeemflietden binne gaadlik foar ferskate romten en binne maklik skjin te hâlden",
+        "systeemflieden binne gaadlik foar ferskate rûmten en binne maklik skjin te hâlden",
+        "systeemflieten binne gaadlik foar ferskate romten en binne maklik skjin te hâlden"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_wrong",
+      "selected_text": "systeemflieren binne gaadlik foar ferskate romten en binne maklik skjin te hâlden",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 08:30:57",
+      "elapsed_seconds_at_submit": 6482.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21508562.mp3",
+      "reference": "ik sil dy kant mar wer út",
+      "baseline_1best": "ik sil dy kant mar wer út",
+      "gpt_output": "ik sil dy kant mar wer út",
+      "nbest": [
+        "ik sil dy kant mar wer út",
+        "ik sil dy kant mar werút",
+        "ik sil dykant mar wer út",
+        "ik sil dy kantt mar wer út",
+        "ik sil dy kant moar wer út"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "ik sil dy kant mar wer út",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:31:05",
+      "elapsed_seconds_at_submit": 6490.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35558410.mp3",
+      "reference": "hoe waarm is it",
+      "baseline_1best": "hoe waarum is it",
+      "gpt_output": "hoe waarm is it",
+      "nbest": [
+        "hoe waarum is it",
+        "hoe waarm is it",
+        "hoe warum is it",
+        "hoe warm is it",
+        "hoe waaarum is it"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "hoe waarm is it",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-27 08:31:21",
+      "elapsed_seconds_at_submit": 6506.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35960082.mp3",
+      "reference": "der foel neat mei him te begjinnen",
+      "baseline_1best": "der foel neat mei him te begjinnen",
+      "gpt_output": "der foel neat mei him te begjinnen",
+      "nbest": [
+        "der foel neat mei him te begjinnen",
+        "der voel neat mei him te begjinnen",
+        "dêr foel neat mei him te begjinnen",
+        "der foel neat mei him te begjinn",
+        "der foel neat mei him te begjinneën"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "der foel neat mei him te begjinnen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:31:34",
+      "elapsed_seconds_at_submit": 6519.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28352492.mp3",
+      "reference": "fjurwurkbrillen moatte foarkomme dat minsken eachletsel oprinne troch fjurwurk",
+      "baseline_1best": "fjoerwurkbrillen moatte ferkomme dat minsken eachletsel oprinne troch fjoerwurk",
+      "gpt_output": "fjoerwurkbrillen moatte foarkomme dat minsken eachletsel oprinne troch fjoerwurk",
+      "nbest": [
+        "fjoerwurkbrillen moatte ferkomme dat minsken eachletsel oprinne troch fjoerwurk",
+        "fjoerwurkbrillen moatte fearkomme dat minsken eachletsel oprinne troch fjoerwurk",
+        "fjoerwurkbrillen moatte ferkomme dat minsken eachletsel oprinne troch fjerwurk",
+        "fjoerwurkbrillen moatte foerkomme dat minsken eachletsel oprinne troch fjoerwurk",
+        "fjoerwurkbrillen moatte ferkomme dat minsken eachletsel oprinne troch fjorwurk"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "fjoerwurkbrillen moatte ferkomme dat minsken eachletsel oprinne troch fjoerwurk",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:32:23",
+      "elapsed_seconds_at_submit": 6568.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21402915.mp3",
+      "reference": "hie der dan net mei dy aardige húshâldster trouwe kind",
+      "baseline_1best": "hie dach dan net mei dy aardige húshâldster trouwe kind",
+      "gpt_output": "hie doch dan net mei dy aardige húshâldster trouwe kind",
+      "nbest": [
+        "hie dach dan net mei dy aardige húshâldster trouwe kind",
+        "hie doch dan net mei dy aardige húshâldster trouwe kind",
+        "hiee dach dan net mei dy aardige húshâldster trouwe kind",
+        "hie dach dan net mei dy aardige húshâldster trouwe kint",
+        "hiee doch dan net mei dy aardige húshâldster trouwe kind"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "hie [...] dan net mei dy aardige húshâldster trouwe kind",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 08:35:30",
+      "elapsed_seconds_at_submit": 6756.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35546518.mp3",
+      "reference": "it wie dreech om de tsjerkeklokken wer op it âlde plak te krijen",
+      "baseline_1best": "it wie dreech om de tsjerkeklokken wer op it âlde plak te krijen",
+      "gpt_output": "it wie dreech om de tsjerkeklokken wer op it âlde plak te krijen",
+      "nbest": [
+        "it wie dreech om de tsjerkeklokken wer op it âlde plak te krijen",
+        "it wie dreech om de tsjerke klokken wer op it âlde plak te krijen",
+        "it wie dreech om de tsjerkeklokken werop it âlde plak te krijen",
+        "it wie dreech om de tsjerke klokken werop it âlde plak te krijen",
+        "it wie dreech om de tsjerkeklokken wer op it alde plak te krijen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "it wie dreech om de tsjerkeklokken wer op it âlde plak te krijen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:35:43",
+      "elapsed_seconds_at_submit": 6768.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36815516.mp3",
+      "reference": "vera snijt de pizza mei in fleismes yn fjouweren",
+      "baseline_1best": "fearah sneit de pytsja mei in fleisemes yn fjouwergen",
+      "gpt_output": "feara sneit de pytsja mei in fleismes yn fjouwergen",
+      "nbest": [
+        "fearah sneit de pytsja mei in fleisemes yn fjouwergen",
+        "feara sneit de pytsja mei in fleisemes yn fjouwergen",
+        "fearah sneit de pytsja mei in fleisemes yn fjouweren",
+        "fearah sneit de pytsja mei in flisemes yn fjouwergen",
+        "fearah sneit de pytsja mei in fleismes yn fjouwergen"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "vera sneit de pizza mei in fleismes yn fjouweren",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 08:37:14",
+      "elapsed_seconds_at_submit": 6860.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_20507006.mp3",
+      "reference": "wy beseagen dêr ek in heel lyts mar moai museum",
+      "baseline_1best": "wy beseagen dêr ek in heel lyts mar moai museum",
+      "gpt_output": "wy beseagen dêr ek in hiel lyts mar moai museum",
+      "nbest": [
+        "wy beseagen dêr ek in heel lyts mar moai museum",
+        "wy beseagen dêr ek in heel lyts mar moai museëum",
+        "wy beseagen der ek in heel lyts mar moai museum",
+        "wy beseagen dr ek in heel lyts mar moai museum",
+        "wy beseagen dêr ek in heel lyts mar moai museëm"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "create",
+      "selected_text": "wy beseagen dêr ek in heel lyts mar moai museum",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:37:32",
+      "elapsed_seconds_at_submit": 6877.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23759047.mp3",
+      "reference": "hja en har âldere suster marga ferskille as dei en nacht",
+      "baseline_1best": "hja en har âldere suster marga ferskille as dei en nacht",
+      "gpt_output": "hja en har âldere suster marga ferskille as dei en nacht",
+      "nbest": [
+        "hja en har âldere suster marga ferskille as dei en nacht",
+        "hja en har âldere suster manga ferskille as dei en nacht",
+        "hja en har âldere suster marga ferskille as dei en nacht'",
+        "hja en har âldere suster madga ferskille as dei en nacht",
+        "hja en har ldere suster marga ferskille as dei en nacht"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hja en har âldere suster marga ferskille as dei en nacht",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:37:42",
+      "elapsed_seconds_at_submit": 6887.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36354414.mp3",
+      "reference": "der wie ferset fanwege twivel oer skeafrije gaswinning",
+      "baseline_1best": "der wie ferset fanwege twivel oer skeafrije gaswenning",
+      "gpt_output": "der wie ferset fanwege twifel oer skeafrije gaswenning",
+      "nbest": [
+        "der wie ferset fanwege twivel oer skeafrije gaswenning",
+        "der wie ferset fanwegen twivel oer skeafrije gaswenning",
+        "der wie ferset fanwege twifel oer skeafrije gaswenning",
+        "der wie ferset fanwegen twifel oer skeafrije gaswenning",
+        "der wie fersert fanwege twivel oer skeafrije gaswenning"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_wrong",
+      "selected_text": "der wie ferset fanwege twivel oer skeafrije gaswinning",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 08:38:46",
+      "elapsed_seconds_at_submit": 6951.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36990540.mp3",
+      "reference": "wêr kin ik jo mei fan tsjinst wêze",
+      "baseline_1best": "wêr kin ik jo my fan tsjinst wêze",
+      "gpt_output": "wêr kin ik jo my fan tsjinst wêze",
+      "nbest": [
+        "wêr kin ik jo my fan tsjinst wêze",
+        "wêr kin ik jo me fan tsjinst wêze",
+        "wêr kin ik jo myi fan tsjinst wêze",
+        "wêr kin ik je my fan tsjinst wêze",
+        "wêr kin ik jo mey fan tsjinst wêze"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "wêr kin ik jo mei fan tsjinst wêze",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 08:39:06",
+      "elapsed_seconds_at_submit": 6972.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23802567.mp3",
+      "reference": "hy is troud mei in fotomodel",
+      "baseline_1best": "hy is troud mei in fotomodel",
+      "gpt_output": "hy is troud mei in fotomodel",
+      "nbest": [
+        "hy is troud mei in fotomodel",
+        "hy is trouid mei in fotomodel",
+        "hy is troud mein in fotomodel",
+        "hjy is troud mei in fotomodel",
+        "hy is trouwd mei in fotomodel"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hy is troud mei in fotomodel",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:39:34",
+      "elapsed_seconds_at_submit": 6999.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28453668.mp3",
+      "reference": "de sneintemoarns rieden wy ekstra betiid fan hûs",
+      "baseline_1best": "de sneintemoarns rieden wy ekstra betiid fan hûs",
+      "gpt_output": "de sneintemoarns rieden wy ekstra betiid fan hûs",
+      "nbest": [
+        "de sneintemoarns rieden wy ekstra betiid fan hûs",
+        "de sneintemoarns rieden wy ekstra betiid fanhûs",
+        "de sneintemoarns rieden wy ekstra betiid fan hús",
+        "de sneintemoarns rieden wy ekstra betiid fanhús",
+        "de sneintemoarns rieden wy ekstra betiid fan hs"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de sneintemoarns rieden wy ekstra betiid fan hûs",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 08:39:53",
+      "elapsed_seconds_at_submit": 7019.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23851486.mp3",
+      "reference": "annulearje rûte",
+      "baseline_1best": "annulearje rute",
+      "gpt_output": "annulearje rute",
+      "nbest": [
+        "annulearje rute",
+        "annuleêarje rute",
+        "annuleëarje rute",
+        "annulearje rite",
+        "annulearje rute'"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "annulearje rûte",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 08:40:23",
+      "elapsed_seconds_at_submit": 7048.8
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 6095.6,
-  "saved_at": "2026-04-24 12:44:59"
+  "total_elapsed_seconds": 7048.8,
+  "saved_at": "2026-04-27 08:40:23"
 }
