@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 200,
+  "idx": 205,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -15620,12 +15620,107 @@
       "copied_from_nbest": null,
       "annotation_timestamp": "2026-04-27 09:16:13",
       "elapsed_seconds_at_submit": 9199.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21411826.mp3",
+      "reference": "faak sil de funksje fan ynformaasjeanalist kombinearre wurde mei dy fan systeemûntwikkeler",
+      "baseline_1best": "faak sil de funksje fan ynformaasjeanalist kombinearre wurde mei dy fan systeemûntwikkeler",
+      "gpt_output": "faak sil de funksje fan ynformaasjeanalist kombinearre wurde mei dy fan systeemûntwikkeler",
+      "nbest": [
+        "faak sil de funksje fan ynformaasjeanalist kombinearre wurde mei dy fan systeemûntwikkeler",
+        "faak sil de funksje fan ynformaasjeanalist kombinearre wurde mei dy fan systeem ûntwikkeler",
+        "faak sil de funksje fan ynformaasjeanalïst kombinearre wurde mei dy fan systeemûntwikkeler",
+        "faak sil de funsje fan ynformaasjeanalist kombinearre wurde mei dy fan systeemûntwikkeler",
+        "faak sil de funksjes fan ynformaasjeanalist kombinearre wurde mei dy fan systeemûntwikkeler"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "faak sil de funksje fan ynformaasjeanalist kombinearre wurde mei dy fan systeemûntwikkeler",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 09:16:33",
+      "elapsed_seconds_at_submit": 9218.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36376598.mp3",
+      "reference": "yn elk doarp wurdt de aksje op eigen wize organisearre",
+      "baseline_1best": "yn elk doarp wurdt de aksje op eigen wize organisearre",
+      "gpt_output": "yn elk doarp wurdt de aksje op eigen wize organisearre",
+      "nbest": [
+        "yn elk doarp wurdt de aksje op eigen wize organisearre",
+        "yn elk doarp wurdt de aksje op eigene wize organisearre",
+        "yn elk doarp wurt de aksje op eigen wize organisearre",
+        "yn elk doaarp wurdt de aksje op eigen wize organisearre",
+        "yn elk doarp wurdt de aksje op eigen wize organisearje"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "yn elk doarp wurdt de aksje op eigen wize organisearre",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 09:16:47",
+      "elapsed_seconds_at_submit": 9233.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23785239.mp3",
+      "reference": "hja kaam út amsterdam en foar him wie se in frou fan de wrâld",
+      "baseline_1best": "hja kaam út amsterdam en foar him wie se in frou fan 'e wrâld",
+      "gpt_output": "hja kaam út amsterdam en foar him wie se in frou fan 'e wrâld",
+      "nbest": [
+        "hja kaam út amsterdam en foar him wie se in frou fan 'e wrâld",
+        "hja kaam út amsterdam en foar him wie se in frou fan de wrâld",
+        "hja kaam út amsterdam en foar him wie se in frou fan 'e wrld",
+        "hja kaam út amsterdam en foar him wie se in frou fan de wrld",
+        "hja kaame út amsterdam en foar him wie se in frou fan 'e wrâld"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "hja kaam út amsterdam en foar him wie se in frou fan 'e wrâld",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 09:16:57",
+      "elapsed_seconds_at_submit": 9242.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23757962.mp3",
+      "reference": "sy waarden bedrige troch it opsettende wetter",
+      "baseline_1best": "se waarden bedriige troch it opsetten de wetter",
+      "gpt_output": "se waarden bedrige troch it opsettende wetter",
+      "nbest": [
+        "se waarden bedriige troch it opsetten de wetter",
+        "se waarden bedriigje troch it opsetten de wetter",
+        "se waarden bedrige troch it opsetten de wetter",
+        "se waarden bedrigje troch it opsetten de wetter",
+        "se waarden bedriige troch it opsettende wetter"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_wrong",
+      "selected_text": "se waarden bedrige troch it opsettende wetter",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-27 09:17:28",
+      "elapsed_seconds_at_submit": 9274.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21412585.mp3",
+      "reference": "meitsje in bestân",
+      "baseline_1best": "meitsje in bestân",
+      "gpt_output": "meitsje in bestân",
+      "nbest": [
+        "meitsje in bestân",
+        "meaitsje in bestân",
+        "meitsje in bestn",
+        "meëitsje in bestân",
+        "maeitsje in bestân"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "meitsje in bestân",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-27 09:17:35",
+      "elapsed_seconds_at_submit": 9281.4
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 9199.0,
-  "saved_at": "2026-04-27 09:16:13"
+  "total_elapsed_seconds": 9292.3,
+  "saved_at": "2026-04-27 09:17:46"
 }
