@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 205,
+  "idx": 220,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -15715,12 +15715,297 @@
       "copied_from_nbest": 1,
       "annotation_timestamp": "2026-04-27 09:17:35",
       "elapsed_seconds_at_submit": 9281.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21890307.mp3",
+      "reference": "hja ûndergie in operaasje en kaam op de recoverseal wer by",
+      "baseline_1best": "hja ûndergie in operaasje en kaam op 'e rykuverseal werby",
+      "gpt_output": "hja ûndergie in operaasje en kaam op 'e rykuverseal wer by",
+      "nbest": [
+        "hja ûndergie in operaasje en kaam op 'e rykuverseal werby",
+        "hja ûndergie in operaasje en kaam op 'e rikuverseal werby",
+        "hja ûndergie in operaasje en kaam op de rykuverseal werby",
+        "hja ûndergie in operaasje en kaam op de rikuverseal werby",
+        "hja ûndergie in operaasje en kaam op 'e rykuverseaal werby"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "hja ûndergie in operaasje en kaam op 'e recover?seal wer by",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-28 08:06:07",
+      "elapsed_seconds_at_submit": 11337.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807144.mp3",
+      "reference": "hy sil sa wiis wol wêze en doch it net",
+      "baseline_1best": "hy sil sa wiis wol wêze en doch it net",
+      "gpt_output": "hy sil sa wiis wol wêze en doch it net",
+      "nbest": [
+        "hy sil sa wiis wol wêze en doch it net",
+        "hy sil sa wiis wol wêze en doch it neta",
+        "hy sil sa wiis wol wêze en doch 't net",
+        "hjy sil sa wiis wol wêze en doch it net",
+        "hy sil sa wiis wol wêze en dogch it net"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hy sil sa wiis wol wêze en doch ek net",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-28 08:09:09",
+      "elapsed_seconds_at_submit": 11519.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24694301.mp3",
+      "reference": "dokter kaam de oare moarns om alve oere",
+      "baseline_1best": "dokter kaam de oare moarns om alve oere",
+      "gpt_output": "dokter kaam de oare moarns om alve oere",
+      "nbest": [
+        "dokter kaam de oare moarns om alve oere",
+        "dokter kaam de oare mooarns om alve oere",
+        "dokter kaam de oare marns om alve oere",
+        "dokter kaam de oare moarns om halve oere",
+        "dokter kaam de oare moarns om alfve oere"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "dokter kaam de oare moarns om alve oere",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-28 08:09:16",
+      "elapsed_seconds_at_submit": 11526.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28392385.mp3",
+      "reference": "it programma wurdt alle dagen útstjoerd tusken healwei seizen en seis oere",
+      "baseline_1best": "it programma wurdt alle dagen útstjoerd tusken healwei seizen en seis oere",
+      "gpt_output": "it programma wurdt alle dagen útstjoerd tusken healwei seizen en seis oere",
+      "nbest": [
+        "it programma wurdt alle dagen útstjoerd tusken healwei seizen en seis oere",
+        "it programma wurdt alle dagen útstjoerd tusken chealwei seizen en seis oere",
+        "it programma wurdt alle dagen útstjoerd tusken healwi seizen en seis oere",
+        "it programma wurdt alle dagen útstjoerd tusken healweyi seizen en seis oere",
+        "it programma wurd alle dagen útstjoerd tusken healwei seizen en seis oere"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "it programma wurdt alle dagen útstjoerd tusken healwei seizen en seis oere",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-28 08:09:48",
+      "elapsed_seconds_at_submit": 11558.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35714962.mp3",
+      "reference": "de sneldyk is no sneontenacht ticht troch wurksumheden",
+      "baseline_1best": "de sneldyk is no sneontenacht ticht troch wurksumheden",
+      "gpt_output": "de sneldyk is no sneontenacht ticht troch wurksumheden",
+      "nbest": [
+        "de sneldyk is no sneontenacht ticht troch wurksumheden",
+        "de sneldyk is no sneontenacht ticht troch wrksumheden",
+        "de sneldyk is no steontenacht ticht troch wurksumheden",
+        "de sneldyk is ino sneontenacht ticht troch wurksumheden",
+        "de sneldyk is no sneontenaicht ticht troch wurksumheden"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de sneldyk is no sneontenacht ticht troch wurksumheden",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-28 08:09:57",
+      "elapsed_seconds_at_submit": 11567.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35540960.mp3",
+      "reference": "al har krewearjen wie om 'e nocht",
+      "baseline_1best": "al har kruvearjen wie om 'e noft",
+      "gpt_output": "al har kruvearjen wie om 'e nocht",
+      "nbest": [
+        "al har kruvearjen wie om 'e noft",
+        "al har krivearjen wie om 'e noft",
+        "al har krevearjen wie om 'e noft",
+        "al har kravearjen wie om 'e noft",
+        "al har kruvjearjen wie om 'e noft"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "al har [...] wie om 'e nocht",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-28 08:19:53",
+      "elapsed_seconds_at_submit": 12163.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35999717.mp3",
+      "reference": "juster haw ik belle mei in âlde freon in stúdzjegenoat",
+      "baseline_1best": "juster haw ik belle mei in âlde freon in stútsjegenoat",
+      "gpt_output": "juster haw ik belle mei in âlde freon in stúdzjegenoat",
+      "nbest": [
+        "juster haw ik belle mei in âlde freon in stútsjegenoat",
+        "juster ha ik belle mei in âlde freon in stútsjegenoat",
+        "juster haw ik belle mei in âalde freon in stútsjegenoat",
+        "juster haw ik belle mei in âlde freoun in stútsjegenoat",
+        "juster haww ik belle mei in âlde freon in stútsjegenoat"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "juster haw ik belle mei in âlde freon in stúdzjegenoat",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-28 08:20:30",
+      "elapsed_seconds_at_submit": 12200.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28461674.mp3",
+      "reference": "de fierdere spulregels wurde yn de rin fan dizze útstjoering wol dúdlik",
+      "baseline_1best": "de fierdere spulregels wurde yn de rin fan dizze útstjoering wol dúdlik",
+      "gpt_output": "de fierdere spulregels wurde yn de rin fan dizze útstjoering wol dúdlik",
+      "nbest": [
+        "de fierdere spulregels wurde yn de rin fan dizze útstjoering wol dúdlik",
+        "de fierdere spulregels wurde yn de rin fan dizze útstjoerring wol dúdlik",
+        "de fierdere speulregels wurde yn de rin fan dizze útstjoering wol dúdlik",
+        "de fierdere spulrigels wurde yn de rin fan dizze útstjoering wol dúdlik",
+        "de fierdere spulregels wurde yn de rin fan dizze útstsjoering wol dúdlik"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de fierdere spulregels wurde yn de rin fan dizze útstjoering wol dúdlik",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-28 08:20:52",
+      "elapsed_seconds_at_submit": 12221.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21412524.mp3",
+      "reference": "de plysje koe foarkomme dat it ta in konfrontaasje kaam",
+      "baseline_1best": "de plysje koe foarkomme dat it ta in konfrontaasje kaam",
+      "gpt_output": "de plysje koe foarkomme dat it ta in konfrontaasje kaam",
+      "nbest": [
+        "de plysje koe foarkomme dat it ta in konfrontaasje kaam",
+        "de polysje koe foarkomme dat it ta in konfrontaasje kaam",
+        "de plysje koe foarkomme dat ir ta in konfrontaasje kaam",
+        "de plysje koe foarkomme dat et ta in konfrontaasje kaam",
+        "de polysje koe foarkomme dat ir ta in konfrontaasje kaam"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de plysje koe foarkomme dat it ta in konfrontaasje kaam",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-28 08:21:03",
+      "elapsed_seconds_at_submit": 12233.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28364586.mp3",
+      "reference": "de man hat de stap der flink ûnder set",
+      "baseline_1best": "de man hat de stap de flink ûnderset",
+      "gpt_output": "de man hat de stap der flink ûnderset",
+      "nbest": [
+        "de man hat de stap de flink ûnderset",
+        "de man hat de stapde flink ûnderset",
+        "de man hat de stap der flink ûnderset",
+        "de man hat de stapder flink ûnderset",
+        "de man hat de stap deflink ûnderset"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_wrong",
+      "selected_text": "de man hat de stap der flink ûnder set",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-28 08:26:06",
+      "elapsed_seconds_at_submit": 12536.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23796759.mp3",
+      "reference": "neffens har dochter hat de hûndertjierrige noch in goede kondysje",
+      "baseline_1best": "neffens har dochter hat dy hûndertjierrige noch in goede kondysje",
+      "gpt_output": "neffens har dochter hat dy hûndertjierrige noch in goede kondysje",
+      "nbest": [
+        "neffens har dochter hat dy hûndertjierrige noch in goede kondysje",
+        "neffens har dochter hat de hûndertjierrige noch in goede kondysje",
+        "neffens har dochter hat y hûndertjierrige noch in goede kondysje",
+        "neffens har dochter hat e hûndertjierrige noch in goede kondysje",
+        "neffens har dochter hat sy hûndertjierrige noch in goede kondysje"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "neffens har dochter hat dy hûndertjierrige noch in goede kondysje",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-28 08:26:19",
+      "elapsed_seconds_at_submit": 12549.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35700522.mp3",
+      "reference": "ik drukte it ear tsjin it hout en harke",
+      "baseline_1best": "ik drukte it ear tsjin it hout en harke",
+      "gpt_output": "ik drukte it ear tsjin it hout en harke",
+      "nbest": [
+        "ik drukte it ear tsjin it hout en harke",
+        "ik drukte it eëar tsjin it hout en harke",
+        "ik drukte it ear tsjin it hout en harce",
+        "'k drukte it ear tsjin it hout en harke",
+        "ik drukte it ear tsjin int hout en harke"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "ik drukte it ear tsjin it hout en harke",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-28 08:26:25",
+      "elapsed_seconds_at_submit": 12555.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28199025.mp3",
+      "reference": "stel dizze kolom yn op breuken fan trettjin",
+      "baseline_1best": "stel dizze kolom yn op breuken fan trettjin",
+      "gpt_output": "stel dizze kolom yn op breuken fan trettjin",
+      "nbest": [
+        "stel dizze kolom yn op breuken fan trettjin",
+        "stel dizze kolom yn op bruken fan trettjin",
+        "stel dizze kolom yn op brëuken fan trettjin",
+        "stel dizze kolom yn op brauken fan trettjin",
+        "stel dizze kolom yn op breuken fan tretjin"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "stel dizze kolom yn op breuken fan trettjin",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-28 08:26:31",
+      "elapsed_seconds_at_submit": 12561.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21525591.mp3",
+      "reference": "yn 'e keamer stie in piano mar der wie nimmen dy't derop spile",
+      "baseline_1best": "yn 'e keamer stie in piano want der wie nimmen dy't er op spile",
+      "gpt_output": "yn 'e keamer stie in piano want der wie nimmen dy't der op spile",
+      "nbest": [
+        "yn 'e keamer stie in piano want der wie nimmen dy't er op spile",
+        "yn 'e keamer stie in piano mant der wie nimmen dy't er op spile",
+        "yn 'e keamer stie in piano wmant der wie nimmen dy't er op spile",
+        "yn 'e keamer stie in piano ant der wie nimmen dy't er op spile",
+        "yn 'e keamer stie in piano wart der wie nimmen dy't er op spile"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "yn 'e keamer stie in piano want der wie nimmen dy't er op spile",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-28 08:27:13",
+      "elapsed_seconds_at_submit": 12602.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24674458.mp3",
+      "reference": "meitsje it koeler min trije graden",
+      "baseline_1best": "aad meitsje it koeler nim trije graden",
+      "gpt_output": "aad meitsje it koeler nim trije graden",
+      "nbest": [
+        "aad meitsje it koeler nim trije graden",
+        "aad meitsje it koeler nin trije graden",
+        "ad meitsje it koeler nim trije graden",
+        "aad meitsje it koeler mim trije graden",
+        "ad meitsje it koeler nin trije graden"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "aad meitsje it koeler nim trije graden",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-28 08:27:55",
+      "elapsed_seconds_at_submit": 12645.2
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 9292.3,
-  "saved_at": "2026-04-27 09:17:53"
+  "total_elapsed_seconds": 12645.2,
+  "saved_at": "2026-04-28 08:27:55"
 }
