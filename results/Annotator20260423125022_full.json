@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 258,
+  "idx": 260,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -16722,12 +16722,50 @@
       "copied_from_nbest": 2,
       "annotation_timestamp": "2026-04-28 09:04:31",
       "elapsed_seconds_at_submit": 14840.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23781764.mp3",
+      "reference": "ik bin alhiel net tefreden mei it resultaat",
+      "baseline_1best": "ik bin al hiel net tefrreden mei it resultaat",
+      "gpt_output": "ik bin al hiel net tefreden mei it resultaat",
+      "nbest": [
+        "ik bin al hiel net tefrreden mei it resultaat",
+        "ik bin al hiel net teferreden mei it resultaat",
+        "ik bin al hiel net tefreden mei it resultaat",
+        "ik bin al hiel net tefereden mei it resultaat",
+        "ik bin al heel net tefrreden mei it resultaat"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "ik bin alhiel net tefreden mei it resultaat",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-29 09:08:26",
+      "elapsed_seconds_at_submit": 14896.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36265877.mp3",
+      "reference": "de frachtweinsjauffeur hie syn lading net goed fêstmakke",
+      "baseline_1best": "de frachtweinsjauffeur hie syn lading net goed fêst makke",
+      "gpt_output": "de frachtweinsjauffeur hie syn lading net goed fêstmakke",
+      "nbest": [
+        "de frachtweinsjauffeur hie syn lading net goed fêst makke",
+        "de frachtweinsjauffeur hie syn lading net goed fêstmakke",
+        "de frachtweinsjauffeur hie syn laading net goed fêst makke",
+        "de frachtweinsjaffeur hie syn lading net goed fêst makke",
+        "de frachtweinsjauôffeur hie syn lading net goed fêst makke"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "de frachtweinsjauffeur hie syn lading net goed fêst makke",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:08:49",
+      "elapsed_seconds_at_submit": 14920.1
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 14853.5,
-  "saved_at": "2026-04-28 09:04:59"
+  "total_elapsed_seconds": 14920.1,
+  "saved_at": "2026-04-29 09:08:49"
 }
