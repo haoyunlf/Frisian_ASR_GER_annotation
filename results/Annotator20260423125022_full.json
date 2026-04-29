@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 280,
+  "idx": 300,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -17140,12 +17140,392 @@
       "copied_from_nbest": 1,
       "annotation_timestamp": "2026-04-29 09:25:21",
       "elapsed_seconds_at_submit": 15911.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28194861.mp3",
+      "reference": "hy betelle fiifhûndert euro de man swart yn 't hantsje",
+      "baseline_1best": "hy betelle fiifhûndert euro de man swart yn it hantsje",
+      "gpt_output": "hy betelle fiifhûndert euro de man swart yn it hantsje",
+      "nbest": [
+        "hy betelle fiifhûndert euro de man swart yn it hantsje",
+        "hy betelle fiif hûndert euro de man swart yn it hantsje",
+        "hy betelle fiifhûndert euro de man swart yn 't hantsje",
+        "hy betelle fiifhûndert euro de man swart yn i't hantsje",
+        "hy betelle fiifhûndert euro de man swart yn 'it hantsje"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "hy betelle fiifhûndert euro de man swart yn it hantsje",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:25:43",
+      "elapsed_seconds_at_submit": 15933.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36601915.mp3",
+      "reference": "ik woe eartiids graach model wurde",
+      "baseline_1best": "ik woe eardieis graach model wurde",
+      "gpt_output": "ik woe earderis graach model wurde",
+      "nbest": [
+        "ik woe eardieis graach model wurde",
+        "ik woe eardeis graach model wurde",
+        "ik woe earddieis graach model wurde",
+        "ik woe eardjieis graach model wurde",
+        "ik woe eardis graach model wurde"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "ik woe eartiids graach model wurde",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-29 09:28:39",
+      "elapsed_seconds_at_submit": 16110.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24068913.mp3",
+      "reference": "yn de bus kaam ik neist sa'n moai blier jongfeint te sitten",
+      "baseline_1best": "yn 'e bus kaam ik neist sa'n moai blier jongfein te sitten",
+      "gpt_output": "yn 'e bus kaam ik neist sa'n moai blier jongfeint te sitten",
+      "nbest": [
+        "yn 'e bus kaam ik neist sa'n moai blier jongfein te sitten",
+        "yn 'e bus kaam ik neist sa'n moai blied jongfein te sitten",
+        "yn 'e bus kaam ik neist sa' moai blier jongfein te sitten",
+        "yn 'e bus kaam ik neit sa'n moai blier jongfein te sitten",
+        "yn 'e bus kaam ik neist sa'n moai blier jongfeine te sitten"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "yn 'e bus kaam ik neist sa'n moai blier jongfein te sitten",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:29:19",
+      "elapsed_seconds_at_submit": 16149.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23812000.mp3",
+      "reference": "in trekker sit ûnder de reade ferve en in doar is bekladde",
+      "baseline_1best": "in trekker sit ûnder de reade ferve en in doar is bekladde",
+      "gpt_output": "in trekker sit ûnder de reade ferve en in doar is bekladde",
+      "nbest": [
+        "in trekker sit ûnder de reade ferve en in doar is bekladde",
+        "in trekke sit ûnder de reade ferve en in doar is bekladde",
+        "in trekker sit ûnder de reade ferfe en in doar is bekladde",
+        "in trekke sit ûnder de reade ferfe en in doar is bekladde",
+        "in trekker sit nder de reade ferve en in doar is bekladde"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "in trekker sit ûnder de reade ferve en in doar is bekladde",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:29:31",
+      "elapsed_seconds_at_submit": 16161.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21551250.mp3",
+      "reference": "de wyfkes fan solitêre bijen meitsje elk apart ien of mear nêsten",
+      "baseline_1best": "de wyfkes fan solitêre bijen meitsje elke part ien of mear nêsten",
+      "gpt_output": "de wyfkes fan solitêre bijen meitsje elke part ien of mear nêsten",
+      "nbest": [
+        "de wyfkes fan solitêre bijen meitsje elke part ien of mear nêsten",
+        "de wyfkes fan solitêre bijen meitsje elkepart ien of mear nêsten",
+        "de wyfkes fan solitêre bijen meitsje elke part ien of mear 'nêsten",
+        "de wyfkes fan solitêre bijeën meitsje elke part ien of mear nêsten",
+        "de wyfkes fan soliteêre bijen meitsje elke part ien of mear nêsten"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "de wyfkes fan solitêre bijen meitsje elke part ien of mear nêsten",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:30:09",
+      "elapsed_seconds_at_submit": 16199.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35552764.mp3",
+      "reference": "ik wol graach in wolkje molke troch de tee",
+      "baseline_1best": "ik wol graach in wolkje molke troch de tee",
+      "gpt_output": "ik wol graach in wolkje molke troch de tee",
+      "nbest": [
+        "ik wol graach in wolkje molke troch de tee",
+        "ik wol graach in wolkje malke troch de tee",
+        "ik wol graach in wolkje mâlke troch de tee",
+        "ik wol graach in wolkje melke troch de tee",
+        "ik wol graach in wolkje mlke troch de tee"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "ik wol graach in wolkje molke troch de tee",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:30:26",
+      "elapsed_seconds_at_submit": 16217.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36812959.mp3",
+      "reference": "oant safier tanke foar de muoite",
+      "baseline_1best": "oant safier tanke foar de muoite",
+      "gpt_output": "oant safier tanke foar de muoite",
+      "nbest": [
+        "oant safier tanke foar de muoite",
+        "oant sa fier tanke foar de muoite",
+        "oant safier tankje foar de muoite",
+        "oant safier tanke foar de muite",
+        "oant sa fier tankje foar de muoite"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "oant safier tanke foar de muoite",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:30:37",
+      "elapsed_seconds_at_submit": 16227.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28417534.mp3",
+      "reference": "wy binne hjoed aardich opsketten mei it wurk",
+      "baseline_1best": "wy binne hjoed aardich opsketten mei it wurk",
+      "gpt_output": "wy binne hjoed aardich opsketten mei it wurk",
+      "nbest": [
+        "wy binne hjoed aardich opsketten mei it wurk",
+        "we binne hjoed aardich opsketten mei it wurk",
+        "w binne hjoed aardich opsketten mei it wurk",
+        "wey binne hjoed aardich opsketten mei it wurk",
+        "wye binne hjoed aardich opsketten mei it wurk"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "wy binne hjoed aardich opsketten mei it wurk",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:30:49",
+      "elapsed_seconds_at_submit": 16239.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23777036.mp3",
+      "reference": "ik ferfeel my hjir en der komt net ien mear op besite",
+      "baseline_1best": "ik ferfiel my hjir en der komt net ien mear op besite",
+      "gpt_output": "ik ferfiel my hjir en der komt net ien mear op besite",
+      "nbest": [
+        "ik ferfiel my hjir en der komt net ien mear op besite",
+        "ik ferfiel my hjir en dêr komt net ien mear op besite",
+        "ik ferfeel my hjir en der komt net ien mear op besite",
+        "ik ferfel my hjir en der komt net ien mear op besite",
+        "ik ferfeel my hjir en dêr komt net ien mear op besite"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "ik ferfiel my hjir en der komt net ien mear op besite",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:31:02",
+      "elapsed_seconds_at_submit": 16252.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24731141.mp3",
+      "reference": "wy binne der deaferlegen mei",
+      "baseline_1best": "wy binne der dea ferlegen mei",
+      "gpt_output": "wy binne der dea ferlegen mei",
+      "nbest": [
+        "wy binne der dea ferlegen mei",
+        "wy binne de dea ferlegen mei",
+        "wy binne der dea fenlegen mei",
+        "wy binne dêr dea ferlegen mei",
+        "wy binne der dea ferlege mei"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "wy binne der dea ferlegen mei",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:31:10",
+      "elapsed_seconds_at_submit": 16261.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36733054.mp3",
+      "reference": "as it skip lek is geane de rotten oan board",
+      "baseline_1best": "as it skip lek is giene de rotten oan board",
+      "gpt_output": "as it skip lek is geane de rotten oan board",
+      "nbest": [
+        "as it skip lek is giene de rotten oan board",
+        "as it skip lek is giene de rotten oan boad",
+        "as it skip lek is giene de rotten oanboard",
+        "as it skip lek is gieane de rotten oan board",
+        "as it skip lek is giene de rotten oanboad"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "as it skip lek is giene de rotten oan board",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:31:24",
+      "elapsed_seconds_at_submit": 16275.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23757623.mp3",
+      "reference": "sis dan ris wat ik kin it net rûke",
+      "baseline_1best": "sis dan ris wat ik kin it net rûke",
+      "gpt_output": "sis dan ris wat ik kin it net rûke",
+      "nbest": [
+        "sis dan ris wat ik kin it net rûke",
+        "sis dan ris wat ik kin it net rke",
+        "sis dan ris wat it kin it net rûke",
+        "sis dan ris wat ik kin 't net rûke",
+        "sis dan ris wat ik kin it net roûke"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "sis dan ris wat ik kin it net rûke",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:31:38",
+      "elapsed_seconds_at_submit": 16289.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36741792.mp3",
+      "reference": "juster om twa oere de middeis binne wy yn parys oankommen",
+      "baseline_1best": "juster om twa oere de middeis binne wy yn parys oankommen",
+      "gpt_output": "juster om twa oere de middeis binne wy yn parys oankommen",
+      "nbest": [
+        "juster om twa oere de middeis binne wy yn parys oankommen",
+        "juster om twa oere de middeis binne we yn parys oankommen",
+        "juster om twa oere de middeis binne wy yn parys oankommeen",
+        "juster om twa oere de middeis binne wi yn parys oankommen",
+        "juster om twa oere de middeis binne w yn parys oankommen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "juster om twa oere te middeis binne wy yn parys oankommen",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-29 09:32:51",
+      "elapsed_seconds_at_submit": 16361.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35705349.mp3",
+      "reference": "mark wol yn nij seelân in nij libben opbouwe",
+      "baseline_1best": "mark wol yn nij senân in nij libben opbouwe",
+      "gpt_output": "mark wol yn nij seelân in nij libben opbouwe",
+      "nbest": [
+        "mark wol yn nij senân in nij libben opbouwe",
+        "mark wol yn nijsenân in nij libben opbouwe",
+        "mark wol yn nij selân in nij libben opbouwe",
+        "mark wol yn nij senân in nij libben op bouwe",
+        "mark wol yn nijesenân in nij libben opbouwe"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "mark wol yn nij-seelân in nij libben opbouwe",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-29 09:33:37",
+      "elapsed_seconds_at_submit": 16408.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24675123.mp3",
+      "reference": "de operasjonger hat in jacht út snits kocht",
+      "baseline_1best": "de operasjonger hat in jacht útsniet skocht",
+      "gpt_output": "de operasjonger hat in jacht útsnit skocht",
+      "nbest": [
+        "de operasjonger hat in jacht útsniet skocht",
+        "de operasjonger hat in jacht útsnit skocht",
+        "de operasjonger hat in jacht út sniet skocht",
+        "de operasjonger hat in jacht útesniet skocht",
+        "de operasjonger hat in jacht út snit skocht"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "de operasjonger hat in jacht út snits kocht",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-29 09:34:18",
+      "elapsed_seconds_at_submit": 16449.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23784104.mp3",
+      "reference": "de europeeske beurzen iepenen licht posityf mar sakken dêrnei al gau yn it read",
+      "baseline_1best": "de europeeske beurzen iepenen licht posityf mar sakten der nei al gau yn it read",
+      "gpt_output": "de europeeske beurzen iepenen licht posityf mar sakten dernei al gau yn it read",
+      "nbest": [
+        "de europeeske beurzen iepenen licht posityf mar sakten der nei al gau yn it read",
+        "de europeeske beurzen iepenen licht posityf mar sakten dernei al gau yn it read",
+        "de europeeske beurzen iepenen licht posityf mar sakten dêr nei al gau yn it read",
+        "de europeeske beurzen iepenen licht posityf mar sakkten der nei al gau yn it read",
+        "de europeeske beurzen iepenen licht posityf mar sakten dêrnei al gau yn it read"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "de europeeske beurzen iepenen licht posityf mar sakten dêrnei al gau yn it read",
+      "copied_from_nbest": 5,
+      "annotation_timestamp": "2026-04-29 09:36:37",
+      "elapsed_seconds_at_submit": 16587.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28334487.mp3",
+      "reference": "it is noch altyd net persys bekend wat der dy freedtenachts bard is",
+      "baseline_1best": "it is noch altyd net persiis bekend wat der de freedtenachtspard is",
+      "gpt_output": "it is noch altyd net persiis bekend wat der freedtenacht bard is",
+      "nbest": [
+        "it is noch altyd net persiis bekend wat der de freedtenachtspard is",
+        "it is noch altyd net persiis bekend wat der dy freedtenachtspard is",
+        "it is noch altyd net persiis bekend wat der de freedtenachtspart is",
+        "it is noch altyd net persiis bekend wat der dy freedtenachtspart is",
+        "it is noch altyd net persiis bekend wat der de freedtenachtpard is"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "it is noch altyd net persys bekend wat der de freedtenachts bard is",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-29 09:37:44",
+      "elapsed_seconds_at_submit": 16654.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28499207.mp3",
+      "reference": "ik tink dat de alarmbel echt net let hoecht te wurden",
+      "baseline_1best": "ik tink dat de alarmbel echt net let hoegd te wurde",
+      "gpt_output": "ik tink dat de alarmbel echt net let hoecht te wurden",
+      "nbest": [
+        "ik tink dat de alarmbel echt net let hoegd te wurde",
+        "ik tink dat de alarmbel echt net let hoegt te wurde",
+        "ik tink dat de alarmbel echt net let hoeghd te wurde",
+        "ik tink dat de alarmbel echt net let hoegd te wurden",
+        "ik tink dat de alarmbel echt net let hoeght te wurde"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "ik tink dat de alarmbel echt net let hoecht te wurden",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-29 09:38:30",
+      "elapsed_seconds_at_submit": 16700.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_25789739.mp3",
+      "reference": "ik soe it net dwaan",
+      "baseline_1best": "ik soe it net dwaan",
+      "gpt_output": "ik soe it net dwaan",
+      "nbest": [
+        "ik soe it net dwaan",
+        "ik soe 't net dwaan",
+        "ik soe it neat dwaan",
+        "ik soe ït net dwaan",
+        "ik soe it net dwa an"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "ik soe it net dwaan",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:38:36",
+      "elapsed_seconds_at_submit": 16706.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28455710.mp3",
+      "reference": "hy hie de ôfrûne moannen in fol programma",
+      "baseline_1best": "hy hie de ôfrûne moannen in fol programma",
+      "gpt_output": "hy hie de ôfrûne moannen in fol programma",
+      "nbest": [
+        "hy hie de ôfrûne moannen in fol programma",
+        "hy hie de ôfrûne moannen in folprogramma",
+        "hjy hie de ôfrûne moannen in fol programma",
+        "hay hie de ôfrûne moannen in fol programma",
+        "hya hie de ôfrûne moannen in fol programma"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hy hie de ôfrûne moannen in fol programma",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:38:45",
+      "elapsed_seconds_at_submit": 16715.9
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 15911.9,
-  "saved_at": "2026-04-29 09:25:21"
+  "total_elapsed_seconds": 16715.9,
+  "saved_at": "2026-04-29 09:38:45"
 }
