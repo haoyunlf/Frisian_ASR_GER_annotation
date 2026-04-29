@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 300,
+  "idx": 311,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -17520,12 +17520,221 @@
       "copied_from_nbest": 1,
       "annotation_timestamp": "2026-04-29 09:38:45",
       "elapsed_seconds_at_submit": 16715.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28462305.mp3",
+      "reference": "sit mar net yn noed wy hawwe dit earder by de ein hân",
+      "baseline_1best": "sit mar net yn noed we hawwe de earder by de einhân",
+      "gpt_output": "sit mar net yn noed wy hawwe dy earder by de ein hân",
+      "nbest": [
+        "sit mar net yn noed we hawwe de earder by de einhân",
+        "sit mar net yn noed we hawwe de earder by de ein hân",
+        "sit mar net yn noed we hawwe dy earder by de einhân",
+        "sit mar net yn noed we hawwe dê earder by de einhân",
+        "sit mar net yn noed wy hawwe de earder by de einhân"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "sit mar net yn noed we hawwe dy earder by de ein hân",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-29 09:39:59",
+      "elapsed_seconds_at_submit": 16790.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35769803.mp3",
+      "reference": "no saterdei wurdt op it partijkongres de kandidatelist fêststeld",
+      "baseline_1best": "no saterdei wurdt op it partijkongres de kandidatelist fêststeld",
+      "gpt_output": "no saterdei wurdt op it partijkongres de kandidatenlist fêststeld",
+      "nbest": [
+        "no saterdei wurdt op it partijkongres de kandidatelist fêststeld",
+        "no saterdei wurdt op it partijkongres de kandidatenlist fêststeld",
+        "no saterdei wurdt op it partijkongres de kandidaterlist fêststeld",
+        "no saterdei wurdt op it partijkongres de kandidate list fêststeld",
+        "no saterdei wurdt op it partijkongres de kandidaatelist fêststeld"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "choose_from_nbest",
+      "selected_text": "no saterdei wurdt op it partijkongres de kandidatelist fêststeld",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:40:41",
+      "elapsed_seconds_at_submit": 16831.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23759043.mp3",
+      "reference": "hy kin it ek net helpe dat er sa is",
+      "baseline_1best": "hy kin it ek net helpe dat er sa is",
+      "gpt_output": "hy kin it ek net helpe dat er sa is",
+      "nbest": [
+        "hy kin it ek net helpe dat er sa is",
+        "hy kin it ek net helpe dat er say is",
+        "hy kin it ek net helpe dat er sy is",
+        "hy kin it ek net helpe dat er s is",
+        "hy kin it ek net helpe dat er se is"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hy kin it ek net helpe dat er sa is",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:40:47",
+      "elapsed_seconds_at_submit": 16838.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21407693.mp3",
+      "reference": "doe't it lang om let dage wie se fan 't bêd ôf kommen",
+      "baseline_1best": "doe't it lang om let dage wie se fan 't bêd okom",
+      "gpt_output": "doe't it lang om let dage wie se fan 't bêd oerein kom",
+      "nbest": [
+        "doe't it lang om let dage wie se fan 't bêd okom",
+        "doe't it lang om let dage wie se fan 't bêd akom",
+        "doe't it lang om let dage wie se fan 't bêd o kom",
+        "doe't it lang om let dage wie se fan 't bêd a kom",
+        "doe't it lang om let dage wie ser fan 't bêd okom"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "doe't it lang om let dage wie se fan 't bêd ôfkaam",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-29 09:44:07",
+      "elapsed_seconds_at_submit": 17037.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28653182.mp3",
+      "reference": "om hoefolle persoanen giet it",
+      "baseline_1best": "om hoefolle persoanen giet it",
+      "gpt_output": "om hoefolle persoanen giet it",
+      "nbest": [
+        "om hoefolle persoanen giet it",
+        "om hoe folle persoanen giet it",
+        "om hoefolle persoanein giet it",
+        "om hoefolle persoane giet it",
+        "om hoefolle persoann giet it"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "om hoefolle persoanen giet it",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:44:15",
+      "elapsed_seconds_at_submit": 17046.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36820549.mp3",
+      "reference": "hiest noch safolle freegje wollen oan allegear minsken dy't der net mear binne",
+      "baseline_1best": "hy is noch safolle freegje wollen oan allegear minsken dy't der net mear binne",
+      "gpt_output": "hy is noch safolle freegje wollen oan allegear minsken dy't der net mear binne",
+      "nbest": [
+        "hy is noch safolle freegje wollen oan allegear minsken dy't der net mear binne",
+        "hy is noch safolle freegje wollen oan allegeare minsken dy't der net mear binne",
+        "hy is noch safolle freegje wollen oan allegearr minsken dy't der net mear binne",
+        "hy is noch safolle freegje wollen oan allegearre minsken dy't der net mear binne",
+        "hy is noch safolle freegje wollen oan allegear minsken dy't dêr net mear binne"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "hy hie? noch safolle freegje wollen oan allegear minsken dy't der net mear binne",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-29 09:50:32",
+      "elapsed_seconds_at_submit": 17422.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24761187.mp3",
+      "reference": "besikers fan de iepen monumintedagen besjogge ek graach de monuminten fan de takomst",
+      "baseline_1best": "besikers fan de iepen monuminte dagen besjogge ek graach de monuminten fan de takomst",
+      "gpt_output": "besikers fan de iepen monumintedagen besjogge ek graach de monuminten fan de takomst",
+      "nbest": [
+        "besikers fan de iepen monuminte dagen besjogge ek graach de monuminten fan de takomst",
+        "besikers fan de iepen monumintedagen besjogge ek graach de monuminten fan de takomst",
+        "besikers fan de iepenmonuminte dagen besjogge ek graach de monuminten fan de takomst",
+        "besikers fan 'e iepen monuminte dagen besjogge ek graach de monuminten fan de takomst",
+        "besikers fan de iepenmonumintedagen besjogge ek graach de monuminten fan de takomst"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "besikers fan de iepen monumintedagen besjogge ek graach de monuminten fan de takomst",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-29 09:50:48",
+      "elapsed_seconds_at_submit": 17438.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35775128.mp3",
+      "reference": "by de brân binne gjin skealike stoffen frijkaam",
+      "baseline_1best": "by de brânen binne gjin skealike stoffen frijkaam",
+      "gpt_output": "by de brânen binne gjin skealike stoffen frijkaam",
+      "nbest": [
+        "by de brânen binne gjin skealike stoffen frijkaam",
+        "by de brân binne gjin skealike stoffen frijkaam",
+        "by de brânn binne gjin skealike stoffen frijkaam",
+        "by de brâne binne gjin skealike stoffen frijkaam",
+        "by de brânen binne gjin skealike stoften frijkaam"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "by de brân binne gjin skealike stoffen frijkaam",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-29 09:51:17",
+      "elapsed_seconds_at_submit": 17467.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21530841.mp3",
+      "reference": "nei hûndert meter geane jo linksôf",
+      "baseline_1best": "nei hûndert meter geane jo links ôf",
+      "gpt_output": "nei hûndert meter geane jo links ôf",
+      "nbest": [
+        "nei hûndert meter geane jo links ôf",
+        "nei hondert meter geane jo links ôf",
+        "nei hûndert meter geëane jo links ôf",
+        "nei hûndert meter geane jo links äôf",
+        "nei hûndertmeter geane jo links ôf"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "nei hûndert meter geane jo linksôf",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-29 09:51:40",
+      "elapsed_seconds_at_submit": 17490.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36548374.mp3",
+      "reference": "wêr is dyn skoalle",
+      "baseline_1best": "wêr is dyn skoalle",
+      "gpt_output": "wêr is dyn skoalle",
+      "nbest": [
+        "wêr is dyn skoalle",
+        "wêr is dyn skooalle",
+        "wê is dyn skoalle",
+        "wêr is dyn skoale",
+        "wêr is dyn sqoalle"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "wêr is dyn skoalle",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:51:46",
+      "elapsed_seconds_at_submit": 17497.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21530840.mp3",
+      "reference": "it koart pleit is moarn oan it begjin fan de middei",
+      "baseline_1best": "it koartplaijt is moarn oan it begjin fan de middei",
+      "gpt_output": "it koartpleit is moarn oan it begjin fan de middei",
+      "nbest": [
+        "it koartplaijt is moarn oan it begjin fan de middei",
+        "it koart plaijt is moarn oan it begjin fan de middei",
+        "it koartplaijit is moarn oan it begjin fan de middei",
+        "it koart plaijit is moarn oan it begjin fan de middei",
+        "it koartplait is moarn oan it begjin fan de middei"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "it koartpleit is moarn oan it begjin fan de middei",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-29 09:52:39",
+      "elapsed_seconds_at_submit": 17549.5
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 16715.9,
-  "saved_at": "2026-04-29 09:38:45"
+  "total_elapsed_seconds": 17549.5,
+  "saved_at": "2026-04-29 09:52:39"
 }
