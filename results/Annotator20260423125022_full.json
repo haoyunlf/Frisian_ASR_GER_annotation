@@ -16756,16 +16756,16 @@
       ],
       "category": "ref_in_nbest",
       "behavior_type": "choose_correct",
-      "selected_text": "de frachtweinsjauffeur hie syn lading net goed fêst makke",
-      "copied_from_nbest": 1,
-      "annotation_timestamp": "2026-04-29 09:08:49",
-      "elapsed_seconds_at_submit": 14920.1
+      "selected_text": "de frachtweinsjauffeur hie syn lading net goed fêstmakke",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-29 09:09:16",
+      "elapsed_seconds_at_submit": 14946.9
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 14920.1,
-  "saved_at": "2026-04-29 09:08:49"
+  "total_elapsed_seconds": 14946.9,
+  "saved_at": "2026-04-29 09:09:16"
 }
