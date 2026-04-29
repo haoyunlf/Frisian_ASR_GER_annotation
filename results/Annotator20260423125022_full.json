@@ -11819,7 +11819,7 @@
       "gpt_wer": 0.1429
     }
   ],
-  "idx": 260,
+  "idx": 280,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807988.mp3",
@@ -16760,12 +16760,392 @@
       "copied_from_nbest": 2,
       "annotation_timestamp": "2026-04-29 09:09:16",
       "elapsed_seconds_at_submit": 14946.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28381542.mp3",
+      "reference": "it museum giet moarns om tsien oere iepen",
+      "baseline_1best": "it museum giet moarns om tsien oere iepen",
+      "gpt_output": "it museum giet moarns om tsien oere iepen",
+      "nbest": [
+        "it museum giet moarns om tsien oere iepen",
+        "it museum giet moarns om tsieën oere iepen",
+        "it museum giet mooarns om tsien oere iepen",
+        "it museum giet moarns om tsien oere i'epen",
+        "it museëum giet moarns om tsien oere iepen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "it museum giet moarns om tsien oere iepen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:09:30",
+      "elapsed_seconds_at_submit": 14960.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21431998.mp3",
+      "reference": "it ûngelok hat gjin gefolgen foar de iepeningsdatum",
+      "baseline_1best": "it ûngelok hat gjin gefolgen foar de iepeningsdatum",
+      "gpt_output": "it ûngelok hat gjin gefolgen foar de iepeningsdatum",
+      "nbest": [
+        "it ûngelok hat gjin gefolgen foar de iepeningsdatum",
+        "it ûngelok hat gjin gefolgen foar de iepeningesdatum",
+        "it ûngelok hat gjin gefolgen foar de iepeningksdatum",
+        "t ûngelok hat gjin gefolgen foar de iepeningsdatum",
+        "it ngelok hat gjin gefolgen foar de iepeningsdatum"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "it ûngelok hat gjin gefolgen foar de iepeningsdatum",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:09:51",
+      "elapsed_seconds_at_submit": 14981.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_29844749.mp3",
+      "reference": "dy hellet it fan sân meter djipte",
+      "baseline_1best": "dy hellet it fan sân meter djipte",
+      "gpt_output": "dy hellet it fan sân meter djipte",
+      "nbest": [
+        "dy hellet it fan sân meter djipte",
+        "dy hellet it fan sân meter gjipte",
+        "dy hellet it fan sân meter gdjipte",
+        "dy hellet it fan sân meter dgjipte",
+        "dy hellet it fan sân meter jipte"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "dy hellet it fan sân meter djipte",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:10:11",
+      "elapsed_seconds_at_submit": 15001.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35556195.mp3",
+      "reference": "hotel",
+      "baseline_1best": "hotel",
+      "gpt_output": "hotel",
+      "nbest": [
+        "hotel",
+        "chotel",
+        "ho tel",
+        "hoetel",
+        "hoctel"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hotel",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:10:15",
+      "elapsed_seconds_at_submit": 15005.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28359593.mp3",
+      "reference": "de brânwacht moast de ferwûne man út de auto snije",
+      "baseline_1best": "de brânwacht moast de ferwûne man út de auto snije",
+      "gpt_output": "de brânwacht moast de ferwûne man út de auto snije",
+      "nbest": [
+        "de brânwacht moast de ferwûne man út de auto snije",
+        "de brânwacht moast die ferwûne man út de auto snije",
+        "de brânwacht moast de ferwûne man út de auto snijen",
+        "de brânwacht moast de ferwûne man út de auto snijge",
+        "de grânwacht moast de ferwûne man út de auto snije"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de brânwacht moast de ferwûne man út de auto snije",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:10:32",
+      "elapsed_seconds_at_submit": 15022.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24696673.mp3",
+      "reference": "dêr hawwe wy it gedonder yn 'e glêzen",
+      "baseline_1best": "wy hawwe wat gedondere yn 'e glêzen",
+      "gpt_output": "wy hawwe wat gedonder yn 'e glêzen",
+      "nbest": [
+        "wy hawwe wat gedondere yn 'e glêzen",
+        "wy hawwe wat gedonder yn 'e glêzen",
+        "we hawwe wat gedondere yn 'e glêzen",
+        "wy hawwe wat gedonnere yn 'e glêzen",
+        "wy hawwe wat gedondre yn 'e glêzen"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "wy hawwe wat gedonder yn 'e glêzen",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-29 09:10:44",
+      "elapsed_seconds_at_submit": 15035.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28746088.mp3",
+      "reference": "wy wolle in tocht meitsje by de tsjerken del yn de doarpen",
+      "baseline_1best": "wy wolle in tocht meitsje by de tsjerken del yn de doarpen",
+      "gpt_output": "wy wolle in tocht meitsje by de tsjerken del yn de doarpen",
+      "nbest": [
+        "wy wolle in tocht meitsje by de tsjerken del yn de doarpen",
+        "wy wolle in tocht meitsje by de tsjerken del yn ie doarpen",
+        "we wolle in tocht meitsje by de tsjerken del yn de doarpen",
+        "wy wolle in tocht meitsje by de tsjerken del yn e doarpen",
+        "wy wolle in tocht meitsje by de tsjerken del yn d doarpen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "wy wolle in tocht meitsje by de tsjerken del yn de doarpen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:10:59",
+      "elapsed_seconds_at_submit": 15049.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28271637.mp3",
+      "reference": "de ferliezen steapelen har op",
+      "baseline_1best": "de ferliezen steapelen har op",
+      "gpt_output": "de ferliezen steapelen har op",
+      "nbest": [
+        "de ferliezen steapelen har op",
+        "de fverliezen steapelen har op",
+        "de ferliezen steapellen har op",
+        "de vferliezen steapelen har op",
+        "de ferliezen steakelen har op"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de ferliezen steapelen har op",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:11:27",
+      "elapsed_seconds_at_submit": 15078.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35775129.mp3",
+      "reference": "dat sjogge wy dan wol at dat rapport der is",
+      "baseline_1best": "dat sjogge we dan wol oft dat rapport der is",
+      "gpt_output": "dat sjogge we dan wol oft dat rapport der is",
+      "nbest": [
+        "dat sjogge we dan wol oft dat rapport der is",
+        "dat sjogge we dan wol oaft dat rapport der is",
+        "dat sjogge we dan wol aft dat rapport der is",
+        "dat sjogge we dan wol ot dat rapport der is",
+        "dat sjogge we dan wol oat dat rapport der is"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "dat sjogge we dan wol as dat rapport der is",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-04-29 09:19:16",
+      "elapsed_seconds_at_submit": 15547.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36963309.mp3",
+      "reference": "do dochst krekt oft ik neat om hannen haw",
+      "baseline_1best": "do dochst krekt at ik neat om hannen ha",
+      "gpt_output": "do dochst krekt as ik neat om hannen ha",
+      "nbest": [
+        "do dochst krekt at ik neat om hannen ha",
+        "do dochs krekt at ik neat om hannen ha",
+        "do dochst krekt as ik neat om hannen ha",
+        "do dochst krekt at ik neat om hannen haw",
+        "do dochs krekt as ik neat om hannen ha"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "do dochst krekt as ik neat om hannen ha",
+      "copied_from_nbest": 3,
+      "annotation_timestamp": "2026-04-29 09:21:20",
+      "elapsed_seconds_at_submit": 15670.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21407815.mp3",
+      "reference": "troch hoe't se praten tocht ik dat se troud wienen",
+      "baseline_1best": "trochhoe't se praten tocht ik dat se troud wienen",
+      "gpt_output": "troch hoe't se praten tocht ik dat se troud wiene",
+      "nbest": [
+        "trochhoe't se praten tocht ik dat se troud wienen",
+        "troch hoe't se praten tocht ik dat se troud wienen",
+        "trochhoe't se praten tocht ik dat se troud wiene",
+        "troch hoe't se praten tocht ik dat se troud wiene",
+        "trochhoe't se praten tocht ik dat se troud wiennen"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_wrong",
+      "selected_text": "troch hoe't se praten tocht ik dat se troud wiene",
+      "copied_from_nbest": 4,
+      "annotation_timestamp": "2026-04-29 09:24:13",
+      "elapsed_seconds_at_submit": 15843.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35581080.mp3",
+      "reference": "kin ik dêr as frou allinnich hinne of is dat gefaarlik",
+      "baseline_1best": "kin ik der is frou allinnich hinne of is dat te gefaarlik",
+      "gpt_output": "kin ik der as frou allinnich hinne of is dat te gefaarlik",
+      "nbest": [
+        "kin ik der is frou allinnich hinne of is dat te gefaarlik",
+        "kin ik der as frou allinnich hinne of is dat te gefaarlik",
+        "kin ik der isn frou allinnich hinne of is dat te gefaarlik",
+        "kin ik der ris frou allinnich hinne of is dat te gefaarlik",
+        "kin ik der isi frou allinnich hinne of is dat te gefaarlik"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "kin ik der as frou allinnich hinne of is dat te gefaarlik",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-29 09:24:17",
+      "elapsed_seconds_at_submit": 15847.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_27411143.mp3",
+      "reference": "se moat har hús ferkeapje",
+      "baseline_1best": "se moat har hús ferkeapje",
+      "gpt_output": "se moat har hûs ferkeapje",
+      "nbest": [
+        "se moat har hús ferkeapje",
+        "se moat har hûs ferkeapje",
+        "sye moat har hús ferkeapje",
+        "se mohat har hús ferkeapje",
+        "se 'moat har hús ferkeapje"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "choose_from_nbest",
+      "selected_text": "se moat har hûs ferkeapje",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-04-29 09:24:20",
+      "elapsed_seconds_at_submit": 15851.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28434140.mp3",
+      "reference": "email printsje",
+      "baseline_1best": "email printsje",
+      "gpt_output": "email printsje",
+      "nbest": [
+        "email printsje",
+        "email 'printsje",
+        "ema il printsje",
+        "emaïil printsje",
+        "eemail printsje"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "email printsje",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:24:25",
+      "elapsed_seconds_at_submit": 15855.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24741675.mp3",
+      "reference": "sylvia waard de sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "baseline_1best": "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "gpt_output": "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "nbest": [
+        "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+        "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehús",
+        "sylvia waard esneintenachts mei hertklachten opnommen yn it sikehûs",
+        "sylvia waard sneintenachts mei herdklachten opnommen yn it sikehûs",
+        "sylvia waard sneintenachts mei heartklachten opnommen yn it sikehûs"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:24:30",
+      "elapsed_seconds_at_submit": 15860.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35761728.mp3",
+      "reference": "doe't ik jong wie haw ik in soad by de boer arbeide",
+      "baseline_1best": "doe't ik jong wie haw ik in soad by de boer arbeide",
+      "gpt_output": "doe't ik jong wie haw ik in soad by de boer arbeide",
+      "nbest": [
+        "doe't ik jong wie haw ik in soad by de boer arbeide",
+        "doe't ik jong wie haw ik in soad byde boer arbeide",
+        "doe't ik jong wie ha ik in soad by de boer arbeide",
+        "doe't ik jong wie haww ik in soad by de boer arbeide",
+        "doe't ik jong wie haw itk in soad by de boer arbeide"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "doe't ik jong wie haw ik in soad by de boer arbeide",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:24:36",
+      "elapsed_seconds_at_submit": 15866.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28382223.mp3",
+      "reference": "noch mear as earder stiet syn drokke aginda fol mei fuotbalaktiviteiten",
+      "baseline_1best": "noch mear as earder stiet syn drokke aginda fol mei fuotbalaktiviteiten",
+      "gpt_output": "noch mear as earder stiet syn drokke aginda fol mei fuotbalaktiviteiten",
+      "nbest": [
+        "noch mear as earder stiet syn drokke aginda fol mei fuotbalaktiviteiten",
+        "noch mear as earder stiet syn drokke aginda fol mei fuotbalaktiziteiten",
+        "noch mear as earder stie't syn drokke aginda fol mei fuotbalaktiviteiten",
+        "noch mear as earder stiet syn drokke aginde fol mei fuotbalaktiviteiten",
+        "noch mear as earder stiet syn droke aginda fol mei fuotbalaktiviteiten"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "noch mear as earder stiet syn drokke aginda fol mei fuotbalaktiviteiten",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:24:42",
+      "elapsed_seconds_at_submit": 15873.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24737147.mp3",
+      "reference": "meitsje de foarige kolom sichtber",
+      "baseline_1best": "meitsje de foarige kolom sichtber",
+      "gpt_output": "meitsje de foarige kolom sichtber",
+      "nbest": [
+        "meitsje de foarige kolom sichtber",
+        "meitsje de foarige kalom sichtber",
+        "meitsje de foarige kaolom sichtber",
+        "meitsje de foarige koalom sichtber",
+        "meitsje de foarige klom sichtber"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "meitsje de foarige kolom sichtber",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:24:46",
+      "elapsed_seconds_at_submit": 15877.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28455998.mp3",
+      "reference": "op dy moandeitemoarn wiene de gerdinen fan har wenning ticht",
+      "baseline_1best": "op dy moandeitemoarn wiene de gerdinen fan har wenning ticht",
+      "gpt_output": "op dy moandeitemoarn wiene de gerdinen fan har wenning ticht",
+      "nbest": [
+        "op dy moandeitemoarn wiene de gerdinen fan har wenning ticht",
+        "op dey moandeitemoarn wiene de gerdinen fan har wenning ticht",
+        "op dye moandeitemoarn wiene de gerdinen fan har wenning ticht",
+        "op de moandeitemoarn wiene de gerdinen fan har wenning ticht",
+        "op dy moandeitemoarn wiene de gerdinen fan harr wenning ticht"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "op dy moandeitemoarn wiene de gerdinen fan har wenning ticht",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:25:07",
+      "elapsed_seconds_at_submit": 15897.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28454385.mp3",
+      "reference": "hja hie it al betiid op 'e radio heard",
+      "baseline_1best": "hja hie it al betiid op de radio heard",
+      "gpt_output": "hja hie it al betiid op 'e radio heard",
+      "nbest": [
+        "hja hie it al betiid op de radio heard",
+        "hja hie it al betiid op 'e radio heard",
+        "hja hie it al betiid op ie radio heard",
+        "hja hie it al betiid op e radio heard",
+        "hja hie it ol betiid op de radio heard"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "hja hie it al betiid op de radio heard",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-04-29 09:25:21",
+      "elapsed_seconds_at_submit": 15911.9
     }
   ],
   "task_type": "Complete dataset annotation",
   "task_slug": "full",
   "total_available": 311,
   "user_id": "Annotator20260423125022",
-  "total_elapsed_seconds": 14946.9,
-  "saved_at": "2026-04-29 09:09:16"
+  "total_elapsed_seconds": 15911.9,
+  "saved_at": "2026-04-29 09:25:21"
 }
