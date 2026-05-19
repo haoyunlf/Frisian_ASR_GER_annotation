@@ -23,7 +23,7 @@ def upload_to_github(state, user_id, total_elapsed):
         content = json.dumps(save_data, ensure_ascii=False, indent=2)
 
         encoded = base64.b64encode(content.encode()).decode()
-        task_slug = state.get("task_slug", "full")
+        task_slug = state.get("task_slug", "100")
         filepath = f"{results_path}/{user_id}_{task_slug}.json"
         url = f"https://api.github.com/repos/{repo}/contents/{filepath}"
         headers = {
