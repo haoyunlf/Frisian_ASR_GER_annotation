@@ -442,20 +442,21 @@ if st.session_state.get('save_and_exit'):
         st.session_state.elapsed_before_pause = current_elapsed
         st.session_state.is_paused = True
 
-    st.info(f"📋 Your annotator ID: **{user_id}**  \nNote it down to resume your annotation later.")
     ok, err = upload_to_github(state, user_id, current_elapsed)
-    if ok:
-        st.success("✅ Progress saved! You can also download your current annotation below.")
-    else:
-        st.warning("⚠️ Upload failed")
-        with st.expander("Show error details"):
-            st.code(err)
-    save_data = dict(state)
-    save_data["total_elapsed_seconds"] = round(current_elapsed, 1)
-    st.download_button(
-        label=f"📥 Download ({completed_samples}/{total_samples})",
-        data=json.dumps(save_data, ensure_ascii=False, indent=2),
-        file_name=f"{user_id}_{completed_samples}of{total_samples}_partial.json",
-        mime="application/json",
-    )
+    with st.sidebar:
+        st.info(f"📋 Your annotator ID: **{user_id}**  \nNote it down to resume your annotation later.")
+        if ok:
+            st.success("✅ Progress saved! You can also download your current annotation below.")
+        else:
+            st.warning("⚠️ Upload failed")
+            with st.expander("Show error details"):
+                st.code(err)
+        save_data = dict(state)
+        save_data["total_elapsed_seconds"] = round(current_elapsed, 1)
+        st.download_button(
+            label=f"📥 Download ({completed_samples}/{total_samples})",
+            data=json.dumps(save_data, ensure_ascii=False, indent=2),
+            file_name=f"{user_id}_{completed_samples}of{total_samples}_partial.json",
+            mime="application/json",
+        )
     st.stop()
