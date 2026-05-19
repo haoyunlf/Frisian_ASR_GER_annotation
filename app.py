@@ -180,7 +180,7 @@ if 'annotation_state' not in st.session_state:
         selected_samples_pool = None  # will use random.sample below
     elif task_option == "100 samples":
         available_samples = len(samples_100)
-        st.info(f"This task will include **{available_samples}** 100 samples for annotation.")
+        st.info(f"This task will include **{available_samples}** samples for annotation.")
         task_description = "100 samples"
         task_slug = "100"
         selected_samples_pool = samples_100
@@ -278,7 +278,7 @@ if state["idx"] >= len(state["subset"]):
 # ===== 显示进度 =====
 progress = state["idx"] / len(state["subset"])
 st.progress(progress)
-st.write(f"**Sample {state['idx'] + 1} / {len(state['subset'])}** ({progress*100:.1f}% completed)")
+st.write(f"**Sample {state['idx'] + 1} / {len(state['subset'])}**")
 
 # ===== 当前样本 =====
 item = state["subset"][state["idx"]]
