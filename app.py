@@ -77,6 +77,37 @@ def load_data():
 
 samples = load_data()
 
+
+def sample_100_stratified(all_samples, n=100, seed=42):
+    """Stratified sample of `n` items from all_samples by (category, behavior_type).
+    The result is deterministic for a given seed."""
+    import math
+    rng = random.Random(seed)
+    # Group
+    groups = {}
+    for s in all_samples:
+        key = (s["category"], s["behavior_type"])
+        groups.setdefault(key, []).append(s)
+    total = len(all_samples)
+    # Proportional allocation with largest-remainder method
+    exact  = {k: len(v) / total * n for k, v in groups.items()}
+    floors = {k: math.floor(v) for k, v in exact.items()}
+    remainder = n - sum(floors.values())
+    fracs = sorted(groups.keys(), key=lambda k: -(exact[k] - floors[k]))
+    for k in fracs[:remainder]:
+        floors[k] += 1
+    # Sample within each group
+    result = []
+    for k, cnt in floors.items():
+        pool = groups[k][:]
+        rng.shuffle(pool)
+        result.extend(pool[:cnt])
+    rng.shuffle(result)
+    return result
+
+
+samples_100 = sample_100_stratified(samples)
+
 st.title("Frisian ASR Error Annotation")
 
 # 添加任务描述
@@ -107,7 +138,7 @@ def load_from_github(user_id):
             "Authorization": f"token {token}",
             "Accept": "application/vnd.github.v3+json",
         }
-        for slug in ("full", "quick"):
+        for slug in ("100", "quick", "full"):
             filepath = f"{results_path}/{user_id}_{slug}.json"
             url = f"https://api.github.com/repos/{repo}/contents/{filepath}"
             r = requests.get(url, headers=headers, params={"ref": branch})
@@ -135,8 +166,9 @@ if 'annotation_state' not in st.session_state:
     st.write("**Choose annotation task type:**")
     task_option = st.radio(
         label="",  # 空标签
-        options=["Quick test (10 random samples)", "Full dataset (all samples)"],
-        index=0,
+        options=["Quick test (10 random samples)", "100 samples"],
+        # options=["Quick test (10 random samples)", "100 samples (stratified)", "Full dataset (all samples)"],
+        index=1,
         key="task_type_radio"
     )
 
@@ -145,17 +177,23 @@ if 'annotation_state' not in st.session_state:
         st.info(f"This task will include **{available_samples}** randomly selected samples for annotation.")
         task_description = f"Quick test - {available_samples} samples"
         task_slug = "quick"
-        use_all = False
-    else:  # Full dataset
-        available_samples = len(samples)
-        st.info(f"This task will include **all {available_samples}** samples from the dataset for annotation.")
-        task_description = "Complete dataset annotation"
-        task_slug = "full"
-        use_all = True
-    
+        selected_samples_pool = None  # will use random.sample below
+    elif task_option == "100 samples":
+        available_samples = len(samples_100)
+        st.info(f"This task will include **{available_samples}** 100 samples for annotation.")
+        task_description = "100 samples"
+        task_slug = "100"
+        selected_samples_pool = samples_100
+    # else:  # Full dataset
+    #     available_samples = len(samples)
+    #     st.info(f"This task will include **all {available_samples}** samples from the dataset for annotation.")
+    #     task_description = "Complete dataset annotation"
+    #     task_slug = "full"
+    #     selected_samples_pool = samples
+
     if st.button("🚀 Start New Annotation Task", type="primary"):
-        if use_all:
-            selected_samples = samples.copy()
+        if selected_samples_pool is not None:
+            selected_samples = selected_samples_pool[:]
             random.shuffle(selected_samples)
         else:
             selected_samples = random.sample(samples, available_samples)
@@ -166,7 +204,7 @@ if 'annotation_state' not in st.session_state:
             "answers": [],
             "task_type": task_description,
             "task_slug": task_slug,
-            "total_available": len(samples)
+            "total_available": available_samples
         }
         st.session_state.annotation_state = state
         st.session_state.elapsed_before_pause = 0.0
