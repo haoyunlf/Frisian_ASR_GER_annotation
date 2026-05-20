@@ -3801,7 +3801,7 @@
       "gpt_wer": 0.1538
     }
   ],
-  "idx": 40,
+  "idx": 60,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28369729.mp3",
@@ -4562,12 +4562,392 @@
       "copied_from_nbest": 3,
       "annotation_timestamp": "2026-05-19 13:39:11",
       "elapsed_seconds_at_submit": 1918.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28294673.mp3",
+      "reference": "de pot ferwyt de tsjettel dat er swart is",
+      "baseline_1best": "de pat ferwitet tsjettel dat der swart is",
+      "gpt_output": "de pat ferwitet tsjettel dat er swart is",
+      "nbest": [
+        "de pat ferwitet tsjettel dat der swart is",
+        "de pat ferwitet tsjettel dat er swart is",
+        "de pat ferwite tsjettel dat der swart is",
+        "de pat ferwitet tsjeattel dat der swart is",
+        "de pat ferwitet tsjettel dat dêr swart is"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "de pot ferwitet de tsjettel dat er swart is",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-20 13:37:02",
+      "elapsed_seconds_at_submit": 2064.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24722792.mp3",
+      "reference": "flak nei de oarloch krige er in auto",
+      "baseline_1best": "plak nei de oarloch krige er in auto",
+      "gpt_output": "plak nei de oarloch krige er in auto",
+      "nbest": [
+        "plak nei de oarloch krige er in auto",
+        "splak nei de oarloch krige er in auto",
+        "plak nei de oarloch kriger in auto",
+        "lak nei de oarloch krige er in auto",
+        "plak nei de oarloch krig er in auto"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "flak nei de oarloch krige er in auto",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-20 13:38:02",
+      "elapsed_seconds_at_submit": 2125.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23781764.mp3",
+      "reference": "ik bin alhiel net tefreden mei it resultaat",
+      "baseline_1best": "ik bin al hiel net tefrreden mei it resultaat",
+      "gpt_output": "ik bin al hiel net tefreden mei it resultaat",
+      "nbest": [
+        "ik bin al hiel net tefrreden mei it resultaat",
+        "ik bin al hiel net teferreden mei it resultaat",
+        "ik bin al hiel net tefreden mei it resultaat",
+        "ik bin al hiel net tefereden mei it resultaat",
+        "ik bin al heel net tefrreden mei it resultaat"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "ik bin al hielendal net tefreden oer it resultaat",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-20 13:40:06",
+      "elapsed_seconds_at_submit": 2249.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36793774.mp3",
+      "reference": "och foar my hoecht dat net mear sa nedich",
+      "baseline_1best": "acht foar my hoecht dat net mear sa nedich",
+      "gpt_output": "ach foar my hoecht dat net mear sa nedich",
+      "nbest": [
+        "acht foar my hoecht dat net mear sa nedich",
+        "ach foar my hoecht dat net mear sa nedich",
+        "acht foar my hoeht dat net mear sa nedich",
+        "acht foar my hoegcht dat net mear sa nedich",
+        "acht foar my hoecht dat net mar sa nedich"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "ach foar my hoecht dat net mear sa nedich",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-05-20 13:40:34",
+      "elapsed_seconds_at_submit": 2277.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24741675.mp3",
+      "reference": "sylvia waard de sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "baseline_1best": "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "gpt_output": "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "nbest": [
+        "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+        "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehús",
+        "sylvia waard esneintenachts mei hertklachten opnommen yn it sikehûs",
+        "sylvia waard sneintenachts mei herdklachten opnommen yn it sikehûs",
+        "sylvia waard sneintenachts mei heartklachten opnommen yn it sikehûs"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-20 13:41:11",
+      "elapsed_seconds_at_submit": 2314.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24702787.mp3",
+      "reference": "meitsje tekst kursyf fan 'tsjuster' oant en mei 'nacht'",
+      "baseline_1best": "meitsje tekst kursyf fan tsjuster' oant en mei 'nacht'",
+      "gpt_output": "meitsje tekst kursyf fan 'tsjuster' oant en mei 'nacht'",
+      "nbest": [
+        "meitsje tekst kursyf fan tsjuster' oant en mei 'nacht'",
+        "meitsje tekst kursyf fan 'tsjuster' oant en mei 'nacht'",
+        "meitsje tekst kursyf fan tsjuster' oant en mei 'nacht''",
+        "meitsje tekst kursyf fan tsjuster' oant en 'mei 'nacht'",
+        "meitsje 'tekst kursyf fan tsjuster' oant en mei 'nacht'"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "meitsje tekst kursyf fan 'tsjuster' oant en mei 'nacht'",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-05-20 13:43:17",
+      "elapsed_seconds_at_submit": 2439.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28455813.mp3",
+      "reference": "foarhinne wennen se yn de sânfurderryp ûnder greonterp",
+      "baseline_1best": "foarhinne wennen se yn de sân fierder ryp ûnder greaunterp",
+      "gpt_output": "foarhinne wennen se yn de sân fierder ryp ûnder greaunterp",
+      "nbest": [
+        "foarhinne wennen se yn de sân fierder ryp ûnder greaunterp",
+        "foarhinne wennen se yn de sân fuierder ryp ûnder greaunterp",
+        "foarhinne wennen se yn de sân fiuerder ryp ûnder greaunterp",
+        "foarhinne wennen se yn de sân fuerder ryp ûnder greaunterp",
+        "foarhinne wennen se yn de sân fierder ryp ûnder greaun terp"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "foarhinne wennen sy yn de sân fierderop ûnder greonterp",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-20 13:44:18",
+      "elapsed_seconds_at_submit": 2500.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23882529.mp3",
+      "reference": "nul",
+      "baseline_1best": "nu",
+      "gpt_output": "no",
+      "nbest": [
+        "nu",
+        "nuu",
+        "nuo",
+        "nou",
+        "nul"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_wrong",
+      "selected_text": "nu",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-20 13:44:26",
+      "elapsed_seconds_at_submit": 2509.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23758556.mp3",
+      "reference": "joop hie der gjin aan fan wat er dêrmei bedoelde",
+      "baseline_1best": "joop hie der gjin aan fan wat er dêrmei bedoelde",
+      "gpt_output": "joop hie der gjin aan fan wat er dêrmei bedoelde",
+      "nbest": [
+        "joop hie der gjin aan fan wat er dêrmei bedoelde",
+        "ijoop hie der gjin aan fan wat er dêrmei bedoelde",
+        "ioop hie der gjin aan fan wat er dêrmei bedoelde",
+        "yjoop hie der gjin aan fan wat er dêrmei bedoelde",
+        "yoop hie der gjin aan fan wat er dêrmei bedoelde"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "joop hie der gjin boadskip oan fan wat er dêrmei bedoelde",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-20 13:48:15",
+      "elapsed_seconds_at_submit": 2738.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35556195.mp3",
+      "reference": "hotel",
+      "baseline_1best": "hotel",
+      "gpt_output": "hotel",
+      "nbest": [
+        "hotel",
+        "chotel",
+        "ho tel",
+        "hoetel",
+        "hoctel"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hotel",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-20 13:48:22",
+      "elapsed_seconds_at_submit": 2744.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23759043.mp3",
+      "reference": "hy kin it ek net helpe dat er sa is",
+      "baseline_1best": "hy kin it ek net helpe dat er sa is",
+      "gpt_output": "hy kin it ek net helpe dat er sa is",
+      "nbest": [
+        "hy kin it ek net helpe dat er sa is",
+        "hy kin it ek net helpe dat er say is",
+        "hy kin it ek net helpe dat er sy is",
+        "hy kin it ek net helpe dat er s is",
+        "hy kin it ek net helpe dat er se is"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hy kin it ek net helpe dat er sa is",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-20 13:48:34",
+      "elapsed_seconds_at_submit": 2756.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24697009.mp3",
+      "reference": "it jûnet en ik stean neist myn teleskoop en genietsje fan in moaie sinneûndergong",
+      "baseline_1best": "it jûnet en ik stean neist myn teleskoop in genytsje fan in moaie sinneûndergong",
+      "gpt_output": "it jûnet en ik stean neist myn teleskoop en genytsje fan in moaie sinneûndergong",
+      "nbest": [
+        "it jûnet en ik stean neist myn teleskoop in genytsje fan in moaie sinneûndergong",
+        "it jûnet en ik stean neist myn teleskoop en genytsje fan in moaie sinneûndergong",
+        "it jûnet en ik stean neist myn teleskoop in geniytsje fan in moaie sinneûndergong",
+        "it jûnet en ik stean neist myn teleskoop en geniytsje fan in moaie sinneûndergong",
+        "it jûnet en ik stean neist myn teleskoop in genytsje fan in moaie sinneûnder gong"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "it jûnet en ik stean neist myn teleskoop en genietsje fan in moaie sinneûndergong",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-20 13:50:17",
+      "elapsed_seconds_at_submit": 2859.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36914890.mp3",
+      "reference": "wizigje myn privacyynstellingen",
+      "baseline_1best": "wizigje myn privacyynstellingen",
+      "gpt_output": "wizigje myn privacyynstellingen",
+      "nbest": [
+        "wizigje myn privacyynstellingen",
+        "wizigje myn privarcyynstellingen",
+        "wizigje myn privasyynstellingen",
+        "wizigje myn privascyynstellingen",
+        "wizigje myn privoacyynstellingen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "wizigje myn privacyynstellingen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-20 13:51:00",
+      "elapsed_seconds_at_submit": 2903.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21530841.mp3",
+      "reference": "nei hûndert meter geane jo linksôf",
+      "baseline_1best": "nei hûndert meter geane jo links ôf",
+      "gpt_output": "nei hûndert meter geane jo links ôf",
+      "nbest": [
+        "nei hûndert meter geane jo links ôf",
+        "nei hondert meter geane jo links ôf",
+        "nei hûndert meter geëane jo links ôf",
+        "nei hûndert meter geane jo links äôf",
+        "nei hûndertmeter geane jo links ôf"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "nei hûndermeter gean jo linksôf",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-20 13:52:40",
+      "elapsed_seconds_at_submit": 3003.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23780762.mp3",
+      "reference": "it folgjende emailberjocht iepenje",
+      "baseline_1best": "it folgjende emailberjocht iepenje",
+      "gpt_output": "it folgjende emailberjocht iepenje",
+      "nbest": [
+        "it folgjende emailberjocht iepenje",
+        "it folgjende email berjocht iepenje",
+        "it folgjende emaailberjocht iepenje",
+        "it folgjende emailberyjocht iepenje",
+        "it folgjende emailberjocht i'epenje"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "it folgjende emailberjocht iepenje",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-20 13:52:54",
+      "elapsed_seconds_at_submit": 3016.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36804733.mp3",
+      "reference": "keunst moatst noait keapje as belizzing",
+      "baseline_1best": "keunst moast noait keapje as belizzing",
+      "gpt_output": "keunst moatst noait keapje as belizzing",
+      "nbest": [
+        "keunst moast noait keapje as belizzing",
+        "keunst moatst noait keapje as belizzing",
+        "keunst moast noait keapje as beliszing",
+        "keunst moatst noait keapje as beliszing",
+        "keunst moast noait keapje as belizzsing"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "keunst moatst noait keapje as belizzing",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-05-20 13:53:20",
+      "elapsed_seconds_at_submit": 3042.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23825171.mp3",
+      "reference": "de boukommisje is drok oan it wurk mei de tariedingen",
+      "baseline_1best": "de boukommisje is drok oan it wurk mei de tariedingen",
+      "gpt_output": "de boukommisje is drok oan it wurk mei de tariedingen",
+      "nbest": [
+        "de boukommisje is drok oan it wurk mei de tariedingen",
+        "de boukomisje is drok oan it wurk mei de tariedingen",
+        "de boukommisje is drok oan it wurrk mei de tariedingen",
+        "de boukommisje is drok oan it wurk mei de tariedingeën",
+        "de boukommisje is drok oan it wurkk mei de tariedingen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de boukommisje is drok oan it wurk mei de tariedingen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-20 13:54:11",
+      "elapsed_seconds_at_submit": 3093.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28416811.mp3",
+      "reference": "men kin op natuerlike wize ôffalle troch minder te iten",
+      "baseline_1best": "men kin op natuerlike wize ôffalle troch minder te iten",
+      "gpt_output": "men kin op natuerlike wize ôffalle troch minder te iten",
+      "nbest": [
+        "men kin op natuerlike wize ôffalle troch minder te iten",
+        "men kin op natuerlike wïize ôffalle troch minder te iten",
+        "men kin op natuerlike wizze ôffalle troch minder te iten",
+        "men kin ot natuerlike wize ôffalle troch minder te iten",
+        "men kin op natuerlike wize ôsffalle troch minder te iten"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "minsken kinne op natuerlike wize ôffalle troch minder te iten",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-20 13:55:31",
+      "elapsed_seconds_at_submit": 3173.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23819744.mp3",
+      "reference": "foar it meidwaan wurdt meastal om in lytse eigen bydrage frege",
+      "baseline_1best": "foar it meidwaan wurdt meastal om in lytse eigen bydrage frege",
+      "gpt_output": "foar it meidwaan wurdt meastal om in lytse eigen bydrage frege",
+      "nbest": [
+        "foar it meidwaan wurdt meastal om in lytse eigen bydrage frege",
+        "foar it meidwaan wurdt t meastal om in lytse eigen bydrage frege",
+        "foar it meidwaan wurdtt meastal om in lytse eigen bydrage frege",
+        "foar it meidwaan wurdtit meastal om in lytse eigen bydrage frege",
+        "foar it meidwaan wurdtdt meastal om in lytse eigen bydrage frege"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "foar it meidwaan wurdt meastal om in lytse eigen bydrage frege",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-20 13:55:50",
+      "elapsed_seconds_at_submit": 3192.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23807992.mp3",
+      "reference": "gean nei wurd",
+      "baseline_1best": "gjin nij wurd",
+      "gpt_output": "gjin nij wurd",
+      "nbest": [
+        "gjin nij wurd",
+        "gjen nij wurd",
+        "gjein nij wurd",
+        "gjian nij wurd",
+        "gjan nij wurd"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "gjin nij wurd",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-20 13:55:56",
+      "elapsed_seconds_at_submit": 3199.6
     }
   ],
   "task_type": "100 samples",
   "task_slug": "100",
   "total_available": 100,
   "user_id": "Annotator20260519125408",
-  "total_elapsed_seconds": 1934.5,
-  "saved_at": "2026-05-19 13:39:27"
+  "total_elapsed_seconds": 3199.6,
+  "saved_at": "2026-05-20 13:55:56"
 }
