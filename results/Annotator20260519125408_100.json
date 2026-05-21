@@ -3801,7 +3801,7 @@
       "gpt_wer": 0.1538
     }
   ],
-  "idx": 79,
+  "idx": 80,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28369729.mp3",
@@ -5303,12 +5303,31 @@
       "copied_from_nbest": 1,
       "annotation_timestamp": "2026-05-20 14:13:29",
       "elapsed_seconds_at_submit": 4252.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28074507.mp3",
+      "reference": "hja sloech de klauwen yn my en berôve my nachtenlang fan 'e sliep",
+      "baseline_1best": "hja sloech de klouwen yn mei en brôve my nachtenlang fan 'e sliep",
+      "gpt_output": "hja sloech de klouwen yn my en berôve my nachtenlang fan 'e sliep",
+      "nbest": [
+        "hja sloech de klouwen yn mei en brôve my nachtenlang fan 'e sliep",
+        "hja sloech de klouwen yn mei en berôve my nachtenlang fan 'e sliep",
+        "hja sloech de klouwen yn myi en brôve my nachtenlang fan 'e sliep",
+        "hja sloech de klouwen yn myi en berôve my nachtenlang fan 'e sliep",
+        "hja sloech de klouwen yn mei en brôve my nachtnlang fan 'e sliep"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "hja sloech de klauwen yn my en berôve my nachtenlang fan 'e sliep",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-21 09:37:52",
+      "elapsed_seconds_at_submit": 4461.9
     }
   ],
   "task_type": "100 samples",
   "task_slug": "100",
   "total_available": 100,
   "user_id": "Annotator20260519125408",
-  "total_elapsed_seconds": 4261.4,
-  "saved_at": "2026-05-20 14:13:38"
+  "total_elapsed_seconds": 4461.9,
+  "saved_at": "2026-05-21 09:37:52"
 }
