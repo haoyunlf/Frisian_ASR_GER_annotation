@@ -3801,7 +3801,7 @@
       "gpt_wer": 0.1538
     }
   ],
-  "idx": 80,
+  "idx": 100,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28369729.mp3",
@@ -5322,12 +5322,392 @@
       "copied_from_nbest": null,
       "annotation_timestamp": "2026-05-21 09:37:52",
       "elapsed_seconds_at_submit": 4461.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36730964.mp3",
+      "reference": "it sil wol yn in bepaald soarte fan kranten komme",
+      "baseline_1best": "it sil wol yn in bepaald soarte fan kranten komme",
+      "gpt_output": "it sil wol yn in bepaalde soarte fan kranten komme",
+      "nbest": [
+        "it sil wol yn in bepaald soarte fan kranten komme",
+        "it sil wol yn in bepaal soarte fan kranten komme",
+        "it sil wol yn in bepaalde soarte fan kranten komme",
+        "it sil wol yn in bepaald soarte fan krânten komme",
+        "it sil wol yn in bepaald soarte fan kränten komme"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "choose_from_nbest",
+      "selected_text": "it sil wol yn in bepalld soarte fan krante komme",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-21 09:38:22",
+      "elapsed_seconds_at_submit": 4492.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28414725.mp3",
+      "reference": "hy wurdt leaver net mei namme en tanamme neamd yn 'e krante",
+      "baseline_1best": "hy wurdt leaver net mei namme en tanamme niamd yn 'e krante",
+      "gpt_output": "hy wurdt leaver net mei namme en tanamme neamd yn 'e krante",
+      "nbest": [
+        "hy wurdt leaver net mei namme en tanamme niamd yn 'e krante",
+        "hy wurdt leaver net mei namme en tanamme nimd yn 'e krante",
+        "hy wurdt leaver net mei namme en tanamme niamd yn de krante",
+        "hy wurdt leaver net mei namme en tanamme nimd yn de krante",
+        "hy wurdt leaver net mei namme en tanamme neamd yn 'e krante"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "hy wurdt leaver net mei namme en tanamme neamd yn 'e krante",
+      "copied_from_nbest": 5,
+      "annotation_timestamp": "2026-05-21 09:38:47",
+      "elapsed_seconds_at_submit": 4517.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24627494.mp3",
+      "reference": "dat binne ús freonen",
+      "baseline_1best": "dat binne ús freonen",
+      "gpt_output": "dat binne ús freonen",
+      "nbest": [
+        "dat binne ús freonen",
+        "dat binne ús freoneen",
+        "dat binne ús freonenn",
+        "dat binne ús freeonen",
+        "dat binne ús freounen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "dat binne ús freonen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-21 09:39:19",
+      "elapsed_seconds_at_submit": 4549.4
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28453668.mp3",
+      "reference": "de sneintemoarns rieden wy ekstra betiid fan hûs",
+      "baseline_1best": "de sneintemoarns rieden wy ekstra betiid fan hûs",
+      "gpt_output": "de sneintemoarns rieden wy ekstra betiid fan hûs",
+      "nbest": [
+        "de sneintemoarns rieden wy ekstra betiid fan hûs",
+        "de sneintemoarns rieden wy ekstra betiid fanhûs",
+        "de sneintemoarns rieden wy ekstra betiid fan hús",
+        "de sneintemoarns rieden wy ekstra betiid fanhús",
+        "de sneintemoarns rieden wy ekstra betiid fan hs"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de sneintemoarns rieden wy ekstra betiid fan hûs",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-21 09:40:23",
+      "elapsed_seconds_at_submit": 4613.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36493872.mp3",
+      "reference": "de man hat in alkoholferslaving en de kâns op in weromfal is grut",
+      "baseline_1best": "de man hat in alkohol ferslagging en de kâns op in weromfal is grut",
+      "gpt_output": "de man hat in alkoholferslaving en de kâns op in weromfal is grut",
+      "nbest": [
+        "de man hat in alkohol ferslagging en de kâns op in weromfal is grut",
+        "de man hat in alkoholferslagging en de kâns op in weromfal is grut",
+        "de man hat in alkohol ferslaging en de kâns op in weromfal is grut",
+        "de man hat in alkoholferslaging en de kâns op in weromfal is grut",
+        "de man hat in alkehol ferslagging en de kâns op in weromfal is grut"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "de man hat in alkoholferslaving en de kâns op in weromfal is grut",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-21 09:41:33",
+      "elapsed_seconds_at_submit": 4683.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28335404.mp3",
+      "reference": "sy hat har nocht fan him hoe dan ek",
+      "baseline_1best": "sy hat har nocht fan him hoe dan ek",
+      "gpt_output": "sy hat har nocht fan him hoe dan ek",
+      "nbest": [
+        "sy hat har nocht fan him hoe dan ek",
+        "sa hat har nocht fan him hoe dan ek",
+        "sj hat har nocht fan him hoe dan ek",
+        "si hat har nocht fan him hoe dan ek",
+        "sy hat har nocht fan hïm hoe dan ek"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "sy hat har nocht fan him hoe dan ek",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-21 09:41:50",
+      "elapsed_seconds_at_submit": 4700.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24698682.mp3",
+      "reference": "we ha net sa bêst spile",
+      "baseline_1best": "wa net sa bêst spile",
+      "gpt_output": "wa net sa bêst spile",
+      "nbest": [
+        "wa net sa bêst spile",
+        "waa net sa bêst spile",
+        "wai net sa bêst spile",
+        "wa i net sa bêst spile",
+        "wah net sa bêst spile"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "wy haw net sa bêst spile",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-21 09:42:22",
+      "elapsed_seconds_at_submit": 4732.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24750183.mp3",
+      "reference": "it giet oer want hy wol net mear",
+      "baseline_1best": "it giet oer want hy wol net mear",
+      "gpt_output": "it giet oer want hy wol net mear",
+      "nbest": [
+        "it giet oer want hy wol net mear",
+        "it giet oer want hjy wol net mear",
+        "it giet oer want ihy wol net mear",
+        "it giet oerr want hy wol net mear",
+        "it giet oear want hy wol net mear"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "it giet oer want hy wol net mear",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-21 09:42:32",
+      "elapsed_seconds_at_submit": 4742.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23811427.mp3",
+      "reference": "we wolle in kuiertocht meitsje yn de natoer",
+      "baseline_1best": "we wolle in koietocht meitsje yn de natouer",
+      "gpt_output": "wy wolle in kuiertocht meitsje yn de natuer",
+      "nbest": [
+        "we wolle in koietocht meitsje yn de natouer",
+        "we wolle in koietocht meitsje yn de natuer",
+        "we wolle in koietocht meitsje yn de natoer",
+        "we wolle in koietocht meitsje yn de natuoer",
+        "wy wolle in koietocht meitsje yn de natouer"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "wy wolle in kuiertocht meitsje yn de natuer",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-21 09:43:13",
+      "elapsed_seconds_at_submit": 4783.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24721187.mp3",
+      "reference": "sûnt wannear hawwe wy in faam foar de húshâlding",
+      "baseline_1best": "sûnt wannear ha wy in faam foar de húshâlding",
+      "gpt_output": "sûnt wannear ha wy in faam foar de húshâlding",
+      "nbest": [
+        "sûnt wannear ha wy in faam foar de húshâlding",
+        "sûnt wannear haw wy in faam foar de húshâlding",
+        "sûnt wannear ha ewy in faam foar de húshâlding",
+        "sûnt wannear hae wy in faam foar de húshâlding",
+        "sûnt wannear haewy in faam foar de húshâlding"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "sûnt wannear haw wy in faam foar de húshâlding",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-05-21 09:44:05",
+      "elapsed_seconds_at_submit": 4835.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24694301.mp3",
+      "reference": "dokter kaam de oare moarns om alve oere",
+      "baseline_1best": "dokter kaam de oare moarns om alve oere",
+      "gpt_output": "dokter kaam de oare moarns om alve oere",
+      "nbest": [
+        "dokter kaam de oare moarns om alve oere",
+        "dokter kaam de oare mooarns om alve oere",
+        "dokter kaam de oare marns om alve oere",
+        "dokter kaam de oare moarns om halve oere",
+        "dokter kaam de oare moarns om alfve oere"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "dokter kaam de oare moarns om alve oere",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-21 09:44:24",
+      "elapsed_seconds_at_submit": 4854.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_20507008.mp3",
+      "reference": "we fine dat in heel wichtich punt",
+      "baseline_1best": "we fine dat in heel wichtich punt",
+      "gpt_output": "wy fine dat in hiel wichtich punt",
+      "nbest": [
+        "we fine dat in heel wichtich punt",
+        "wy fine dat in heel wichtich punt",
+        "we fine dat in hel wichtich punt",
+        "wê fine dat in heel wichtich punt",
+        "we fine dat in heal wichtich punt"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "create",
+      "selected_text": "wy fine dat in heel wichtich punt",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-05-21 09:44:34",
+      "elapsed_seconds_at_submit": 4864.2
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28194861.mp3",
+      "reference": "hy betelle fiifhûndert euro de man swart yn 't hantsje",
+      "baseline_1best": "hy betelle fiifhûndert euro de man swart yn it hantsje",
+      "gpt_output": "hy betelle fiifhûndert euro de man swart yn it hantsje",
+      "nbest": [
+        "hy betelle fiifhûndert euro de man swart yn it hantsje",
+        "hy betelle fiif hûndert euro de man swart yn it hantsje",
+        "hy betelle fiifhûndert euro de man swart yn 't hantsje",
+        "hy betelle fiifhûndert euro de man swart yn i't hantsje",
+        "hy betelle fiifhûndert euro de man swart yn 'it hantsje"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "hy betelle fiifhûndert euro de man swart yn it hantsje",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-21 09:45:05",
+      "elapsed_seconds_at_submit": 4895.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28359163.mp3",
+      "reference": "hy smookte de iene sigaret nei de oare",
+      "baseline_1best": "hy smookte de iene sigaret nei de oare",
+      "gpt_output": "hy smookte de iene sigaret nei de oare",
+      "nbest": [
+        "hy smookte de iene sigaret nei de oare",
+        "hy smookte de iene sigearet nei de oare",
+        "hy smokte de iene sigaret nei de oare",
+        "hy smookte de iene sigeret nei de oare",
+        "hy smookte de iene sigret nei de oare"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hy smookte de iene sigaret nei de oare",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-21 09:45:47",
+      "elapsed_seconds_at_submit": 4937.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35761728.mp3",
+      "reference": "doe't ik jong wie haw ik in soad by de boer arbeide",
+      "baseline_1best": "doe't ik jong wie haw ik in soad by de boer arbeide",
+      "gpt_output": "doe't ik jong wie haw ik in soad by de boer arbeide",
+      "nbest": [
+        "doe't ik jong wie haw ik in soad by de boer arbeide",
+        "doe't ik jong wie haw ik in soad byde boer arbeide",
+        "doe't ik jong wie ha ik in soad by de boer arbeide",
+        "doe't ik jong wie haww ik in soad by de boer arbeide",
+        "doe't ik jong wie haw itk in soad by de boer arbeide"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "doe't ik jong wie haw ik in soad by de boer arbeide",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-21 09:46:54",
+      "elapsed_seconds_at_submit": 5004.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_21429693.mp3",
+      "reference": "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+      "baseline_1best": "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+      "gpt_output": "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+      "nbest": [
+        "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+        "ik sjoc hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+        "ik sjoch hielendal gjin wôâl mear sa mistich wurdt it no ynienen",
+        "ik sjoch hielendal gjin wâôl mear sa mistich wurdt it no ynienen",
+        "ik sjoch hielendal gjin wâld mear sa mistich wurdt it no ynienen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "ik sjoch hielendal gjin wâl mear sa mistich wurdt it no ynienen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-21 09:47:51",
+      "elapsed_seconds_at_submit": 5061.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_27762829.mp3",
+      "reference": "wolsto ek wat fan my drinke",
+      "baseline_1best": "wolsto ek wat foan my drinke",
+      "gpt_output": "wolsto ek wat fan my drinke",
+      "nbest": [
+        "wolsto ek wat foan my drinke",
+        "wolsto ek wat fan my drinke",
+        "wolsto ek wat foar my drinke",
+        "wolsto ek wat far my drinke",
+        "wolsto ek wat foanr my drinke"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "wolsto ek wat fan myn drinken",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-21 09:48:45",
+      "elapsed_seconds_at_submit": 5114.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28461674.mp3",
+      "reference": "de fierdere spulregels wurde yn de rin fan dizze útstjoering wol dúdlik",
+      "baseline_1best": "de fierdere spulregels wurde yn de rin fan dizze útstjoering wol dúdlik",
+      "gpt_output": "de fierdere spulregels wurde yn de rin fan dizze útstjoering wol dúdlik",
+      "nbest": [
+        "de fierdere spulregels wurde yn de rin fan dizze útstjoering wol dúdlik",
+        "de fierdere spulregels wurde yn de rin fan dizze útstjoerring wol dúdlik",
+        "de fierdere speulregels wurde yn de rin fan dizze útstjoering wol dúdlik",
+        "de fierdere spulrigels wurde yn de rin fan dizze útstjoering wol dúdlik",
+        "de fierdere spulregels wurde yn de rin fan dizze útstsjoering wol dúdlik"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de fierdere spulregels wurde yn de rin fan dizze útstjoering wol dúdlik",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-21 09:49:43",
+      "elapsed_seconds_at_submit": 5173.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_35550261.mp3",
+      "reference": "ien tredde fan de befolking is fan hús en hear ferdreaun",
+      "baseline_1best": "ien tredde fan de befolking is fan hûs en hear ferdreaun",
+      "gpt_output": "ien tredde fan de befolking is fan hûs en hear ferdreaun",
+      "nbest": [
+        "ien tredde fan de befolking is fan hûs en hear ferdreaun",
+        "ien tredder fan de befolking is fan hûs en hear ferdreaun",
+        "ien tredde fan 'e befolking is fan hûs en hear ferdreaun",
+        "ien tredder fan 'e befolking is fan hûs en hear ferdreaun",
+        "ien tredde fan de befolking is fan hús en hear ferdreaun"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "ien tredde fan de befolking is fan hûs en hear ferdreaun",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-05-21 09:50:23",
+      "elapsed_seconds_at_submit": 5213.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_25789729.mp3",
+      "reference": "ik wurkje mei hynstehier en brûk ek lekkense stoffen fan hûndert persint wolle",
+      "baseline_1best": "ik wurkje mei hynstehier en brûk ek lekkerske stoffen fan hûndert persint wolle",
+      "gpt_output": "ik wurkje mei hynstehier en brûk ek lekkerske stoffen fan hûndert persint wol",
+      "nbest": [
+        "ik wurkje mei hynstehier en brûk ek lekkerske stoffen fan hûndert persint wolle",
+        "ik wurkje mei hynstehier en brûk ek lekkenske stoffen fan hûndert persint wolle",
+        "ik wurkje mei hynstehier en brûk ek lekkerse stoffen fan hûndert persint wolle",
+        "ik wurkje mei hynstehier en brûk ek lekkerske stoffen fan hûndertpersint wolle",
+        "ik wurkje mei hynstehier en brûk ek lekkense stoffen fan hûndert persint wolle"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "ik wurkje mei hynstehier en brûk ek de lekkerste stoffen fan hûndert persint wolle",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-05-21 09:53:01",
+      "elapsed_seconds_at_submit": 5371.4
     }
   ],
   "task_type": "100 samples",
   "task_slug": "100",
   "total_available": 100,
   "user_id": "Annotator20260519125408",
-  "total_elapsed_seconds": 4461.9,
-  "saved_at": "2026-05-21 09:37:52"
+  "total_elapsed_seconds": 5371.4,
+  "saved_at": "2026-05-21 09:53:01"
 }
