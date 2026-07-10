@@ -3801,7 +3801,7 @@
       "gpt_wer": 0.0
     }
   ],
-  "idx": 20,
+  "idx": 40,
   "answers": [
     {
       "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28416811.mp3",
@@ -4182,12 +4182,392 @@
       "copied_from_nbest": null,
       "annotation_timestamp": "2026-07-10 12:26:39",
       "elapsed_seconds_at_submit": 679.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36548335.mp3",
+      "reference": "hy krûpt ûnder de grutte leunstoel",
+      "baseline_1best": "hy kroept ûnder de grutte leunenstoel",
+      "gpt_output": "hy krûpt ûnder de grutte leunstoel",
+      "nbest": [
+        "hy kroept ûnder de grutte leunenstoel",
+        "hy kropt ûnder de grutte leunenstoel",
+        "hy koept ûnder de grutte leunenstoel",
+        "hy kloept ûnder de grutte leunenstoel",
+        "hy krûept ûnder de grutte leunenstoel"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "hy krûpet ûnder de grutte leunstoel",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-07-10 12:27:21",
+      "elapsed_seconds_at_submit": 721.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36777071.mp3",
+      "reference": "de bedriuwsadviseurs steane de ûndernimmers mei ried en died by",
+      "baseline_1best": "de bedriuwsadviseurs steane de ûndernimmers mei read en died by",
+      "gpt_output": "de bedriuwsadviseurs steane de ûndernimmers mei raad en died by",
+      "nbest": [
+        "de bedriuwsadviseurs steane de ûndernimmers mei read en died by",
+        "de bedriuwsadviseurs steane de ûndernimmers mei ead en died by",
+        "de bedriuwsadviseur steane de ûndernimmers mei read en died by",
+        "de bedriuwsadviseurss steane de ûndernimmers mei read en died by",
+        "de bedriuwsadviseurs steane de ûndernimmers mei read en die by"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "de bedriuwsadviseurs stean de ûndernimmers mei rie en died by",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-07-10 12:27:54",
+      "elapsed_seconds_at_submit": 754.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28417534.mp3",
+      "reference": "wy binne hjoed aardich opsketten mei it wurk",
+      "baseline_1best": "wy binne hjoed aardich opsketten mei it wurk",
+      "gpt_output": "wy binne hjoed aardich opsketten mei it wurk",
+      "nbest": [
+        "wy binne hjoed aardich opsketten mei it wurk",
+        "we binne hjoed aardich opsketten mei it wurk",
+        "w binne hjoed aardich opsketten mei it wurk",
+        "wey binne hjoed aardich opsketten mei it wurk",
+        "wye binne hjoed aardich opsketten mei it wurk"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "wy binne hjoed aardich opsketten mei it wurk",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-07-10 12:29:07",
+      "elapsed_seconds_at_submit": 827.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28455813.mp3",
+      "reference": "foarhinne wennen se yn de sânfurderryp ûnder greonterp",
+      "baseline_1best": "foarhinne wennen se yn de sân fierder ryp ûnder greaunterp",
+      "gpt_output": "foarhinne wennen se yn de sân fierder ryp ûnder greaunterp",
+      "nbest": [
+        "foarhinne wennen se yn de sân fierder ryp ûnder greaunterp",
+        "foarhinne wennen se yn de sân fuierder ryp ûnder greaunterp",
+        "foarhinne wennen se yn de sân fiuerder ryp ûnder greaunterp",
+        "foarhinne wennen se yn de sân fuerder ryp ûnder greaunterp",
+        "foarhinne wennen se yn de sân fierder ryp ûnder greaun terp"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "foarhinne wennen se yn de sân fierderop ûnder greonterp",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-07-10 12:30:52",
+      "elapsed_seconds_at_submit": 932.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28334487.mp3",
+      "reference": "it is noch altyd net persys bekend wat der dy freedtenachts bard is",
+      "baseline_1best": "it is noch altyd net persiis bekend wat der de freedtenachtspard is",
+      "gpt_output": "it is noch altyd net persiis bekend wat der freedtenacht bard is",
+      "nbest": [
+        "it is noch altyd net persiis bekend wat der de freedtenachtspard is",
+        "it is noch altyd net persiis bekend wat der dy freedtenachtspard is",
+        "it is noch altyd net persiis bekend wat der de freedtenachtspart is",
+        "it is noch altyd net persiis bekend wat der dy freedtenachtspart is",
+        "it is noch altyd net persiis bekend wat der de freedtenachtpard is"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "it is noch altyd net persiis bekend wat der de freedtenacht bard is",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-07-10 12:31:31",
+      "elapsed_seconds_at_submit": 971.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24741675.mp3",
+      "reference": "sylvia waard de sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "baseline_1best": "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "gpt_output": "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "nbest": [
+        "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+        "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehús",
+        "sylvia waard esneintenachts mei hertklachten opnommen yn it sikehûs",
+        "sylvia waard sneintenachts mei herdklachten opnommen yn it sikehûs",
+        "sylvia waard sneintenachts mei heartklachten opnommen yn it sikehûs"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "sylvia waard sneintenachts mei hertklachten opnommen yn it sikehûs",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-07-10 12:31:58",
+      "elapsed_seconds_at_submit": 998.9
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36804733.mp3",
+      "reference": "keunst moatst noait keapje as belizzing",
+      "baseline_1best": "keunst moast noait keapje as belizzing",
+      "gpt_output": "keunst moatst noait keapje as belizzing",
+      "nbest": [
+        "keunst moast noait keapje as belizzing",
+        "keunst moatst noait keapje as belizzing",
+        "keunst moast noait keapje as beliszing",
+        "keunst moatst noait keapje as beliszing",
+        "keunst moast noait keapje as belizzsing"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "keunst moast noait keapje as belizzing",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-07-10 12:33:07",
+      "elapsed_seconds_at_submit": 1067.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28453668.mp3",
+      "reference": "de sneintemoarns rieden wy ekstra betiid fan hûs",
+      "baseline_1best": "de sneintemoarns rieden wy ekstra betiid fan hûs",
+      "gpt_output": "de sneintemoarns rieden wy ekstra betiid fan hûs",
+      "nbest": [
+        "de sneintemoarns rieden wy ekstra betiid fan hûs",
+        "de sneintemoarns rieden wy ekstra betiid fanhûs",
+        "de sneintemoarns rieden wy ekstra betiid fan hús",
+        "de sneintemoarns rieden wy ekstra betiid fanhús",
+        "de sneintemoarns rieden wy ekstra betiid fan hs"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de sneintemoarns rieden wy ekstra betiid fan hûs",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-07-10 12:33:45",
+      "elapsed_seconds_at_submit": 1105.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23825171.mp3",
+      "reference": "de boukommisje is drok oan it wurk mei de tariedingen",
+      "baseline_1best": "de boukommisje is drok oan it wurk mei de tariedingen",
+      "gpt_output": "de boukommisje is drok oan it wurk mei de tariedingen",
+      "nbest": [
+        "de boukommisje is drok oan it wurk mei de tariedingen",
+        "de boukomisje is drok oan it wurk mei de tariedingen",
+        "de boukommisje is drok oan it wurrk mei de tariedingen",
+        "de boukommisje is drok oan it wurk mei de tariedingeën",
+        "de boukommisje is drok oan it wurkk mei de tariedingen"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de boukommisje is drok oan it wurk mei de tariedingen",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-07-10 12:33:57",
+      "elapsed_seconds_at_submit": 1117.0
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24621306.mp3",
+      "reference": "geandewei by it âlder wurden komme der allegear eleminten by",
+      "baseline_1best": "geandewei by it âlder wurden komme der allegear eleminten by",
+      "gpt_output": "geandewei by it âlder wurden komme der allegear eleminten by",
+      "nbest": [
+        "geandewei by it âlder wurden komme der allegear eleminten by",
+        "geande wei by it âlder wurden komme der allegear eleminten by",
+        "geandewei by it âlder wurden komme dêr allegear eleminten by",
+        "geande wei by it âlder wurden komme dêr allegear eleminten by",
+        "gean dewei by it âlder wurden komme der allegear eleminten by"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "geandewei by it âlder wurden komme der allegear eleminten by",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-07-10 12:34:32",
+      "elapsed_seconds_at_submit": 1152.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36793774.mp3",
+      "reference": "och foar my hoecht dat net mear sa nedich",
+      "baseline_1best": "acht foar my hoecht dat net mear sa nedich",
+      "gpt_output": "ach foar my hoecht dat net mear sa nedich",
+      "nbest": [
+        "acht foar my hoecht dat net mear sa nedich",
+        "ach foar my hoecht dat net mear sa nedich",
+        "acht foar my hoeht dat net mear sa nedich",
+        "acht foar my hoegcht dat net mear sa nedich",
+        "acht foar my hoecht dat net mar sa nedich"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "ach foar my hoecht dat net mear sa nedich",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-07-10 12:34:42",
+      "elapsed_seconds_at_submit": 1162.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24698682.mp3",
+      "reference": "we ha net sa bêst spile",
+      "baseline_1best": "wa net sa bêst spile",
+      "gpt_output": "wa net sa bêst spile",
+      "nbest": [
+        "wa net sa bêst spile",
+        "waa net sa bêst spile",
+        "wai net sa bêst spile",
+        "wa i net sa bêst spile",
+        "wah net sa bêst spile"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "we ha net sa bêst spile",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-07-10 12:35:08",
+      "elapsed_seconds_at_submit": 1188.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28338885.mp3",
+      "reference": "ik sil dy myn fûsten priuwe litte",
+      "baseline_1best": "ik sil dy myn fûtsten priuwe litte",
+      "gpt_output": "ik sil dy myn fûsten priuwe litte",
+      "nbest": [
+        "ik sil dy myn fûtsten priuwe litte",
+        "ik sil dy myn fûsten priuwe litte",
+        "ik sil dy myn fûetsten priuwe litte",
+        "ik sil dy myn fûesten priuwe litte",
+        "ik sil dy myn fotsten priuwe litte"
+      ],
+      "category": "ref_in_nbest",
+      "behavior_type": "choose_correct",
+      "selected_text": "ik sil dy myn fûsten priuwe litte",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-07-10 12:35:17",
+      "elapsed_seconds_at_submit": 1197.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24731142.mp3",
+      "reference": "de blommen ferkleurje fan rôsread nei blau",
+      "baseline_1best": "de blommen ferkleurje fan rôsread nei blau",
+      "gpt_output": "de blommen ferkleurje fan rôsread nei blau",
+      "nbest": [
+        "de blommen ferkleurje fan rôsread nei blau",
+        "de blommen ferkleurje fan rôs read nei blau",
+        "de blommn ferkleurje fan rôsread nei blau",
+        "de blommen ferkleurje fan rôsread nei blaiu",
+        "de blommen ferkleurje fan rôsreard nei blau"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "de blommen ferkleurje fan rôsread nei blau",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-07-10 12:35:48",
+      "elapsed_seconds_at_submit": 1228.5
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_24694301.mp3",
+      "reference": "dokter kaam de oare moarns om alve oere",
+      "baseline_1best": "dokter kaam de oare moarns om alve oere",
+      "gpt_output": "dokter kaam de oare moarns om alve oere",
+      "nbest": [
+        "dokter kaam de oare moarns om alve oere",
+        "dokter kaam de oare mooarns om alve oere",
+        "dokter kaam de oare marns om alve oere",
+        "dokter kaam de oare moarns om halve oere",
+        "dokter kaam de oare moarns om alfve oere"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "dokter kaam de oare moarns om alve oere",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-07-10 12:35:58",
+      "elapsed_seconds_at_submit": 1238.8
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23811427.mp3",
+      "reference": "we wolle in kuiertocht meitsje yn de natoer",
+      "baseline_1best": "we wolle in koietocht meitsje yn de natouer",
+      "gpt_output": "wy wolle in kuiertocht meitsje yn de natuer",
+      "nbest": [
+        "we wolle in koietocht meitsje yn de natouer",
+        "we wolle in koietocht meitsje yn de natuer",
+        "we wolle in koietocht meitsje yn de natoer",
+        "we wolle in koietocht meitsje yn de natuoer",
+        "wy wolle in koietocht meitsje yn de natouer"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "we wolle in kuiertocht meitsje yn de natuer",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-07-10 12:43:23",
+      "elapsed_seconds_at_submit": 1683.1
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28423687.mp3",
+      "reference": "ik haw gjin sint yn 'e bûse",
+      "baseline_1best": "ik haw gjin sint yn 'e boese",
+      "gpt_output": "ik haw gjin sint yn 'e bûse",
+      "nbest": [
+        "ik haw gjin sint yn 'e boese",
+        "ik ha gjin sint yn 'e boese",
+        "ik haw gjn sint yn 'e boese",
+        "ik haw gjin sint yn 'e boeske",
+        "ik haw gjin sint yn 'e boetse"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "create",
+      "selected_text": "ik ha gjin sint yn 'e bûse",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-07-10 12:43:41",
+      "elapsed_seconds_at_submit": 1701.3
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_28376657.mp3",
+      "reference": "nee it is neat feroare it is praktysk noch allegear persys gelyk",
+      "baseline_1best": "nee it is neat feroaren it is praktysk noch allegear presiis gelyk",
+      "gpt_output": "nee it is neat feroare it is praktysk noch allegear presiis gelyk",
+      "nbest": [
+        "nee it is neat feroaren it is praktysk noch allegear presiis gelyk",
+        "nee it is neat feroare it is praktysk noch allegear presiis gelyk",
+        "nee it is neat feroaren it is praktysk noch allegearr presiis gelyk",
+        "nee it is neat feroaren it is praktysk noch allegear prersiis gelyk",
+        "nee it is neat feroaren it is praktysk noch allegear pesiis gelyk"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "choose",
+      "selected_text": "nee it is neat feroare it is praktysk noch allegear presiis gelyk",
+      "copied_from_nbest": 2,
+      "annotation_timestamp": "2026-07-10 12:43:53",
+      "elapsed_seconds_at_submit": 1713.7
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_23759047.mp3",
+      "reference": "hja en har âldere suster marga ferskille as dei en nacht",
+      "baseline_1best": "hja en har âldere suster marga ferskille as dei en nacht",
+      "gpt_output": "hja en har âldere suster marga ferskille as dei en nacht",
+      "nbest": [
+        "hja en har âldere suster marga ferskille as dei en nacht",
+        "hja en har âldere suster manga ferskille as dei en nacht",
+        "hja en har âldere suster marga ferskille as dei en nacht'",
+        "hja en har âldere suster madga ferskille as dei en nacht",
+        "hja en har ldere suster marga ferskille as dei en nacht"
+      ],
+      "category": "ref_is_1best",
+      "behavior_type": "no_change",
+      "selected_text": "hja en har âldere suster marga ferskille as dei en nacht",
+      "copied_from_nbest": 1,
+      "annotation_timestamp": "2026-07-10 15:33:54",
+      "elapsed_seconds_at_submit": 11914.6
+    },
+    {
+      "uid": "/data/data2/yun/downloads/downloads/extracted/3f5bfc0e7f5de8152a335530722469b260d64fc70e09594e0745e10d118439c5/fy-NL_test_0/common_voice_fy-NL_36820549.mp3",
+      "reference": "hiest noch safolle freegje wollen oan allegear minsken dy't der net mear binne",
+      "baseline_1best": "hy is noch safolle freegje wollen oan allegear minsken dy't der net mear binne",
+      "gpt_output": "hy is noch safolle freegje wollen oan allegear minsken dy't der net mear binne",
+      "nbest": [
+        "hy is noch safolle freegje wollen oan allegear minsken dy't der net mear binne",
+        "hy is noch safolle freegje wollen oan allegeare minsken dy't der net mear binne",
+        "hy is noch safolle freegje wollen oan allegearr minsken dy't der net mear binne",
+        "hy is noch safolle freegje wollen oan allegearre minsken dy't der net mear binne",
+        "hy is noch safolle freegje wollen oan allegear minsken dy't dêr net mear binne"
+      ],
+      "category": "ref_not_in_nbest",
+      "behavior_type": "no_change",
+      "selected_text": "hy hie noch safolle freegje wollen oan allegear minsken dy't der net mear binne",
+      "copied_from_nbest": null,
+      "annotation_timestamp": "2026-07-10 15:34:27",
+      "elapsed_seconds_at_submit": 11947.9
     }
   ],
   "task_type": "100 samples",
   "task_slug": "100",
   "total_available": 100,
   "user_id": "Annotator20260710121510",
-  "total_elapsed_seconds": 679.0,
-  "saved_at": "2026-07-10 12:26:39"
+  "total_elapsed_seconds": 11947.9,
+  "saved_at": "2026-07-10 15:34:27"
 }
